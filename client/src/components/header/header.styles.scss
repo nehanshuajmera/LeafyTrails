@@ -11,17 +11,17 @@
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  .logo-box {
+  .header__logo-box {
     position: absolute;
     top: 2rem;
     left: 3rem;
 
-    .logo {
+    .header__logo {
       height: 8rem;
     }
   }
 
-  .hero-text-box {
+  .header__text-box {
     position: absolute;
     top: 45%;
     left: 50%;
@@ -34,7 +34,7 @@
       backface-visibility: hidden;
       margin-bottom: 6rem;
 
-      .heading-primary-main {
+      .heading-primary--main {
         display: block;
         font-size: 5.8rem;
         letter-spacing: 2.5rem;
@@ -42,7 +42,7 @@
         animation: MoveInLeft 1s ease-out;
       }
 
-      .heading-primary-sub {
+      .heading-primary--sub {
         display: block;
         font-size: 1.8rem;
         letter-spacing: 1.3rem;
@@ -94,7 +94,7 @@
       }
     }
 
-    .btn-white {
+    .btn--white {
       background-color: #fff;
       color: #777;
 
@@ -103,7 +103,7 @@
       }
     }
 
-    .btn-animated {
+    .btn--animated {
       animation: MoveUpButton .5s ease-out .75s backwards;
     }
   }
