@@ -11,7 +11,7 @@ export const Header = () => {
           <span className="heading-primary-main">Outdoors</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
-        <Link to="#" className='btn btn-white'>Discover Now</Link>
+        <Link to="#" className='btn btn-white btn-animated'>Discover our tours</Link>
       </div>
     </header>
   )
