@@ -1,5 +1,5 @@
 import './header.styles.scss';
-
+import { Link } from 'react-router-dom'
 export const Header = () => {
   return (
     <header className="header">
@@ -11,6 +11,7 @@ export const Header = () => {
           <span className="heading-primary-main">Outdoors</span>
           <span className="heading-primary-sub">is where life happens</span>
         </h1>
+        <Link to="#" className='btn btn-white'>Discover Now</Link>
       </div>
     </header>
   )
