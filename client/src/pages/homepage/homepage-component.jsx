@@ -28,7 +28,7 @@ export const HomePage = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ea a voluptatibus, tempora repellendus ducimus placeat voluptate aut. Iste ab hic, inventore veritatis ipsa velit ratione, nulla beatae aliquid minima eaque
             </div>
             <div className="content__main--btn">
-              Admission is Open, Grab your seat now.
+              Admission is Open, Grab your seat now
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ export const HomePage = () => {
             {/* image container */}
           </div>
           <div className="hero__image--content">
-            Shaping future for over 2500+ students
+            <h2>Shaping future for over 2500+ students</h2>
           </div>
         </div>
       </div>
