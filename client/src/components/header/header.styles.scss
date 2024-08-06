@@ -28,13 +28,13 @@
     transform: translate(-50%, -50%);
     text-align: center;
 
-    .heading-primary {
+    .heading__primary {
       color: #fff;
       text-transform: uppercase;
       backface-visibility: hidden;
       margin-bottom: 6rem;
 
-      .heading-primary--main {
+      .heading__primary--main {
         display: block;
         font-size: 5.8rem;
         letter-spacing: 2.5rem;
@@ -42,7 +42,7 @@
         animation: MoveInLeft 1s ease-out;
       }
 
-      .heading-primary--sub {
+      .heading__primary--sub {
         display: block;
         font-size: 1.8rem;
         letter-spacing: 1.3rem;

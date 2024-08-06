@@ -7,9 +7,9 @@ export const Header = () => {
         <img src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png" alt="Logo" className="header__logo" />
       </div>
       <div className="header__text-box">
-        <h1 className="heading-primary">
-          <span className="heading-primary--main">Outdoors</span>
-          <span className="heading-primary--sub">is where life happens</span>
+        <h1 className="heading__primary">
+          <span className="heading__primary--main">Outdoors</span>
+          <span className="heading__primary--sub">is where life happens</span>
         </h1>
         <Link to="#" className='btn btn--white btn--animated'>Discover our tours</Link>
       </div>
