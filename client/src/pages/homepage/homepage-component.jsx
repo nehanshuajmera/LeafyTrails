@@ -1,9 +1,11 @@
+import { LandingAbout } from '../../components/landing-about/landing-about.component';
 import './homepage.styles.scss';
 
 export const HomePage = () => {
   return (
     <div className="homepage">
-      <h1>HomePage</h1>
+      {/* Landing About */}
+      <LandingAbout />
     </div>
   )
 }

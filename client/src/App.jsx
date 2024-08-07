@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { Routes, Route } from 'react-router-dom'
 import { Header } from './components/header/header.component'
 import { HomePage } from './pages/homepage/homepage-component'
@@ -9,7 +9,7 @@ const App = () => {
       <Header />
       <div className="pages">
         <Routes>
-          <Route path='/home' element={<HomePage />} />
+          <Route path='/' element={<HomePage />} />
         </Routes>
       </div>
     </div>
