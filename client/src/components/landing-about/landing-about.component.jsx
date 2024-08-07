@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import './landing-about.styles.scss';
+import { Link } from "react-router-dom";
+import "./landing-about.styles.scss";
 
 export const LandingAbout = () => {
   return (
@@ -11,22 +11,47 @@ export const LandingAbout = () => {
       </div>
       <div className="landing-about__grid">
         <div className="landing-about__grid--content">
-          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">You're going to fall in love with nature</h3>
+          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">
+            You're going to fall in love with nature
+          </h3>
           <p className="grid__content--paragraph">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio suscipit aliquid hic unde quo, incidunt architecto mollitia quidem earum molestiae nemo tempore, fugit ea repudiandae.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+            suscipit aliquid hic unde quo, incidunt architecto mollitia quidem
+            earum molestiae nemo tempore, fugit ea repudiandae.
           </p>
 
-          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">live adventures like you never have before</h3>
+          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">
+            live adventures like you never have before
+          </h3>
           <p className="grid__content--paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempore molestias ratione, quae deleniti?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            tempore molestias ratione, quae deleniti?
           </p>
 
-          <Link to='#' className='btn-text'>Learn More &rarr;</Link>
+          <Link to="#" className="btn-text">
+            Learn More &rarr;
+          </Link>
         </div>
         <div className="landing-about__grid--images">
-          images
+          <div className="composition">
+            <img
+              src="https://images.pexels.com/photos/1302991/pexels-photo-1302991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="photo 1"
+              className="composition__photo composition__photo--p1"
+            />
+            <img
+              src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="photo 2"
+              className="composition__photo composition__photo--p2"
+            />
+            <img
+              src="https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="photo 3"
+              className="composition__photo composition__photo--p3"
+            />
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

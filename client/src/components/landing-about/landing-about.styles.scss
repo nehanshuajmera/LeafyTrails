@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import "../../App.scss";
 $color-grey-light-1: #f7f7f7;
 
 .landing-about {
@@ -8,25 +8,26 @@ $color-grey-light-1: #f7f7f7;
   padding: 20rem 0;
 
   .heading-secondary {
-    background-image: linear-gradient(to right,
-        $color-dark-blue,
-        $color-light-blue );
+    background-image: linear-gradient(
+      to right,
+      $color-dark-blue,
+      $color-light-blue
+    );
     display: inline-block;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     color: transparent;
-    transition: all .2s;
+    transition: all 0.2s;
     cursor: pointer;
 
     &:hover {
       transform:
-        /*skewY(1deg) skewX(15deg)*/
-        scale(1.1);
-      text-shadow: .5rem 1rem 2rem rgba(#000, .2); // rgba(color, opacity)
+        /*skewY(1deg) skewX(15deg)*/ scale(1.1);
+      text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2); // rgba(color, opacity)
     }
   }
 
@@ -35,10 +36,11 @@ $color-grey-light-1: #f7f7f7;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 4rem;
 
     .landing-about__grid--content {
       font-size: 1.6rem;
+      color: #777;
 
       .grid__content--heading-tertiary {
         font-weight: 700;
@@ -54,26 +56,61 @@ $color-grey-light-1: #f7f7f7;
       }
 
       .btn-text {
-
         &:link,
         &:visited {
           color: $color-dark-blue;
           border-bottom: 1px solid $color-dark-blue;
           padding: 3px;
           font-size: 1.6rem;
-          transition: all .2s;
+          transition: all 0.2s;
         }
 
         &:hover {
           background-color: $color-dark-blue;
           color: #fff;
-          box-shadow: 0 1rem 2rem rgba(#000, .15);
+          box-shadow: 0 1rem 2rem rgba(#000, 0.15);
           transform: translateY(-2px);
         }
 
         &:active {
-          box-shadow: 0 .5rem 1rem rgba(#000, .15);
+          box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
           transform: translateY(0px);
+        }
+      }
+    }
+
+    .landing-about__grid--images {
+      .composition {
+        position: relative;
+
+        &__photo {
+          width: 55%;
+          position: absolute;
+          box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
+          z-index: 1;
+          transition: all .2s;
+          outline-offset: 1.8rem;
+
+          &--p1 {
+            top: -2rem;
+            left: 0;
+          }
+
+          &--p2 {
+            right: 0;
+            top: 2rem;
+          }
+
+          &--p3 {
+            top: 10rem;
+            left: 20%;
+          }
+
+          &:hover{
+            outline: 1.5rem solid $color-dark-blue;
+            z-index: 10;
+            transform: scale(1.05) translateY(-2px);
+          }
         }
       }
     }
@@ -86,7 +123,7 @@ $color-grey-light-1: #f7f7f7;
 }
 
 .utility-margin-btm-big {
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .utility-margin-btm-medium {
