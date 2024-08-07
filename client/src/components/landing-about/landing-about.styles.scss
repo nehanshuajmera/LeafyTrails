@@ -2,9 +2,10 @@
 $color-grey-light-1: #f7f7f7;
 
 .landing-about {
+  // height: 100vh;
   margin-top: -20vh;
   background-color: $color-grey-light-1;
-  padding: 25rem 0;
+  padding: 20rem 0;
 
   .heading-secondary {
     background-image: linear-gradient(to right,
@@ -14,14 +15,67 @@ $color-grey-light-1: #f7f7f7;
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 3.5rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: .2rem;
     color: transparent;
     transition: all .2s;
+    cursor: pointer;
 
-    &:hover{
-      transform: skewY(1deg) skewX(15deg) scale(1.1);
-      text-shadow: .5rem 1rem 2rem rgba(#000, .2);
+    &:hover {
+      transform:
+        /*skewY(1deg) skewX(15deg)*/
+        scale(1.1);
+      text-shadow: .5rem 1rem 2rem rgba(#000, .2); // rgba(color, opacity)
+    }
+  }
+
+  .landing-about__grid {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    .landing-about__grid--content {
+      font-size: 1.6rem;
+
+      .grid__content--heading-tertiary {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .grid__content--paragraph {
+        font-weight: 400;
+
+        &:not(:last-child) {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .btn-text {
+
+        &:link,
+        &:visited {
+          color: $color-dark-blue;
+          border-bottom: 1px solid $color-dark-blue;
+          padding: 3px;
+          font-size: 1.6rem;
+          transition: all .2s;
+        }
+
+        &:hover {
+          background-color: $color-dark-blue;
+          color: #fff;
+          box-shadow: 0 1rem 2rem rgba(#000, .15);
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          box-shadow: 0 .5rem 1rem rgba(#000, .15);
+          transform: translateY(0px);
+        }
+      }
     }
   }
 }
@@ -31,6 +85,14 @@ $color-grey-light-1: #f7f7f7;
   text-align: center;
 }
 
-.utility-margin-btm-8 {
-  margin-bottom: 8rem;
+.utility-margin-btm-big {
+  margin-bottom: 5rem;
+}
+
+.utility-margin-btm-medium {
+  margin-bottom: 2.5rem;
+}
+
+.utility-margin-btm-small {
+  margin-bottom: 1.5rem;
 }
