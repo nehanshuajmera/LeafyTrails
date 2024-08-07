@@ -88,7 +88,7 @@ $color-grey-light-1: #f7f7f7;
           position: absolute;
           box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
           z-index: 1;
-          transition: all .2s;
+          transition: all 0.2s;
           outline-offset: 1.8rem;
 
           &--p1 {
@@ -102,14 +102,21 @@ $color-grey-light-1: #f7f7f7;
           }
 
           &--p3 {
-            top: 10rem;
+            top: 8rem;
             left: 20%;
           }
 
-          &:hover{
+          &:hover {
             outline: 1.5rem solid $color-dark-blue;
             z-index: 10;
-            transform: scale(1.05) translateY(-2px);
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+          }
+        }
+
+        &:hover {
+          .composition__photo:not(:hover) {
+            transform: scale(0.95);
           }
         }
       }
