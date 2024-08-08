@@ -1,0 +1,36 @@
+.feature-card {
+  background-color: rgba(#fff, 0.8);
+  font-size: 1.3rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.15);
+  transition: transform .3s;
+
+  &__icon {
+    font-size: 6rem;
+    background-image: linear-gradient(
+      to right,
+      rgba(46, 49, 146, 0.8),
+      rgba(27, 255, 255, 0.8)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 0.3rem;
+  }
+
+  .heading-tertiary {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &:hover{
+    transform: translateY(-1.5rem) scale(1.02);
+  }
+}

@@ -1,0 +1,26 @@
+.feature {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(46, 49, 146, 0.75),
+      rgba(27, 255, 255, 0.75)
+    ),
+    url("https://cdn.pixabay.com/photo/2024/01/10/21/02/mountains-8500373_1280.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -9rem;
+  transform: skewy(-6deg);
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &-grid--container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    max-width: 100rem;
+    transform: skewY(6deg);
+  }
+}

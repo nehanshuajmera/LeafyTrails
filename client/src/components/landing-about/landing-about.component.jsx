@@ -11,7 +11,7 @@ export const LandingAbout = () => {
       </div>
       <div className="landing-about__grid">
         <div className="landing-about__grid--content">
-          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">
+          <h3 className="heading-tertiary utility-margin-btm-small">
             You're going to fall in love with nature
           </h3>
           <p className="grid__content--paragraph">
@@ -20,7 +20,7 @@ export const LandingAbout = () => {
             earum molestiae nemo tempore, fugit ea repudiandae.
           </p>
 
-          <h3 className="grid__content--heading-tertiary utility-margin-btm-small">
+          <h3 className="heading-tertiary utility-margin-btm-small">
             live adventures like you never have before
           </h3>
           <p className="grid__content--paragraph">
