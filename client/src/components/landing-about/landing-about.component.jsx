@@ -29,7 +29,9 @@ export const LandingAbout = () => {
           </p>
 
           <Link to="#" className="btn-text">
-            Learn More &rarr;
+            {/* Learn More &rarr; */}
+            Learn More&nbsp;
+            <i class="fa-solid fa-arrow-right" style={{fontSize: "1.5rem"}}/>
           </Link>
         </div>
         <div className="landing-about__grid--images">

@@ -58,15 +58,19 @@ $color-grey-light-1: #f7f7f7;
       .btn-text {
         &:link,
         &:visited {
-          color: $color-dark-blue;
-          border-bottom: 1px solid $color-dark-blue;
+          color: #007FFF;
+          border-bottom: 2px solid #007FFF;
           padding: 3px;
           font-size: 1.6rem;
+          font-weight: 600;
           transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          width: fit-content;
         }
 
         &:hover {
-          background-color: $color-dark-blue;
+          background-color: #007FFF;
           color: #fff;
           box-shadow: 0 1rem 2rem rgba(#000, 0.15);
           transform: translateY(-2px);
