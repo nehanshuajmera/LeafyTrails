@@ -40,7 +40,7 @@ $color-grey-light-1: #f7f7f7;
 
     .landing-about__grid--content {
       font-size: 1.6rem;
-      color: #777;
+      // color: #777;
 
       .heading-tertiary {
         font-weight: 700;
@@ -95,20 +95,32 @@ $color-grey-light-1: #f7f7f7;
           &--p1 {
             top: -2rem;
             left: 0;
+
+            &:hover {
+              outline: 1.5rem solid #007FFF;
+            }
           }
 
           &--p2 {
             right: 0;
             top: 2rem;
+
+            &:hover {
+              outline: 1.5rem solid #000080;
+            }
           }
 
           &--p3 {
             top: 8rem;
             left: 20%;
+
+            &:hover {
+              outline: 1.5rem solid #002FA7;
+            }
           }
 
           &:hover {
-            outline: 1.5rem solid $color-dark-blue;
+            // outline: 1.5rem solid $color-dark-blue;
             z-index: 10;
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);

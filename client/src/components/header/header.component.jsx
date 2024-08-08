@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__logo-box">
-        <img src="https://cdn-icons-png.flaticon.com/512/7893/7893979.png" alt="Logo" className="header__logo" />
+        <img src="/logo (2).png" alt="Logo" className="header__logo" />
       </div>
       <div className="header__text-box">
         <h1 className="heading__primary">
