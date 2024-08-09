@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
+import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
 
 export const LandingAbout = () => {
   return (
@@ -9,7 +10,7 @@ export const LandingAbout = () => {
           Exciting tours for adventurous people
         </h2>
       </div>
-      <div className="landing-about__grid">
+      <GridLayout2x1>
         <div className="landing-about__grid--content">
           <h3 className="heading-tertiary utility-margin-btm-small">
             You're going to fall in love with nature
@@ -31,7 +32,7 @@ export const LandingAbout = () => {
           <Link to="#" className="btn-text">
             {/* Learn More &rarr; */}
             Learn More&nbsp;
-            <i class="fa-solid fa-arrow-right" style={{fontSize: "1.5rem"}}/>
+            <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
           </Link>
         </div>
         <div className="landing-about__grid--images">
@@ -53,7 +54,7 @@ export const LandingAbout = () => {
             />
           </div>
         </div>
-      </div>
+      </GridLayout2x1>
     </div>
   );
 };

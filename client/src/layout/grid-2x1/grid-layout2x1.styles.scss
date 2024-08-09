@@ -1,0 +1,7 @@
+.grid-layout-2x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 100rem;
+  margin: 0 auto;
+} 

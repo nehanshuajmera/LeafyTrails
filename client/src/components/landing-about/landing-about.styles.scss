@@ -1,11 +1,13 @@
 @import "../../App.scss";
-$color-grey-light: #f7f7f7;
-$color-grey-dark: #eaeaea;
 
 .landing-about {
   height: 120vh;
   margin-top: -20vh;
-  background-image: linear-gradient(to right, $color-grey-dark, $color-grey-light);
+  background-image: linear-gradient(
+    to right,
+    $color-grey-dark,
+    $color-grey-light
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,110 +37,101 @@ $color-grey-dark: #eaeaea;
     }
   }
 
-  .landing-about__grid {
-    max-width: 100rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
+  .landing-about__grid--content {
+    font-size: 1.6rem;
 
-    .landing-about__grid--content {
-      font-size: 1.6rem;
-      // color: #777;
+    .heading-tertiary {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
 
-      .heading-tertiary {
-        font-weight: 700;
-        text-transform: uppercase;
-      }
+    .grid__content--paragraph {
+      font-weight: 400;
 
-      .grid__content--paragraph {
-        font-weight: 400;
-
-        &:not(:last-child) {
-          margin-bottom: 3rem;
-        }
-      }
-
-      .btn-text {
-        &:link,
-        &:visited {
-          color: #007FFF;
-          border-bottom: 1.5px solid #007FFF;
-          padding: 3px;
-          font-size: 1.6rem;
-          font-weight: 600;
-          transition: all 0.2s;
-          display: flex;
-          align-items: center;
-          width: fit-content;
-        }
-
-        &:hover {
-          background-color: #007FFF;
-          color: #fff;
-          box-shadow: 0 1rem 2rem rgba(#000, 0.15);
-          transform: translateY(-2px);
-        }
-
-        &:active {
-          box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
-          transform: translateY(0px);
-        }
+      &:not(:last-child) {
+        margin-bottom: 3rem;
       }
     }
 
-    .landing-about__grid--images {
-      .composition {
-        position: relative;
+    .btn-text {
+      &:link,
+      &:visited {
+        color: #007fff;
+        border-bottom: 1.5px solid #007fff;
+        padding: 3px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        transition: all 0.2s;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+      }
 
-        &__photo {
-          width: 55%;
-          position: absolute;
-          box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
-          z-index: 1;
-          transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-          outline-offset: 1.8rem;
-          cursor: pointer;
+      &:hover {
+        background-color: #007fff;
+        color: #fff;
+        box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+        transform: translateY(-2px);
+      }
 
-          &--p1 {
-            top: -2rem;
-            left: 0;
+      &:active {
+        box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+        transform: translateY(0px);
+      }
+    }
+  }
 
-            &:hover {
-              outline: 1.5rem solid #007FFF;
-            }
-          }
+  .landing-about__grid--images {
+    .composition {
+      position: relative;
 
-          &--p2 {
-            right: 0;
-            top: 2rem;
+      &__photo {
+        width: 55%;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
+        z-index: 1;
+        transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        outline-offset: 1.8rem;
+        cursor: pointer;
 
-            &:hover {
-              outline: 1.5rem solid #000080;
-            }
-          }
-
-          &--p3 {
-            top: 8rem;
-            left: 20%;
-
-            &:hover {
-              outline: 1.5rem solid #002FA7;
-            }
-          }
+        &--p1 {
+          top: -2rem;
+          left: 0;
 
           &:hover {
-            // outline: 1.5rem solid $color-dark-blue;
-            z-index: 10;
-            transform: scale(1.05) translateY(-0.5rem);
-            box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+            outline: 1.5rem solid #007fff;
+          }
+        }
+
+        &--p2 {
+          right: 0;
+          top: 2rem;
+
+          &:hover {
+            outline: 1.5rem solid #000080;
+          }
+        }
+
+        &--p3 {
+          top: 8rem;
+          left: 20%;
+
+          &:hover {
+            outline: 1.5rem solid #002fa7;
           }
         }
 
         &:hover {
-          .composition__photo:not(:hover) {
-            transform: scale(0.95);
-          }
+          // outline: 1.5rem solid $color-dark-blue;
+          z-index: 10;
+          transform: scale(1.05) translateY(-0.5rem);
+          box-shadow: 0 2.5rem 4rem rgba(#000, 0.5);
+        }
+      }
+
+      &:hover {
+        .composition__photo:not(:hover) {
+          transform: scale(0.95);
         }
       }
     }
