@@ -1,0 +1,7 @@
+.grid-layout-3x1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6rem;
+  max-width: 100rem;
+  margin: 0 auto;
+}
