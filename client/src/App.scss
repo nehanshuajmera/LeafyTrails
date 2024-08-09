@@ -9,3 +9,27 @@ $color-dark-blue: #2E3192;
 $color-medium-blue: #4E65FF;
 $color-light-blue: #1BFFFF;
 $color-extra-light-blue: #92EFFD;
+
+/* scroll-bar */
+/* Style for the entire scrollbar */
+::-webkit-scrollbar {
+  width: 1rem; /* Width of the scrollbar */
+  height: 1rem; /* Height of the scrollbar (for horizontal scroll) */
+}
+
+/* Style for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 0; /* Rounded corners */
+}
+
+/* Style for the scrollbar track (the background) */
+::-webkit-scrollbar-track {
+  background-color: #eaeaea; /* Background color of the scrollbar track */
+  border-radius: 0; /* Rounded corners */
+}
+
+/* Optional: Add a hover effect for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
