@@ -1,10 +1,11 @@
+import { GridLayout4x1 } from "../../layout/grid-4x1/grid-layout4x1.component";
 import { FeatureCard } from "../feature-card/feature-card.component";
 import "./feature.styles.scss";
 
 export const Feature = () => {
   return (
     <div className="feature">
-      <div className="feature-grid--container">
+      <GridLayout4x1>
         <FeatureCard
           iconName="basic-world"
           heading="Explore the world"
@@ -25,7 +26,7 @@ export const Feature = () => {
           heading="Live a healthier life"
           content="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
         />
-      </div>
+      </GridLayout4x1>
     </div>
   );
 };

@@ -16,11 +16,7 @@
   justify-content: center;
   cursor: pointer;
 
-  &-grid--container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6rem;
-    max-width: 100rem;
+  & > * {
     transform: skewY(6deg);
   }
 }
