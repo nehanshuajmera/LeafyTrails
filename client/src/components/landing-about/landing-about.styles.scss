@@ -30,7 +30,7 @@ $color-grey-dark: #eaeaea;
 
     &:hover {
       transform:
-        /*skewY(1deg) skewX(15deg)*/ scale(1.1);
+        /*skewY(1deg) skewX(15deg)*/ scale(1.05);
       text-shadow: 0.5rem 1rem 2rem rgba(#000, 0.2); // rgba(color, opacity)
     }
   }
