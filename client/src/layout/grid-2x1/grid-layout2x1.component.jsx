@@ -5,5 +5,5 @@ export const GridLayout2x1 = ({children}) => {
     <div className="grid-layout-2x1">
       {children}
     </div>
-  )
-}
+  );
+};

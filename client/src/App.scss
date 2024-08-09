@@ -4,14 +4,9 @@ body {
   padding: 1.5rem;
 }
 
-/* colors */
-$color-dark-blue: #2E3192;
-$color-medium-blue: #4E65FF;
-$color-light-blue: #1BFFFF;
-$color-extra-light-blue: #92EFFD;
-
-$color-grey-light: #f7f7f7;
-$color-grey-dark: #eaeaea;
+@import './sass/_variables';
+@import './sass/_typography';
+@import './sass/_utilities';
 
 /* Style for the entire scrollbar */
 ::-webkit-scrollbar {

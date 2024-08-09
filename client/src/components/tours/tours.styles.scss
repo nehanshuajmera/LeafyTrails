@@ -12,34 +12,4 @@
     $color-grey-light
   );
   margin-top: -7rem;
-
-  .heading-secondary {
-    background-image: linear-gradient(
-      to right,
-      $color-dark-blue,
-      $color-light-blue
-    );
-    display: inline-block;
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    color: transparent;
-    transition: all 0.2s;
-    cursor: pointer;
-
-    &:hover {
-      transform:
-        /*skewY(1deg) skewX(15deg)*/ scale(1.05);
-      text-shadow: 0rem 1rem 2rem rgba(#000, 0.2); // rgba(color, opacity)
-    }
-  }
-
-  &-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6rem;
-  }
 }
