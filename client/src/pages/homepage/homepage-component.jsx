@@ -1,5 +1,6 @@
 import { Feature } from '../../components/feature/feature.component';
 import { LandingAbout } from '../../components/landing-about/landing-about.component';
+import { Tours } from '../../components/tours/tours.component';
 import './homepage.styles.scss';
 
 export const HomePage = () => {
@@ -10,6 +11,9 @@ export const HomePage = () => {
 
       {/* Feature Section */}
       <Feature />
+
+      {/* Tour Section */}
+      <Tours />
     </div>
   )
 }
