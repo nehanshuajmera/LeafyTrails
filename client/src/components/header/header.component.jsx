@@ -1,5 +1,6 @@
-import './header.styles.scss';
-import { Link } from 'react-router-dom'
+import { AnimatedButton } from "../animated-button/animated-button.component";
+import "./header.styles.scss";
+
 export const Header = () => {
   return (
     <header className="header">
@@ -11,8 +12,10 @@ export const Header = () => {
           <span className="heading__primary--main">Outdoors</span>
           <span className="heading__primary--sub">is where life happens</span>
         </h1>
-        <Link to="#" className='btn btn--white btn--animated'>Discover our tours</Link>
+        <AnimatedButton to="#" color="white" animated>
+          Discover Our Tours
+        </AnimatedButton>
       </div>
     </header>
-  )
-} 
+  );
+};
