@@ -1,0 +1,62 @@
+@import "../../App.scss";
+
+.rotate-card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  width: 25rem;
+  position: relative;
+  height: 40rem;
+
+  .card__side {
+    width: 100%;
+    height: 100%;
+    border-radius: .3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+  }
+
+  .card__side--front {
+    background-color: #fff;
+  }
+
+  .card__side--back {
+    transform: rotateY(180deg);
+  }
+
+  .back-orange {
+    background-image: linear-gradient(
+      to right bottom,
+      $light-orange,
+      $dark-orange
+    );
+  }
+
+  .back-green {
+    background-image: linear-gradient(
+      to right bottom,
+      $light-green,
+      $dark-green
+    );
+  }
+
+  .back-blue {
+    background-image: linear-gradient(
+      to right bottom,
+      $light-blue,
+      $dark-blue
+    );
+  }
+
+  &:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover .card__side--back {
+    transform: rotateY(0);
+  }
+}

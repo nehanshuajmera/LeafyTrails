@@ -5,11 +5,13 @@ import "./tours.styles.scss";
 export const Tours = () => {
   return (
     <div className="tours">
-      <h2 className="heading-secondary">Most popular tours</h2>
+      <h2 className="heading-secondary utility-margin-btm-big">
+        Most popular tours
+      </h2>
       <GridLayout3x1>
-        <RotateCard />
-        <RotateCard />
-        <RotateCard />
+        <RotateCard backgroundColor="orange" />
+        <RotateCard backgroundColor="green" />
+        <RotateCard backgroundColor="blue" />
       </GridLayout3x1>
     </div>
   );
