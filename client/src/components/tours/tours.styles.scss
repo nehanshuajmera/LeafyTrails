@@ -2,6 +2,7 @@
 
 .tours {
   margin-top: -7rem;
+  padding-top: 8rem;
   height: 120vh;
   display: flex;
   align-items: center;
@@ -12,16 +13,4 @@
     $color-grey-dark,
     $color-grey-light
   );
-  transform: skewY(-6deg);
-
-  & > * {
-    transform: skewY(6deg);
-  }
-
-  & h2:first-child {
-    &:hover {
-      transform: skewY(6deg) scale(1.05);
-      text-shadow: 0rem 1rem 2rem rgba(#000, 0.2);
-    }
-  }
 }
