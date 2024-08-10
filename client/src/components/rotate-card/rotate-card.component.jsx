@@ -1,7 +1,12 @@
 import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./rotate-card.styles.scss";
 
-export const RotateCard = ({ backgroundColor, cardHeading, details }) => {
+export const RotateCard = ({
+  backgroundColor,
+  cardHeading,
+  details,
+  price,
+}) => {
   return (
     <div className="rotate-card">
       <div className={`card__side card__side--front`}>
@@ -23,7 +28,15 @@ export const RotateCard = ({ backgroundColor, cardHeading, details }) => {
         className={`card__side card__side--back 
         back-${backgroundColor}`}
       >
-        back
+        <div className="card__action">
+          <div className="price__box">
+            <div className="price--only">only</div>
+            <div className="price--value">{price}</div>
+          </div>
+          <div className="card__btn">
+            <AnimatedButton color="white">Buy now !</AnimatedButton>
+          </div>
+        </div>
       </div>
     </div>
   );

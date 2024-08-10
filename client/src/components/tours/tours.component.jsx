@@ -17,16 +17,19 @@ export const Tours = () => {
           backgroundColor="orange"
           cardHeading="The Sea Explorer"
           details={card1Details}
+          price='₹30000'
         />
         <RotateCard
           backgroundColor="green"
           cardHeading="The Forest Hiker"
           details={card2Details}
+          price='₹45000'
         />
         <RotateCard
           backgroundColor="blue"
           cardHeading="The Snow Adventurer"
           details={card3Details}
+          price='₹55000'
         />
       </GridLayout3x1>
       <div className="tours__btn utility-margin-top-big">
