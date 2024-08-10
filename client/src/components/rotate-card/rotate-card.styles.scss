@@ -31,9 +31,11 @@
       width: 100%;
       height: 40%;
       background-blend-mode: screen;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
 
-    .front-orange {
+    .picture-orange {
       background-image: linear-gradient(
           to right bottom,
           $light-orange,
@@ -42,7 +44,7 @@
         url("../../assets/card-1.jpg");
     }
 
-    .front-green {
+    .picture-green {
       background-image: linear-gradient(
           to right bottom,
           $light-green,
@@ -51,13 +53,75 @@
         url("../../assets/card-2.jpg");
     }
 
-    .front-blue {
+    .picture-blue {
       background-image: linear-gradient(
           to right bottom,
           $light-blue,
           $dark-blue
         ),
         url("../../assets/card-3.jpg");
+    }
+
+    .card__heading {
+      text-align: right;
+      font-size: 2.6rem;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300;
+      width: 75%;
+      position: absolute;
+      top: 9rem;
+      right: 1.5rem;
+    }
+
+    .card-heading-span {
+      padding: 0.5rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+
+    .heading-orange {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($light-orange, 0.85),
+        rgba($dark-orange, 0.85)
+      );
+    }
+
+    .heading-green {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($light-green, 0.85),
+        rgba($dark-green, 0.85)
+      );
+    }
+
+    .heading-blue {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($light-blue, 0.85),
+        rgba($dark-blue, 0.85)
+      );
+    }
+
+    .card__details {
+      padding: 3rem;
+
+      ul {
+        margin: 0 auto;
+        list-style: none;
+        width: 80%;
+
+        li {
+          font-size: 1.5rem;
+          padding: 0.8rem;
+          text-align: center;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid #eee;
+          }
+        }
+      }
     }
   }
 

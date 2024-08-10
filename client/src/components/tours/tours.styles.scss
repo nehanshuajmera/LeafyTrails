@@ -1,15 +1,27 @@
 @import "../../App.scss";
 
 .tours {
-  // height: 100vh;
+  margin-top: -7rem;
+  height: 100vh;
   display: flex;
   align-items: center;
-  padding: 20rem 0;
+  justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(
     to right,
     $color-grey-dark,
     $color-grey-light
   );
-  margin-top: -7rem;
+  transform: skewY(-6deg);
+
+  & > * {
+    transform: skewY(6deg);
+  }
+
+  & h2:first-child {
+    &:hover {
+      transform: skewY(6deg) scale(1.05);
+      text-shadow: 0rem 1rem 2rem rgba(#000, 0.2);
+    }
+  }
 }
