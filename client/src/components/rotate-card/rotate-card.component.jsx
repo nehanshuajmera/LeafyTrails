@@ -12,11 +12,9 @@ export const RotateCard = ({ backgroundColor, cardHeading, details }) => {
         </h4>
         <div className="card__details">
           <ul>
-            {
-              details.map((detail) => (
-                <li key={detail.id}>{detail.item}</li>
-              ))
-            }
+            {details.map((detail) => (
+              <li key={detail.id}>{detail.item}</li>
+            ))}
           </ul>
         </div>
       </div>
