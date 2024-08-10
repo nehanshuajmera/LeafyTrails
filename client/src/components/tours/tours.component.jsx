@@ -13,8 +13,8 @@ export const Tours = () => {
       </h2>
       <GridLayout3x1>
         <RotateCard backgroundColor="orange" cardHeading="The Sea Explorer" details={card1Details} />
-        <RotateCard backgroundColor="green" cardHeading="The Sea Explorer" details={card2Details} />
-        <RotateCard backgroundColor="blue" cardHeading="The Sea Explorer" details={card3Details} />
+        <RotateCard backgroundColor="green" cardHeading="The Forest Hiker" details={card2Details} />
+        <RotateCard backgroundColor="blue" cardHeading="The Snow Adventurer" details={card3Details} />
       </GridLayout3x1>
     </div>
   );
