@@ -4,6 +4,7 @@ import "./tours.styles.scss";
 import { card1Details } from "./card-detail";
 import { card2Details } from "./card-detail";
 import { card3Details } from "./card-detail";
+import { AnimatedButton } from "../animated-button/animated-button.component";
 
 export const Tours = () => {
   return (
@@ -12,10 +13,25 @@ export const Tours = () => {
         Most popular tours
       </h2>
       <GridLayout3x1>
-        <RotateCard backgroundColor="orange" cardHeading="The Sea Explorer" details={card1Details} />
-        <RotateCard backgroundColor="green" cardHeading="The Forest Hiker" details={card2Details} />
-        <RotateCard backgroundColor="blue" cardHeading="The Snow Adventurer" details={card3Details} />
+        <RotateCard
+          backgroundColor="orange"
+          cardHeading="The Sea Explorer"
+          details={card1Details}
+        />
+        <RotateCard
+          backgroundColor="green"
+          cardHeading="The Forest Hiker"
+          details={card2Details}
+        />
+        <RotateCard
+          backgroundColor="blue"
+          cardHeading="The Snow Adventurer"
+          details={card3Details}
+        />
       </GridLayout3x1>
+      <div className="tours__btn utility-margin-top-big">
+        <AnimatedButton color="blue">Discover all tours</AnimatedButton>
+      </div>
     </div>
   );
 };

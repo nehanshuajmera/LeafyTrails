@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
 import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
+import { AnimatedButton } from "../animated-button/animated-button.component";
 
 export const LandingAbout = () => {
   return (
@@ -29,11 +30,15 @@ export const LandingAbout = () => {
             tempore molestias ratione, quae deleniti?
           </p>
 
-          <Link to="#" className="btn-text">
-            {/* Learn More &rarr; */}
+          {/* <Link to="#" className="btn-text">
             Learn More&nbsp;
             <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
-          </Link>
+          </Link> */}
+
+          <AnimatedButton to='#' color='blue' >
+            Learn More{" "}
+            <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+          </AnimatedButton>
         </div>
         <div className="landing-about__grid--images">
           <div className="composition">

@@ -2,7 +2,7 @@
 
 .tours {
   margin-top: -7rem;
-  height: 100vh;
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,5 +23,9 @@
       transform: skewY(6deg) scale(1.05);
       text-shadow: 0rem 1rem 2rem rgba(#000, 0.2);
     }
+  }
+
+  & btn:hover {
+    transform: skewY(6deg);
   }
 }

@@ -52,11 +52,19 @@
 }
 
 .btn--blue {
-  background-color: #007fff;
-  color: #000;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($light-blue, 0.85),
+    rgba($dark-blue, 0.85)
+  );
+  color: #fff;
 
   &::after {
-    background-color: #007fff;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($light-blue, 0.85),
+      rgba($dark-blue, 0.85)
+    );
   }
 }
 
