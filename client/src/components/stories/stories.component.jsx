@@ -1,8 +1,9 @@
 import { TestimonialCard } from "../testimonial-card/testimonial-card.component";
+import { AnimatedButton } from "../animated-button/animated-button.component"
 import "./stories.styles.scss";
 
-import back2Image from '../../assets/card-1.jpg';
-import back1Image from '../../assets/card-1.jpg';
+import back1Image from '../../assets/story-1.jpg';
+import back2Image from '../../assets/story-2.jpg';
 
 export const Stories = () => {
   return (
@@ -13,17 +14,18 @@ export const Stories = () => {
       <div className="stories__container">
         <TestimonialCard
           backImage={back1Image}
-          customerName="Naina Mahajan"
-          title="Lorem ipsum dolor sit amet"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse. Praesentium nulla laudantium nostrum voluptate iste officia! Voluptatum non tempore porro rem numquam reprehenderit distinctio, repudiandae soluta eveniet expedita eum autem molestias corrupti ut! Deserunt."
+          figCaption="Nehanshu Ajmera"
+          title="WOW! my life is completely different now"
+          content="Wow! My life has completely transformed. The adventure we had was beyond anything I could have imagined. Every moment spent in the great outdoors brought a new perspective and an unforgettable sense of peace and fulfillment."
         />
         <TestimonialCard
           backImage={back2Image}
-          customerName="Naina Mahajan"
-          title="Lorem ipsum dolor sit amet"
-          content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, esse. Praesentium nulla laudantium nostrum voluptate iste officia! Voluptatum non tempore porro rem numquam reprehenderit distinctio, repudiandae soluta eveniet expedita eum autem molestias corrupti ut! Deserunt."
+          figCaption="Naina Mahajan"
+          title="I had best week ever with my family"
+          content="Exploring breathtaking landscapes, we hiked through lush forests, wandered along serene leafy trails, and connected with nature like never before. This unforgettable week with my family was a perfect blend of adventure and tranquility."
         />
       </div>
+      <AnimatedButton></AnimatedButton>
     </div>
   );
 };

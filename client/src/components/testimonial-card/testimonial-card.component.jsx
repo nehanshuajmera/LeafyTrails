@@ -2,7 +2,7 @@ import "./testimonial-card.styles.scss";
 
 export const TestimonialCard = ({
   backImage,
-  customerName,
+  figCaption,
   title,
   content,
 }) => {
@@ -10,7 +10,7 @@ export const TestimonialCard = ({
     <div className="testimonial-card">
       <figure className="testimonial-card__image--shape">
         <img src={backImage} alt="" className="testimonial--image" />
-        <figcaption className="image--caption">{customerName}</figcaption>
+        <figcaption className="image--caption">{figCaption}</figcaption>
       </figure>
       <div className="testimonial-card__content">
         <h3 className="heading-tertiary utility-margin-btm-small">{title}</h3>
