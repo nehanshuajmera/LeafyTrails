@@ -9,7 +9,7 @@ import { AnimatedButton } from "../animated-button/animated-button.component";
 export const Tours = () => {
   return (
     <div className="tours">
-      <h2 className="heading-secondary utility-margin-btm-md-2">
+      <h2 className="heading-secondary utility-margin-btm-md-1">
         Most popular tours
       </h2>
       <GridLayout3x1>
