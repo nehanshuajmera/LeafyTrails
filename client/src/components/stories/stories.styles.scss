@@ -1,15 +1,13 @@
-@import "../../App.scss";
+@import '../../App.scss';
 
-.tours {
-  margin-top: -7rem;
-  padding-top: 10rem;
-  height: 120vh;
+.stories {
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  // justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(
-    to right,
+    to right bottom,
     $color-grey-dark,
     $color-grey-light
   );
