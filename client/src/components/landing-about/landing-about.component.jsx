@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
 import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
-import { AnimatedButton } from "../animated-button/animated-button.component";
+
+import image1Grid from '../../assets/about-2.jpg'
+import image2Grid from '../../assets/about-3.jpg'
+import image3Grid from '../../assets/about-1.jpg'
 
 export const LandingAbout = () => {
   return (
@@ -43,17 +46,17 @@ export const LandingAbout = () => {
         <div className="landing-about__grid--images">
           <div className="composition">
             <img
-              src="https://images.pexels.com/photos/1302991/pexels-photo-1302991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={image3Grid}
               alt="photo 1"
               className="composition__photo composition__photo--p1"
             />
             <img
-              src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={image2Grid}
               alt="photo 2"
               className="composition__photo composition__photo--p2"
             />
             <img
-              src="https://images.pexels.com/photos/533769/pexels-photo-533769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              src={image1Grid}
               alt="photo 3"
               className="composition__photo composition__photo--p3"
             />
