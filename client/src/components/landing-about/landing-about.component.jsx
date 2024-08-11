@@ -30,15 +30,15 @@ export const LandingAbout = () => {
             exhilarating experiences, where each journey is uniquely exciting.
           </p>
 
-          {/* <Link to="#" className="btn-text">
+          <Link to="#" className="btn-text">
             Learn More&nbsp;
             <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
-          </Link> */}
+          </Link>
 
-          <AnimatedButton to="#" color="blue">
+          {/* <AnimatedButton to="#" color="blue">
             Learn More{" "}
             <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
-          </AnimatedButton>
+          </AnimatedButton> */}
         </div>
         <div className="landing-about__grid--images">
           <div className="composition">

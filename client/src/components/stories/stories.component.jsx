@@ -1,14 +1,14 @@
 import { TestimonialCard } from "../testimonial-card/testimonial-card.component";
-import { AnimatedButton } from "../animated-button/animated-button.component"
 import "./stories.styles.scss";
 
-import back1Image from '../../assets/story-1.jpg';
-import back2Image from '../../assets/story-2.jpg';
+import back1Image from "../../assets/story-1.jpg";
+import back2Image from "../../assets/story-2.jpg";
+import { Link } from "react-router-dom";
 
 export const Stories = () => {
   return (
     <div className="stories">
-      <h2 className="heading-secondary utility-margin-btm-small">
+      <h2 className="heading-secondary">
         We make people genuinely happy
       </h2>
       <div className="stories__container">
@@ -25,7 +25,10 @@ export const Stories = () => {
           content="Exploring breathtaking landscapes, we hiked through lush forests, wandered along serene leafy trails, and connected with nature like never before. This unforgettable week with my family was a perfect blend of adventure and tranquility."
         />
       </div>
-      <AnimatedButton>Learn More</AnimatedButton>
+      <Link to="#" className="btn-text">
+        Read all stories&nbsp;
+        <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+      </Link>
     </div>
   );
 };
