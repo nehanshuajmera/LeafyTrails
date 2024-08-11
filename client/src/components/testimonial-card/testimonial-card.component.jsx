@@ -8,12 +8,9 @@ export const TestimonialCard = ({
 }) => {
   return (
     <div className="testimonial-card">
-      <figure
-        className="testimonial-card__image--shape"
-        style={{ backgroundImage: `url(${backImage})` }}
-      >
-        &nbsp;
-        <span className="image--name">{customerName}</span>
+      <figure className="testimonial-card__image--shape">
+        <img src={backImage} alt="" className="testimonial--image" />
+        <figcaption className="image--caption">{customerName}</figcaption>
       </figure>
       <div className="testimonial-card__content">
         <h3 className="heading-tertiary utility-margin-btm-small">{title}</h3>
