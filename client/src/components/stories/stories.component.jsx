@@ -1,16 +1,18 @@
 import { TestimonialCard } from "../testimonial-card/testimonial-card.component";
 import "./stories.styles.scss";
+import { BackgroundVideo } from "../background-video/background-video.component";
+import { Link } from "react-router-dom";
 
+// images and video import
 import back1Image from "../../assets/story-1.jpg";
 import back2Image from "../../assets/story-2.jpg";
-import { Link } from "react-router-dom";
+import backVideo from '../../assets/bg-snow.mp4'
 
 export const Stories = () => {
   return (
     <div className="stories">
-      <h2 className="heading-secondary">
-        We make people genuinely happy
-      </h2>
+      <BackgroundVideo videoMp4={backVideo}  />
+      <h2 className="heading-secondary">We make people genuinely happy</h2>
       <div className="stories__container">
         <TestimonialCard
           backImage={back1Image}

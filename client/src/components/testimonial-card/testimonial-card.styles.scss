@@ -4,7 +4,7 @@
   width: 60%;
   padding: 4rem;
   padding-left: 8rem;
-  background-color: #fff;
+  background-color: rgba(#fff, .5);
   border-radius: 0.3rem;
   box-shadow: 0 3rem 6rem rgba(#000, 0.15);
   font-size: 1.6rem;
@@ -56,7 +56,7 @@
   }
 
   .testimonial__content--desc {
-    line-height: 2.2rem;
+    line-height: 2.5rem;
   }
 
   &:hover .image--caption {
