@@ -4,9 +4,9 @@
   width: 60%;
   padding: 4rem;
   padding-left: 8rem;
-  background-color: rgba(#fff, .5);
+  background-color: rgba($color-white, .5);
   border-radius: 0.3rem;
-  box-shadow: 0 3rem 6rem rgba(#000, 0.15);
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
   font-size: 1.6rem;
   transform: skewX(-12deg);
 
@@ -41,7 +41,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, 50%);
-    color: #fff;
+    color: $color-white;
     text-align: center;
     text-transform: uppercase;
     opacity: 0;

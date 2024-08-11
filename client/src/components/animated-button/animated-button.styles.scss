@@ -43,27 +43,27 @@
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: $color-white;
   color: #777;
 
   &::after {
-    background-color: #fff;
+    background-color: $color-white;
   }
 }
 
 .btn--blue {
   background-image: linear-gradient(
     to right bottom,
-    rgba($light-blue, 0.85),
-    rgba($dark-blue, 0.85)
+    rgba($outline-primary, 0.85),
+    rgba($outline-secondary, 0.85)
   );
-  color: #fff;
+  color: $color-white;
 
   &::after {
     background-image: linear-gradient(
       to right bottom,
-      rgba($light-blue, 0.85),
-      rgba($dark-blue, 0.85)
+      rgba($outline-primary, 0.85),
+      rgba($outline-secondary, 0.85)
     );
   }
 }

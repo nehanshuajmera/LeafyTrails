@@ -1,10 +1,13 @@
 /* Button Secondary */
 .btn-text {
+  background-color: rgba( $color-white, .7);
+
   &:link,
   &:visited {
-    color: #007fff;
-    border-bottom: 1.5px solid #007fff;
-    padding: 3px;
+    color: $outline-primary;
+    border-bottom: 1.5px solid $outline-primary;
+    padding: .7rem;
+    border-radius: .5rem;
     font-size: 1.6rem;
     font-weight: 600;
     transition: all 0.2s;
@@ -14,14 +17,14 @@
   }
 
   &:hover {
-    background-color: #007fff;
-    color: #fff;
-    box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+    background-color: $outline-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(-2px);
   }
 
   &:active {
-    box-shadow: 0 0.5rem 1rem rgba(#000, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0px);
   }
 }

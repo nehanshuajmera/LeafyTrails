@@ -11,8 +11,8 @@
   .heading-secondary {
     background-image: linear-gradient(
     to right,
-    #007fff,
-    #000080,
+    $outline-primary,
+    $outline-secondary
   );
   }
 
