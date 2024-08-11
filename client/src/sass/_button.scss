@@ -4,8 +4,8 @@
 
   &:link,
   &:visited {
-    color: $outline-primary;
-    border-bottom: 1.5px solid $outline-primary;
+    color: $outline-secondary;
+    border-bottom: 1.5px solid $outline-secondary;
     padding: .7rem;
     border-radius: .5rem;
     font-size: 1.6rem;
@@ -17,7 +17,7 @@
   }
 
   &:hover {
-    background-color: $outline-primary;
+    background-color: $outline-secondary;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(-2px);

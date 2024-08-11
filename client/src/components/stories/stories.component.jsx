@@ -6,13 +6,15 @@ import { Link } from "react-router-dom";
 // images and video import
 import back1Image from "../../assets/story-1.jpg";
 import back2Image from "../../assets/story-2.jpg";
-import backVideo from '../../assets/bg-snow.mp4'
+import backVideo from "../../assets/bg-snow.mp4";
 
 export const Stories = () => {
   return (
     <div className="stories">
-      <BackgroundVideo videoMp4={backVideo}  />
-      <h2 className="heading-secondary">We make people genuinely happy</h2>
+      <BackgroundVideo videoMp4={backVideo} />
+      <h2 className="heading-secondary utility-margin-btm-small">
+        We make people genuinely happy
+      </h2>
       <div className="stories__container">
         <TestimonialCard
           backImage={back1Image}
