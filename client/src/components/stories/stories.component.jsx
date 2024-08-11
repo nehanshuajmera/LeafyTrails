@@ -7,7 +7,7 @@ import back1Image from '../../assets/card-1.jpg';
 export const Stories = () => {
   return (
     <div className="stories">
-      <h2 className="heading-secondary utility-margin-btm-md-1">
+      <h2 className="heading-secondary">
         We make people genuinely happy
       </h2>
       <div className="stories__container">

@@ -1,0 +1,40 @@
+@import "../../App.scss";
+
+.testimonial-card {
+  width: 60%;
+  padding: 3rem;
+  padding-left: 6rem;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 0 3rem 6rem rgba(#000, 0.1);
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+
+  &__image--shape {
+    height: 15rem;
+    width: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+
+    .image--name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  &__content {
+    transform: skewX(12deg);
+  }
+}
