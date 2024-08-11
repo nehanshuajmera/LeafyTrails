@@ -17,17 +17,17 @@ export const LandingAbout = () => {
             You're going to fall in love with nature
           </h3>
           <p className="grid__content--paragraph">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-            suscipit aliquid hic unde quo, incidunt architecto mollitia quidem
-            earum molestiae nemo tempore, fugit ea repudiandae.
+            Immerse yourself in nature's embrace. Explore stunning landscapes
+            and tranquil vistas, where every moment invites relaxation and awe.
+            Nature’s wonders await, blending beauty and serenity seamlessly.
           </p>
 
           <h3 className="heading-tertiary utility-margin-btm-small">
             live adventures like you never have before
           </h3>
           <p className="grid__content--paragraph">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            tempore molestias ratione, quae deleniti?
+            Embark on thrilling adventures. Discover unforgettable moments and
+            exhilarating experiences, where each journey is uniquely exciting.
           </p>
 
           {/* <Link to="#" className="btn-text">
@@ -35,7 +35,7 @@ export const LandingAbout = () => {
             <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
           </Link> */}
 
-          <AnimatedButton to='#' color='blue' >
+          <AnimatedButton to="#" color="blue">
             Learn More{" "}
             <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
           </AnimatedButton>

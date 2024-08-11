@@ -25,7 +25,7 @@ export const Stories = () => {
           content="Exploring breathtaking landscapes, we hiked through lush forests, wandered along serene leafy trails, and connected with nature like never before. This unforgettable week with my family was a perfect blend of adventure and tranquility."
         />
       </div>
-      <AnimatedButton></AnimatedButton>
+      <AnimatedButton>Learn More</AnimatedButton>
     </div>
   );
 };
