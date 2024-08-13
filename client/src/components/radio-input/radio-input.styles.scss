@@ -14,8 +14,8 @@
     cursor: pointer;
     position: relative;
     padding-left: 3.5rem;
-    // text-transform: uppercase;
     font-weight: 400;
+    color: $scrollbar-thumb-hover;
 
     .radio-btn {
       height: 3rem;
