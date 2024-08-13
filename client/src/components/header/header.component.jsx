@@ -12,7 +12,7 @@ export const Header = () => {
           <span className="heading__primary--main">Outdoors</span>
           <span className="heading__primary--sub">is where life happens</span>
         </h1>
-        <AnimatedButton to="#" color="white" animated>
+        <AnimatedButton to="/about" color="white" animated>
           Discover Our Tours
         </AnimatedButton>
       </div>

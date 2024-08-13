@@ -55,6 +55,11 @@
       &-submit-btn {
         width: fit-content;
         margin-top: 2rem;
+
+        & > *{
+          font-size: 1.5rem;
+          font-weight: 100;
+        }
       }
     }
   }

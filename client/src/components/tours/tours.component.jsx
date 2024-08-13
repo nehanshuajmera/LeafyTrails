@@ -1,10 +1,12 @@
 import { GridLayout3x1 } from "../../layout/grid-3x1/grid-layout3x1.component";
 import { RotateCard } from "../rotate-card/rotate-card.component";
+import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./tours.styles.scss";
+
+// importing data
 import { card1Details } from "./card-detail";
 import { card2Details } from "./card-detail";
 import { card3Details } from "./card-detail";
-import { AnimatedButton } from "../animated-button/animated-button.component";
 
 export const Tours = () => {
   return (
@@ -33,7 +35,7 @@ export const Tours = () => {
         />
       </GridLayout3x1>
       <div className="tours__btn">
-        <AnimatedButton color="blue">Discover all tours</AnimatedButton>
+        <AnimatedButton to="/tours" color="blue">Discover all tours</AnimatedButton>
       </div>
     </div>
   );
