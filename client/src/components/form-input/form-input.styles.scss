@@ -33,4 +33,19 @@
       font-weight: 600;
     }
   }
+
+  .form-input-label {
+    display: block;
+    margin: 1rem 0 0 1.2rem;
+    font-size: 1.4rem;
+    color: #888;
+    font-weight: 700;
+    transition: all .4s;
+  }
+
+  .form-input:placeholder-shown + .form-input-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+  }
 }
