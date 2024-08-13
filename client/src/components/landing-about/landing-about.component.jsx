@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
 import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
 
-import image1Grid from '../../assets/about-2.jpg'
-import image2Grid from '../../assets/about-3.jpg'
-import image3Grid from '../../assets/about-1.jpg'
+import image1Grid from '../../assets/about-1.jpg'
+import image2Grid from '../../assets/about-2.jpg'
+import image3Grid from '../../assets/about-3.jpg'
 
 export const LandingAbout = () => {
   return (
@@ -46,7 +46,7 @@ export const LandingAbout = () => {
         <div className="landing-about__grid--images">
           <div className="composition">
             <img
-              src={image3Grid}
+              src={image1Grid}
               alt="photo 1"
               className="composition__photo composition__photo--p1"
             />
@@ -56,7 +56,7 @@ export const LandingAbout = () => {
               className="composition__photo composition__photo--p2"
             />
             <img
-              src={image1Grid}
+              src={image3Grid}
               alt="photo 3"
               className="composition__photo composition__photo--p3"
             />

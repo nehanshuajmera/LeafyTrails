@@ -1,13 +1,13 @@
 /* Button Secondary */
 .btn-text {
-  background-color: rgba( $color-white, .7);
+  // background-color: rgba( $color-white, .7);
 
   &:link,
   &:visited {
     color: $outline-secondary;
     border-bottom: 1.5px solid $outline-secondary;
     padding: .7rem;
-    border-radius: .5rem;
+    // border-radius: .5rem;
     font-size: 1.6rem;
     font-weight: 600;
     transition: all 0.2s;

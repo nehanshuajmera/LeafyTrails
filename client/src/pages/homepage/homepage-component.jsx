@@ -1,3 +1,4 @@
+import { BookingForm } from '../../components/booking-form/booking-form.component';
 import { Feature } from '../../components/feature/feature.component';
 import { LandingAbout } from '../../components/landing-about/landing-about.component';
 import { Stories } from '../../components/stories/stories.component';
@@ -18,6 +19,9 @@ export const HomePage = () => {
 
       {/* Stories Section */}
       <Stories />
+
+      {/* Booking Form */}
+      <BookingForm />
     </div>
   )
 }

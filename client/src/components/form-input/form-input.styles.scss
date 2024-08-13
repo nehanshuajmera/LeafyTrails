@@ -1,0 +1,36 @@
+@import "../../App.scss";
+
+.group {
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .form-input {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    width: 80%;
+    display: block;
+    background-color: rgba($color-white, .4);
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $outline-secondary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+
+      &:invalid {
+        border-bottom: 3px solid $error;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      // color: #787276;
+      color: #888;
+      font-weight: 600;
+    }
+  }
+}
