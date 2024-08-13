@@ -1,4 +1,5 @@
 import { FormInput } from "../form-input/form-input.component";
+import { RadioInput } from "../radio-input/radio-input.component";
 import "./booking-form.styles.scss";
 
 export const BookingForm = () => {
@@ -31,6 +32,22 @@ export const BookingForm = () => {
               // value=""
               handleChange={handleChange}
               required
+            />
+          </div>
+          <div className="radio-container">
+            <RadioInput
+              type="radio"
+              name="size"
+              id="small"
+              htmlFor="small"
+              label="Small tour group"
+            />
+            <RadioInput
+              type="radio"
+              name="size"
+              id="large"
+              htmlFor="large"
+              label="Large tour group"
             />
           </div>
         </form>

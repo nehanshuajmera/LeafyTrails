@@ -1,0 +1,50 @@
+@import "../../App.scss";
+
+.radio-group {
+  display: inline-block;
+  width: 45%;
+
+  .radio-input {
+    display: none;
+  }
+
+  .radio-input-label {
+    font-size: 1.6rem;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3.5rem;
+    // text-transform: uppercase;
+    font-weight: 400;
+
+    .radio-btn {
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      border: 5px solid $outline-secondary;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-5px);
+      display: inline-block;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: $outline-secondary;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity .4s;
+      }
+    }
+  }
+
+  .radio-input:checked ~ .radio-input-label .radio-btn::after {
+    opacity: 1;
+  }
+}
