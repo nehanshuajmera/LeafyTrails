@@ -1,5 +1,6 @@
 import { FormInput } from "../form-input/form-input.component";
 import { RadioInput } from "../radio-input/radio-input.component";
+import { AnimatedButton } from "../../components/animated-button/animated-button.component";
 import "./booking-form.styles.scss";
 
 export const BookingForm = () => {
@@ -49,6 +50,15 @@ export const BookingForm = () => {
               htmlFor="large"
               label="Large tour group"
             />
+          </div>
+          <div className="form-submit-btn">
+            <AnimatedButton color="blue">
+              Next Step{" "}
+              <i
+                class="fa-solid fa-arrow-right"
+                style={{ fontSize: "1.5rem" }}
+              />
+            </AnimatedButton>
           </div>
         </form>
       </div>
