@@ -8,8 +8,18 @@ export const Footer = () => {
         <h3 className="footer__tagline--main">Ready for an Adventure?</h3>
         <h3 className="footer__tagline--sub">We're Just a Message Away!</h3>
       </div>
-      <div className="footer__content">
+      <div className="footer__logo-content">
+        <div className="footer__logo">
 
+        </div>
+        <div className="footer__links">
+          <div className="page__links">
+
+          </div>
+          <div className="media__links">
+            
+          </div>
+        </div>
       </div>
     </footer>
   );

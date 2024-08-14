@@ -59,19 +59,11 @@
 }
 
 .btn--blue {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($outline-primary, 0.85),
-    rgba($outline-secondary, 0.85)
-  );
+  background-image: linear-gradient(to right bottom, #2C69D1, #0ABCF9);
   color: $color-white;
 
   &::after {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($outline-primary, 0.85),
-      rgba($outline-secondary, 0.85)
-    );
+    background-image: linear-gradient(to right bottom, #2C69D1, #0ABCF9);
   }
 }
 

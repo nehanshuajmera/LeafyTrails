@@ -3,17 +3,17 @@
 .footer {
   height: 98vh;
   padding: 5rem;
-  background-image: linear-gradient(to right bottom, #000000, #2d3436);
+  // background-image: linear-gradient(to right bottom, #000000, #2d3436);
+  background-image: linear-gradient(to right bottom, #09C6F9, #045DE9);
   color: $color-white;
   font-family: 'Merriweather';
-  font-style: italic;
+  // font-style: italic;
   display: flex;
   justify-content: space-around;
 
   &__tagline {
     width: 100%;
     height: fit-content;
-    // border: 1px solid red;
 
     &--main {
       font-size: 7rem;
