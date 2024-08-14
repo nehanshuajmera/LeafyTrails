@@ -35,7 +35,7 @@ export const Tours = () => {
         />
       </GridLayout3x1>
       <div className="tours__btn">
-        <AnimatedButton to="/tours" color="blue">Discover all tours</AnimatedButton>
+        <AnimatedButton to="/tours" color="blue" merriweather>Discover all tours</AnimatedButton>
       </div>
     </div>
   );

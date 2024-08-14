@@ -1,8 +1,29 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .footer {
-  height: 50vh;
-  background-color: black;
-  color: white;
-  backdrop-filter: blur(10px);
+  height: 98vh;
+  padding: 5rem;
+  background-image: linear-gradient(to right bottom, #000000, #2d3436);
+  color: $color-white;
+  font-family: 'Merriweather';
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+
+  &__tagline {
+    width: 100%;
+    height: fit-content;
+    // border: 1px solid red;
+
+    &--main {
+      font-size: 7rem;
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+
+    &--sub {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+  }
 }

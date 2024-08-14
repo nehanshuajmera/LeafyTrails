@@ -52,7 +52,7 @@ export const BookingForm = () => {
             />
           </div>
           <div className="form-submit-btn">
-            <AnimatedButton color="blue">
+            <AnimatedButton color="blue" merriweather>
               Next Step &nbsp;
               <i
                 class="fa-solid fa-arrow-right"

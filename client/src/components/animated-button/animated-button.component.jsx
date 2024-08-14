@@ -5,14 +5,20 @@ export const AnimatedButton = ({
   children,
   color,
   animated,
+  merriweather,
   to,
   ...otherProps
 }) => {
   if (to) {
     return (
       <Link
+        to={to}
         className={`btn btn--${color} ${animated ? "btn--animated" : ""}`}
         {...otherProps}
+        style={{
+          fontFamily: merriweather ? "Merriweather" : "Karla",
+          fontStyle: merriweather ? "italic" : "normal"
+        }}
       >
         {children}
       </Link>
@@ -22,6 +28,10 @@ export const AnimatedButton = ({
     <button
       className={`btn btn--${color} ${animated ? "btn--animated" : ""}`}
       {...otherProps}
+      style={{
+        fontFamily: merriweather ? "Merriweather" : "Karla",
+        fontStyle: merriweather ? "italic" : "normal",
+      }}
     >
       {children}
     </button>
