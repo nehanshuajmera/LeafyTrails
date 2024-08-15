@@ -36,12 +36,10 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
-    // border: 1px solid #045de9;
 
     .footer__logo {
       width: 20rem;
       height: 20rem;
-      // border: 1px solid yellow;
 
       & img {
         height: 100%;
@@ -52,21 +50,24 @@
     .footer__links {
       display: flex;
       flex-direction: column;
-      // align-items: center;
       justify-content: space-between;
       height: 70%;
-      // border: 1px solid green;
 
       .webpage__links {
-        // border: 1px solid red;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
 
         .page-link {
           padding: 1.5rem;
-          font-size: 1.6rem;
-          // border: 1px solid green;
+          font-size: 2rem;
+          transition: all .5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+            text-shadow: 0 1.2rem 2rem rgba($color-black, .25);
+            color: $outline-secondary;
+          }
         }
       }
 
@@ -74,33 +75,26 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        // border: 1px solid green;
+        align-self: flex-end;
 
         .media-link {
-          padding: 1.5rem 2rem;
-          font-size: 2rem;
-          background-image: linear-gradient(
-            to right,
-            rgba(#000000, 1),
-            rgba(#2d3436, 1)
-          );
-          background-clip: text;
-          -webkit-background-clip: text;
-          color: transparent;
-          // border: 1px solid green;
-        }
+          width: 6rem;
+          height: 6rem;
+          padding: 1.5rem;
 
-        .facebook:hover {
-          color: $outline-secondary;
-        }
-        .instagram:hover {
-          color: $outline-secondary;
-        }
-        .twitter:hover {
-          color: $outline-secondary;
-        }
-        .youtube:hover {
-          color: red;
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+
+          & img {
+            height: 100%;
+            transition: all .5s;
+
+            &:hover {
+              transform: scale(1.1);
+              box-shadow: 0 1.2rem 2rem rgba($color-black, .25);
+            }
+          }
         }
       }
     }
