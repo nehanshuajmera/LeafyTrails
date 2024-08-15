@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./header.styles.scss";
 
@@ -5,7 +6,9 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__logo-box">
-        <img src="/leafy-travel.png" alt="Logo" className="header__logo" />
+        <Link to="/">
+          <img src="/leafy-travel.png" alt="Logo" className="header__logo" />
+        </Link>
       </div>
       <div className="header__text-box">
         <h1 className="heading__primary">
