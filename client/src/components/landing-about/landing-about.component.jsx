@@ -35,12 +35,12 @@ export const LandingAbout = () => {
 
           <Link to="#" className="btn-text">
             Learn More&nbsp;
-            <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+            <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
           </Link>
 
           {/* <AnimatedButton to="#" color="blue">
             Learn More{" "}
-            <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+            <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
           </AnimatedButton> */}
         </div>
         <div className="landing-about__grid--images">

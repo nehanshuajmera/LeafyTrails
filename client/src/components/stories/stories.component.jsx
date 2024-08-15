@@ -31,7 +31,7 @@ export const Stories = () => {
       </div>
       <Link to="#" className="btn-text">
         Read all stories&nbsp;
-        <i class="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+        <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
       </Link>
     </div>
   );

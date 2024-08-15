@@ -55,7 +55,7 @@ export const BookingForm = () => {
             <AnimatedButton color="blue" merriweather>
               Next Step &nbsp;
               <i
-                class="fa-solid fa-arrow-right"
+                className="fa-solid fa-arrow-right"
                 style={{ fontSize: "1.5rem" }}
               />
             </AnimatedButton>
