@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className="social-media__links">
             <div className="media-link instagram">
               <Link
-                to="https://www.instagram.com/its_me_ajmeranehanshu/"
+                to="https://www.instagram.com/"
                 target="_blank"
               >
                 <img src={instagram} alt="Instagram" />
@@ -63,7 +63,7 @@ export const Footer = () => {
             </div> */}
             <div className="media-link youtube">
               <Link
-                to="https://www.youtube.com/@nehanshuajmera"
+                to="https://www.youtube.com/"
                 target="_blank"
               >
                 <img src={youtube} alt="Youtube" />
