@@ -39,17 +39,20 @@ export const Footer = () => {
           </div>
           <div className="social-media__links">
             <div className="media-link instagram">
-              <Link to="">
+              <Link
+                to="https://www.instagram.com/its_me_ajmeranehanshu/"
+                target="_blank"
+              >
                 <img src={instagram} alt="Instagram" />
               </Link>
             </div>
             <div className="media-link facebook">
-              <Link to="">
+              <Link to="https://www.facebook.com/" target="_blank">
                 <img src={facebook} alt="Facebook" />
               </Link>
             </div>
             <div className="media-link twitter">
-              <Link to="">
+              <Link to="https://x.com/" target="_blank">
                 <img src={twitter} alt="Twitter" />
               </Link>
             </div>
@@ -59,7 +62,10 @@ export const Footer = () => {
               </Link>
             </div> */}
             <div className="media-link youtube">
-              <Link to="">
+              <Link
+                to="https://www.youtube.com/@nehanshuajmera"
+                target="_blank"
+              >
                 <img src={youtube} alt="Youtube" />
               </Link>
             </div>
