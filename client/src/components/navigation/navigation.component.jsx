@@ -2,6 +2,10 @@ import "./navigation.styles.scss";
 import { Link } from "react-router-dom";
 
 export const Navigation = () => {
+  const closeNavigation = () => {
+    document.getElementById("navi-toggle").checked = false;
+  };
+
   return (
     <div className="navigation">
       <input
@@ -19,27 +23,47 @@ export const Navigation = () => {
       <nav className="navigation__navbar">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/about" className="navigation__link">
+            <Link
+              to="/about"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
               <span>01</span>About Leafy Trails
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/your-benifits" className="navigation__link">
-              <span>02</span>Your Benifits
+            <Link
+              to="/your-benifits"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
+              <span>02</span>Your Benefits
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/tours" className="navigation__link">
+            <Link
+              to="/tours"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
               <span>03</span>Popular Tours
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/stories" className="navigation__link">
+            <Link
+              to="/stories"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
               <span>04</span>Stories
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/booknow" className="navigation__link">
+            <Link
+              to="/booknow"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
               <span>05</span>Book Now
             </Link>
           </li>

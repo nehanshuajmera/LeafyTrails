@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
   &__background {
@@ -33,8 +33,8 @@
     top: 5rem;
     right: 5rem;
     z-index: 20;
-    background-image: radial-gradient( $color-dark-blue, $color-light-blue);
-    transition: transform .8s cubic-bezier(0.37, 0, 0.63, 1);
+    background-image: radial-gradient($color-dark-blue, $color-light-blue);
+    transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
   }
 
   &__navbar {
@@ -45,7 +45,7 @@
     z-index: 30;
     opacity: 0;
     width: 0;
-    transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
   }
 
   &__list {
