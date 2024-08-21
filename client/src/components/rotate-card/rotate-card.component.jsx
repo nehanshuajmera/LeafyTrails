@@ -6,6 +6,7 @@ export const RotateCard = ({
   cardHeading,
   details,
   price,
+  handleClick,
 }) => {
   return (
     <div className="rotate-card">
@@ -34,7 +35,7 @@ export const RotateCard = ({
             <div className="price--value">{price}</div>
           </div>
           <div className="card__btn">
-            <AnimatedButton color="white">Buy now !</AnimatedButton>
+            <AnimatedButton onClick={handleClick} color="white">Buy now !</AnimatedButton>
           </div>
         </div>
       </div>

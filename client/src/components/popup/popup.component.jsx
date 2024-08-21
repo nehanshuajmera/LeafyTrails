@@ -25,23 +25,16 @@ export const Popup = () => {
             Explore the Sea with Comfort & Ease
           </h3>
           <p className="popup__text utility-margin-btm-small">
-            The Sea Explorer is a thrilling 3-day adventure designed for those
-            who love the sea and want to explore it in comfort. This tour
-            accommodates up to 30 people, so it's perfect for families, friends,
-            or solo travelers looking to meet new people. You'll be guided by
-            two expert tour guides who know the best spots and hidden gems along
-            the way. After a day full of activities, you can relax in cozy
-            hotels that offer all the comforts you need to recharge for the next
-            day. 
-            
-            The Sea Explorer tour is designed to be easy, making it
-            accessible for people of all fitness levels. Whether you’re a
-            seasoned traveler or new to the world of tours, you’ll find this
-            adventure engaging and enjoyable. With everything taken care of for
-            you, all you need to do is enjoy the experience and create lasting
-            memories.
+            The Sea Explorer is a thrilling 3-day adventure perfect for sea
+            lovers! Accommodating up to 30 guests, this tour offers a chance to
+            bond with friends, family, or new travel buddies while exploring
+            hidden gems with our expert guides. After each day's exciting
+            activities, unwind in cozy hotels that provide all the comforts you
+            need. Designed for all fitness levels, this easy-going adventure
+            lets you relax and enjoy unforgettable experiences without the
+            hassle—just pure fun and lasting memories.
           </p>
-          <AnimatedButton>hello</AnimatedButton>
+          <AnimatedButton>Book Now</AnimatedButton>
         </div>
       </div>
     </div>

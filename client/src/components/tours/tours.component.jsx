@@ -30,6 +30,7 @@ export const Tours = () => {
           Discover all tours
         </AnimatedButton>
       </div>
+      <Popup />
     </div>
   );
 };
