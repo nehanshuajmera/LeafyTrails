@@ -15,7 +15,9 @@ export const Navigation = () => {
         id="navi-toggle"
       />
       <label htmlFor="navi-toggle" className="navigation__button">
-        Menu
+        <span className="navigation__icon">
+          &nbsp;
+        </span>
       </label>
 
       <div className="navigation__background">&nbsp;</div>
