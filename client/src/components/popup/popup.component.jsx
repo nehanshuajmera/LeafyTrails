@@ -34,7 +34,7 @@ export const Popup = () => {
             lets you relax and enjoy unforgettable experiences without the
             hassle—just pure fun and lasting memories.
           </p>
-          <AnimatedButton>Book Now</AnimatedButton>
+          <AnimatedButton color="white">Book Now</AnimatedButton>
         </div>
       </div>
     </div>
