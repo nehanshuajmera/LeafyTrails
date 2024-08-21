@@ -1,0 +1,92 @@
+@import "../../App.scss";
+
+.navigation {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  z-index: 99;
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 4.5rem;
+    right: 4.5rem;
+    z-index: 40;
+    background-color: $color-white;
+  }
+
+  &__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+    z-index: 20;
+    background-image: radial-gradient($color-light-blue, $color-dark-blue);
+    transform: scale(80);
+  }
+
+  &__navbar {
+    height: 100vh;
+    width: 100%;
+    position: inherit;
+    top: 0;
+    right: 0;
+    z-index: 30;
+
+  }
+
+  &__list {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 300;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      color: $color-white;
+      font-family: "merriweather";
+      letter-spacing: 1px;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 220%;
+      transition: all .4s;
+
+      span {
+        margin-right: 1rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-light-blue;
+      transform: translateX(1rem);
+    }
+  }
+}
