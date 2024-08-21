@@ -26,11 +26,20 @@ export const Navigation = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <Link
+              to="/"
+              className="navigation__link"
+              onClick={closeNavigation}
+            >
+              <span>01</span>Leafy Trails
+            </Link>
+          </li>
+          <li className="navigation__item">
+            <Link
               to="/about"
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>01</span>About Leafy Trails
+              <span>02</span>About Us
             </Link>
           </li>
           <li className="navigation__item">
@@ -39,7 +48,7 @@ export const Navigation = () => {
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>02</span>Your Benefits
+              <span>03</span>Your Benefits
             </Link>
           </li>
           <li className="navigation__item">
@@ -48,7 +57,7 @@ export const Navigation = () => {
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>03</span>Popular Tours
+              <span>04</span>Popular Tours
             </Link>
           </li>
           <li className="navigation__item">
@@ -57,7 +66,7 @@ export const Navigation = () => {
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>04</span>Stories
+              <span>05</span>Stories
             </Link>
           </li>
           <li className="navigation__item">
@@ -66,7 +75,7 @@ export const Navigation = () => {
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>05</span>Book Now
+              <span>06</span>Book Now
             </Link>
           </li>
         </ul>
