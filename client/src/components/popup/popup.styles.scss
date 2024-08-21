@@ -1,0 +1,69 @@
+@import "../../App.scss";
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba($color-black, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: 75%;
+    background-color: $color-white;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    display: table;
+    overflow: hidden;
+  }
+
+  &__left {
+    width: 33.333333%;
+    display: table-cell;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    text-align: justify;
+
+    -webkit-column-count: 2; /* Safari and Chrome */
+    -moz-column-count: 2; /* Firefox */
+    -ms-column-count: 2; /* Internet Explorer 10+ */
+    column-count: 2; /* Standard syntax */
+
+    -webkit-column-gap: 5rem; 
+    -moz-column-gap: 5rem; 
+    -ms-column-gap: 5rem; 
+    column-gap: 5rem; 
+
+    -webkit-column-rule: 0.2rem solid #eaeaea; 
+    -moz-column-rule: 0.2rem solid #eaeaea; 
+    -ms-column-rule: 0.2rem solid #eaeaea; 
+    column-rule: 0.2rem solid #eaeaea; 
+
+    -webkit-hyphens: auto; 
+    -moz-hyphens: auto; 
+    -ms-hyphens: auto; 
+    hyphens: auto; 
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}

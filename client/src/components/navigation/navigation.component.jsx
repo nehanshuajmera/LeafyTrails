@@ -15,9 +15,7 @@ export const Navigation = () => {
         id="navi-toggle"
       />
       <label htmlFor="navi-toggle" className="navigation__button">
-        <span className="navigation__icon">
-          &nbsp;
-        </span>
+        <span className="navigation__icon">&nbsp;</span>
       </label>
 
       <div className="navigation__background">&nbsp;</div>
@@ -25,11 +23,7 @@ export const Navigation = () => {
       <nav className="navigation__navbar">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link
-              to="/"
-              className="navigation__link"
-              onClick={closeNavigation}
-            >
+            <Link to="/" className="navigation__link" onClick={closeNavigation}>
               <span>01</span>Leafy Trails
             </Link>
           </li>
