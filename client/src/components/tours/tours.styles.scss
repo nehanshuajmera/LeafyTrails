@@ -15,10 +15,10 @@
   );
 
   @include responsive(iphone){
-    height: 100vh;
+    height: 90vh;
   }
 
   @include responsive(android){
-    height: 100vh;
+    height: 90vh;
   }
 }
