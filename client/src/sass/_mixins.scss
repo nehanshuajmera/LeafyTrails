@@ -1,0 +1,78 @@
+/* media query manager */
+
+/*  320px - 480px -- iphone
+    480px - 600px -- android
+    600px - 800px -- ipad
+    800px - 1024px -- tablet
+    1024px - 1280px -- mac
+    1280px - 1600px -- laptop
+    1600px - 1800px -- imac
+    1800px - infinity -- desktop  */
+
+/* 1em = 16px (default browser font size) */
+
+@mixin responsive($breakpoint) {
+  /* 320px - 480px -- iphone */
+  @if $breakpoint == iphone {
+    /* 320px/16px = 20em | 480px/16px = 30em */ 
+    @media (min-width: 20em) and (max-width: 30em) {
+      @content;
+    }
+  }
+
+  /* 480px - 600px -- android */
+  @if $breakpoint == android {
+    /* 480px/16px = 30em | 600px/16px = 37.5em */
+    @media (min-width: 30em) and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  /* 600px - 800px -- ipad */
+  @if $breakpoint == ipad {
+    /* 600px/16px = 37.5em | 800px/16px = 50em */
+    @media (min-width: 37.5em) and (max-width: 50em) {
+      @content;
+    }
+  }
+
+  /* 800px - 1024px -- tablet */
+  @if $breakpoint == tablet {
+    /* 800px/16px = 50em | 1024px/16px = 64em */
+    @media (min-width: 50em) and (max-width: 64em) {
+      @content;
+    }
+  }
+
+  /* 1024px - 1280px -- mac */
+  @if $breakpoint == mac {
+    /* 1024px/16px = 64em | 1280px/16px = 80em */
+    @media (min-width: 64em) and (max-width: 80em) {
+      @content;
+    }
+  }
+
+  /* 1280px - 1600px -- laptop */
+  @if $breakpoint == laptop {
+    /* 1280px/16px = 80em | 1600px/16px = 100em */
+    @media (min-width: 80em) and (max-width: 100em) {
+      @content;
+    }
+  }
+
+  /* 1600px - 1800px -- imac */
+  @if $breakpoint == imac {
+    /* 1600px/16px = 100em | 1800px/16px = 112.5em */
+    @media (min-width: 100em) and (max-width: 112.5em) {
+      @content;
+    }
+  }
+
+  /* 1800px - infinity -- desktop */
+  @if $breakpoint == desktop {
+    /* 1800px/16px = 112.5em */
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
