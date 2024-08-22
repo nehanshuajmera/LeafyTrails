@@ -24,6 +24,16 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    @include responsive(iphone) {
+      height: 7rem;
+      width: 7rem;
+    }
+
+    @include responsive(android) {
+      height: 7rem;
+      width: 7rem;
+    }
   }
 
   /* icon hamburger */
@@ -47,7 +57,7 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .4s;
+      transition: all 0.4s;
     }
 
     &:before {
@@ -60,11 +70,11 @@
   }
 
   &__button:hover &__icon::before {
-    top: -.8rem;
+    top: -0.8rem;
   }
 
   &__button:hover &__icon::after {
-    top: .8rem;
+    top: 0.8rem;
   }
 
   &__background {
@@ -77,6 +87,16 @@
     z-index: 20;
     background-image: radial-gradient($color-dark-blue, $color-light-blue);
     transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
+
+    @include responsive(iphone) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include responsive(android) {
+      height: 6rem;
+      width: 6rem;
+    }
   }
 
   &__navbar {
@@ -141,6 +161,14 @@
 
   &__checkbox:checked ~ &__background {
     transform: scale(80);
+
+    @include responsive(iphone) {
+      transform: scale(100);
+    }
+
+    @include responsive(android) {
+      transform: scale(100);
+    }
   }
 
   &__checkbox:checked ~ &__navbar {
@@ -150,7 +178,7 @@
 
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
-    transition: rotate .2s ease-in-out;
+    transition: rotate 0.2s ease-in-out;
   }
 
   &__checkbox:checked + &__button &__icon::before {
