@@ -15,16 +15,14 @@
     height: 18vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
 
   @include responsive(android) {
     font-size: 2rem;
-    height: 18vh;
+    height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
 
