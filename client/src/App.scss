@@ -1,17 +1,28 @@
-body {
-  font-family: 'karla';
-  // font-family: 'merriweather';
-  // font-style: italic;
-  box-sizing: border-box;
-  padding: 1.5rem;
-}
-
 @import './sass/_variables';
 @import './sass/_typography';
 @import './sass/button';
 @import './sass/animation';
 @import './sass/mixins';
 @import './sass/_utilities';
+
+body {
+  font-family: 'karla';
+  // font-family: 'merriweather';
+  // font-style: italic;
+  box-sizing: border-box;
+  padding: 1.5rem;
+
+  @include responsive(iphone) {
+    padding: 0;
+  }
+  @include responsive(android) {
+    padding: 0;
+  }
+  @include responsive(ipad) {
+    padding: 0;
+  }
+}
+
 
 /* Style for the entire scrollbar */
 ::-webkit-scrollbar {

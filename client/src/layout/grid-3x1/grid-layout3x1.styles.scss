@@ -1,6 +1,18 @@
+@import '../../App.scss';
+
 .grid-layout-3x1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 6rem;
   max-width: 100rem;
+
+  @include responsive(iphone){
+    max-width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include responsive(android){
+    max-width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

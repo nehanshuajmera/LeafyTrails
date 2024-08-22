@@ -1,7 +1,19 @@
+@import '../../App.scss';
+
 .grid-layout-4x1{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 6rem;
   max-width: 100rem;
   margin: 0 auto;
+
+  @include responsive(iphone){
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+  }
+
+  @include responsive(android){
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+  }
 }

@@ -1,14 +1,14 @@
 /* media query manager */
 
-/*  320px - 480px -- iphone
-    480px - 600px -- android
-    600px - 800px -- ipad
-    800px - 1024px -- tablet
-    1024px - 1280px -- mac
-    1280px - 14400px -- laptop
-    14400px - 1600px -- desktop
-    1600px - 1800px -- imac
-    1800px - infinity -- screens  */
+/*  320px - 480px -- iphone       | 1rem = 6px
+    480px - 600px -- android      | 1rem = 7px
+    600px - 800px -- ipad         | 1rem = 8px
+    800px - 1024px -- tablet      | 1rem = 9px
+    1024px - 1280px -- mac        | 1rem = 10px
+    1280px - 14400px -- laptop    | 1rem = 10px
+    14400px - 1600px -- desktop   | 1rem = 12px
+    1600px - 1800px -- imac       | 1rem = 14px
+    1800px - infinity -- screens  | 1rem = 16px  */
 
 /* 1em = 16px (default browser font size) */
 
