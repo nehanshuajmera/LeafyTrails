@@ -14,12 +14,12 @@
   justify-content: center;
 
   @include responsive(iphone){
-    height: 90vh;
+    max-height: 80vh;
     margin-top: -10vh;
   }
 
   @include responsive(android){
-    height: 90vh;
+    max-height: 80vh;
     margin-top: -10vh;
   }
 

@@ -61,14 +61,26 @@
   font-style: italic;
 
   @include responsive(iphone) {
-    font-size: 2.5rem;
-    margin: 0 .5rem;
+    font-size: 2.8rem;
+    margin: 0 0.5rem;
+  }
+
+  @include responsive(android) {
+    font-size: 2.8rem;
+    margin: 0 0.5rem;
   }
 
   &:hover {
-    transform:
-      /*skewY(1deg) skewX(15deg)*/ scale(1.05);
+    transform: scale(1.05);
     text-shadow: 0rem 1rem 2rem rgba($color-black, 0.2); // rgba(color, opacity)
+
+    @include responsive(iphone) {
+      transform: scale(1.03);
+    }
+
+    @include responsive(android) {
+      transform: scale(1.03);
+    }
   }
 }
 
