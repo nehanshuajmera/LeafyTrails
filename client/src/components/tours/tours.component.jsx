@@ -24,21 +24,23 @@ export const Tours = () => {
       <h2 className="heading-secondary" id="tours">
         Most popular tours
       </h2>
-      <GridLayout3x1>
-        {toursData &&
-          toursData
-            .slice(0, 3)
-            .map((tour) => (
-              <RotateCard
-                key={tour.id}
-                backgroundColor={tour.backgroundColor}
-                cardHeading={tour.cardHeading}
-                details={tour.details}
-                price={tour.price}
-                handleClick={() => handleOpenPopup(tour)}
-              />
-            ))}
-      </GridLayout3x1>
+      <div className="tours__cards">
+        <GridLayout3x1>
+          {toursData &&
+            toursData
+              .slice(0, 3)
+              .map((tour) => (
+                <RotateCard
+                  key={tour.id}
+                  backgroundColor={tour.backgroundColor}
+                  cardHeading={tour.cardHeading}
+                  details={tour.details}
+                  price={tour.price}
+                  handleClick={() => handleOpenPopup(tour)}
+                />
+              ))}
+        </GridLayout3x1>
+      </div>
       <div className="tours__btn">
         <AnimatedButton to="/tours" color="blue" merriweather>
           Discover all tours

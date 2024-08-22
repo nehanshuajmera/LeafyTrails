@@ -7,13 +7,13 @@
   position: relative;
   height: 40rem;
 
-  @include responsive(iphone){
-    width: 35rem;
-  }
+  // @include responsive(iphone){
+  //   width: 35rem;
+  // }
 
-  @include responsive(android){
-    width: 35rem;
-  }
+  // @include responsive(android){
+  //   width: 35rem;
+  // }
 
   .card__side {
     width: 100%;
