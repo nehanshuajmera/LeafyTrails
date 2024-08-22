@@ -56,6 +56,10 @@
           width: 60%;
         }
 
+        @include responsive(android){
+          width: 60%;
+        }
+
         &--p1 {
           top: -2rem;
           left: 0;
