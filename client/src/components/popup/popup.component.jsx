@@ -3,7 +3,7 @@ import "./popup.styles.scss";
 
 export const Popup = () => {
   return (
-    <div className="popup">
+    <div className="popup" id="popup">
       <div className="popup__content">
         <div className="popup__left">
           <img
@@ -18,6 +18,7 @@ export const Popup = () => {
           />
         </div>
         <div className="popup__right">
+          <a href='#tours' className="popup__close">&times;</a>
           <h2 className="heading-secondary utility-margin-btm-small">
             Dive Into the Sea Adventure
           </h2>
@@ -34,7 +35,7 @@ export const Popup = () => {
             lets you relax and enjoy unforgettable experiences without the
             hassle—just pure fun and lasting memories.
           </p>
-          <AnimatedButton color="white">Book Now</AnimatedButton>
+          <AnimatedButton color="blue">Book Now</AnimatedButton>
         </div>
       </div>
     </div>

@@ -17,7 +17,8 @@ export const AnimatedButton = ({
         {...otherProps}
         style={{
           fontFamily: merriweather ? "Merriweather" : "Karla",
-          fontStyle: merriweather ? "italic" : "normal"
+          fontStyle: merriweather ? "italic" : "normal",
+          letterSpacing: merriweather ? "1.2px" : "",
         }}
       >
         {children}
@@ -31,6 +32,7 @@ export const AnimatedButton = ({
       style={{
         fontFamily: merriweather ? "Merriweather" : "Karla",
         fontStyle: merriweather ? "italic" : "normal",
+        letterSpacing: merriweather ? "1.2px" : "",
       }}
     >
       {children}

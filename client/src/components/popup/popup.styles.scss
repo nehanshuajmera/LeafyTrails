@@ -11,6 +11,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 
   &__content {
     width: 75%;
@@ -19,6 +26,32 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     display: table;
     overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.3);
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transition: all 0.4s 0.2s;
+    -webkit-transition: all 0.4s 0.2s;
+    -moz-transition: all 0.4s 0.2s;
+    -ms-transition: all 0.4s 0.2s;
+    -o-transition: all 0.4s 0.2s;
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 1;
   }
 
   &__left {
@@ -38,6 +71,28 @@
     padding: 3rem 5rem;
   }
 
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3.5rem;
+      line-height: 0;
+      display: block;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $outline-primary;
+    }
+  }
+
   &__text {
     font-size: 1.4rem;
     text-align: justify;
@@ -48,20 +103,20 @@
     -ms-column-count: 2; /* Internet Explorer 10+ */
     column-count: 2; /* Standard syntax */
 
-    -webkit-column-gap: 5rem; 
-    -moz-column-gap: 5rem; 
-    -ms-column-gap: 5rem; 
-    column-gap: 5rem; 
+    -webkit-column-gap: 5rem;
+    -moz-column-gap: 5rem;
+    -ms-column-gap: 5rem;
+    column-gap: 5rem;
 
-    -webkit-column-rule: 0.2rem solid #eaeaea; 
-    -moz-column-rule: 0.2rem solid #eaeaea; 
-    -ms-column-rule: 0.2rem solid #eaeaea; 
-    column-rule: 0.2rem solid #eaeaea; 
+    -webkit-column-rule: 0.2rem solid #eaeaea;
+    -moz-column-rule: 0.2rem solid #eaeaea;
+    -ms-column-rule: 0.2rem solid #eaeaea;
+    column-rule: 0.2rem solid #eaeaea;
 
-    -webkit-hyphens: auto; 
-    -moz-hyphens: auto; 
-    -ms-hyphens: auto; 
-    hyphens: auto; 
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
   }
 
   .heading-secondary {

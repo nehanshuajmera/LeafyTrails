@@ -9,8 +9,8 @@ import { Popup } from "../popup/popup.component";
 
 export const Tours = () => {
   return (
-    <div className="tours" id="tours">
-      <h2 className="heading-secondary">Most popular tours</h2>
+    <div className="tours">
+      <h2 className="heading-secondary" id="tours">Most popular tours</h2>
       <GridLayout3x1> 
         {toursData &&
           toursData
@@ -30,7 +30,7 @@ export const Tours = () => {
           Discover all tours
         </AnimatedButton>
       </div>
-      {/* <Popup /> */}
+      <Popup />
     </div>
   );
 };

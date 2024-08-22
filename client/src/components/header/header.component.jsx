@@ -18,9 +18,12 @@ export const Header = () => {
             <span className="heading__primary--main">Outdoors</span>
             <span className="heading__primary--sub">is where life happens</span>
           </h1>
-          <AnimatedButton to="#tours" color="white" animated merriweather>
+          <a
+            href="#tours"
+            className="anchor__btn anchor__btn--white anchor__btn--animated"
+          >
             Discover Our Tours
-          </AnimatedButton>
+          </a>
         </div>
       </header>
     </>
