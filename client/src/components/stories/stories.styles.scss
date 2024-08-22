@@ -10,13 +10,11 @@
   position: relative;
 
   @include responsive(iphone) {
-    height: 90vh;
-    // padding: 5rem 1rem;
+    height: 80vh;
   }
 
   @include responsive(android) {
-    height: 90vh;
-    // padding: 5rem 1rem;
+    height: 80vh;
   }
 
   .heading-secondary {
