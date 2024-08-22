@@ -51,7 +51,7 @@ export const LandingAbout = () => {
               className="composition__photo composition__photo--p1"
             />
             <img
-              src={image2Grid}
+              src='https://t3.ftcdn.net/jpg/03/96/72/38/240_F_396723837_eoPYyOmhJKwBPnKHoQJnM2htCHKD7WHc.jpg'
               alt="photo 2"
               className="composition__photo composition__photo--p2"
             />
