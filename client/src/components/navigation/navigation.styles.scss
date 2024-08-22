@@ -50,6 +50,14 @@
       height: 2px;
       background-color: $color-black;
       display: inline-block;
+
+      @include responsive(iphone) {
+        width: 3rem;
+      }
+  
+      @include responsive(android) {
+        width: 3rem;
+      }
     }
 
     &::before,
@@ -62,10 +70,26 @@
 
     &:before {
       top: -0.7rem;
+
+      @include responsive(iphone) {
+        top: -.9rem;
+      }
+  
+      @include responsive(android) {
+        top: -.9rem;
+      }
     }
 
     &:after {
       top: 0.7rem;
+
+      @include responsive(iphone) {
+        top: .9rem;
+      }
+  
+      @include responsive(android) {
+        top: .9rem;
+      }
     }
   }
 
