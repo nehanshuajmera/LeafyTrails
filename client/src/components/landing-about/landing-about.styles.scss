@@ -13,6 +13,16 @@
   align-items: center;
   justify-content: center;
 
+  @include responsive(iphone){
+    height: 100vh;
+    // margin-top: -10vh;
+  }
+
+  @include responsive(android){
+    height: 100vh;
+    margin-top: -10vh;
+  }
+
   .landing-about__grid--content {
     font-size: 1.6rem;
 

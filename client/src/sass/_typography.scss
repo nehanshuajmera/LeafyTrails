@@ -7,16 +7,6 @@
   font-family: "merriweather";
   font-style: italic;
 
-  @include responsive(iphone) {
-    margin-bottom: 4rem;
-    // border: 1px solid red;
-  }
-
-  @include responsive(android) {
-    margin-bottom: 4rem;
-    // border: 1px solid blue;
-  }
-
   .heading__primary--main {
     display: block;
     font-size: 5.8rem;
