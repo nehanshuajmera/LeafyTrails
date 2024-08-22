@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .feature {
   background-image: linear-gradient(
       to right bottom,
@@ -15,12 +17,12 @@
   align-items: center;
   justify-content: center;
 
-  @include responsive(iphone){
+  @include responsive(iphone) {
     transform: skewy(-11deg);
     margin-top: -9rem;
   }
 
-  @include responsive(android){
+  @include responsive(android) {
     transform: skewy(-11deg);
     margin-top: -9rem;
   }
@@ -28,11 +30,11 @@
   & > * {
     transform: skewY(6deg);
 
-    @include responsive(iphone){
+    @include responsive(iphone) {
       transform: skewy(11deg);
     }
-  
-    @include responsive(android){
+
+    @include responsive(android) {
       transform: skewy(11deg);
     }
   }
