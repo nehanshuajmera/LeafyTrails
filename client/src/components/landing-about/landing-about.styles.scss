@@ -14,14 +14,14 @@
   justify-content: center;
 
   @include responsive(iphone){
-    height: 80vh;
+    height: 90vh;
     margin-top: -10vh;
     padding-top: 14vh;
     justify-content: start;
   }
 
   @include responsive(android){
-    height: 80vh;
+    height: 90vh;
     margin-top: -10vh;
     padding-top: 14vh;
     justify-content: start;
@@ -29,6 +29,14 @@
 
   .landing-about__grid--content {
     font-size: 1.6rem;
+
+    @include responsive(iphone){
+      font-size: 2rem;
+    }
+  
+    @include responsive(android){
+      font-size: 2rem;
+    }
 
     .grid__content--paragraph {
       font-weight: 400;
