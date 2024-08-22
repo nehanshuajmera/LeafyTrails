@@ -28,10 +28,12 @@
 
     @include responsive(iphone) {
       text-align: center;
+      margin: 0 1rem;
     }
 
     @include responsive(android) {
       text-align: center;
+      margin: 0 1rem;
     }
   }
 

@@ -4,11 +4,19 @@
   width: 60%;
   padding: 4rem;
   padding-left: 8rem;
-  background-color: rgba($color-white, .5);
+  background-color: rgba($color-white, 0.5);
   border-radius: 0.3rem;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
   font-size: 1.6rem;
   transform: skewX(-12deg);
+
+  @include responsive(iphone) {
+    width: 75%;
+  }
+
+  @include responsive(android) {
+    width: 75%;
+  }
 
   &__image--shape {
     height: 15rem;
@@ -30,7 +38,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .5s;
+    transition: all 0.5s;
     transform: translateX(-4rem) scale(1.2);
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -52,7 +60,7 @@
 
   &__content {
     transform: skewX(12deg);
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .testimonial__content--desc {
