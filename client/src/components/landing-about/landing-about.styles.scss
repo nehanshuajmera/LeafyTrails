@@ -52,6 +52,10 @@
         outline-offset: 1.8rem;
         cursor: pointer;
 
+        @include responsive(iphone){
+          width: 60%;
+        }
+
         &--p1 {
           top: -2rem;
           left: 0;
