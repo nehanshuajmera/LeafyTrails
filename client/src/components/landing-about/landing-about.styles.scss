@@ -15,10 +15,12 @@
 
   @include responsive(iphone){
     height: 90vh;
+    margin-top: -10vh;
   }
 
   @include responsive(android){
     height: 90vh;
+    margin-top: -10vh;
   }
 
   .landing-about__grid--content {
