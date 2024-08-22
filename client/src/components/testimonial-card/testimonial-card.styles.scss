@@ -12,10 +12,12 @@
 
   @include responsive(iphone) {
     width: 75%;
+    font-size: 2rem;
   }
 
   @include responsive(android) {
     width: 75%;
+    font-size: 2rem;
   }
 
   &__image--shape {
@@ -61,6 +63,12 @@
   &__content {
     transform: skewX(12deg);
     padding: 0.5rem 0;
+  }
+
+  .heading-tertiary {
+    font-family: 'merriweather';
+    font-style: italic;
+    letter-spacing: 1.2px;
   }
 
   .testimonial__content--desc {
