@@ -9,12 +9,30 @@
   flex-direction: column;
   position: relative;
 
+  @include responsive(iphone) {
+    height: 90vh;
+    // padding: 5rem 1rem;
+  }
+
+  @include responsive(android) {
+    height: 90vh;
+    // padding: 5rem 1rem;
+  }
+
   .heading-secondary {
     background-image: linear-gradient(
       to right,
       $outline-primary,
       $outline-secondary
     );
+
+    @include responsive(iphone) {
+      text-align: center;
+    }
+
+    @include responsive(android) {
+      text-align: center;
+    }
   }
 
   &__container {
