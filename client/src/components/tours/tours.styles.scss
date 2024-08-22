@@ -13,4 +13,12 @@
     $dark-grey,
     $light-grey
   );
+
+  @include responsive(iphone){
+    height: 100vh;
+  }
+
+  @include responsive(android){
+    height: 100vh;
+  }
 }
