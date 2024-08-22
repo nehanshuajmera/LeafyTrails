@@ -14,13 +14,17 @@
   justify-content: center;
 
   @include responsive(iphone){
-    max-height: 80vh;
+    height: 90vh;
     margin-top: -10vh;
+    padding-top: 14vh;
+    justify-content: start;
   }
 
   @include responsive(android){
-    max-height: 80vh;
+    height: 90vh;
     margin-top: -10vh;
+    padding-top: 14vh;
+    justify-content: start;
   }
 
   .landing-about__grid--content {
