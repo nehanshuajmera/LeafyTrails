@@ -5,9 +5,10 @@
     600px - 800px -- ipad
     800px - 1024px -- tablet
     1024px - 1280px -- mac
-    1280px - 1600px -- laptop
+    1280px - 14400px -- laptop
+    14400px - 1600px -- desktop
     1600px - 1800px -- imac
-    1800px - infinity -- desktop  */
+    1800px - infinity -- screens  */
 
 /* 1em = 16px (default browser font size) */
 
@@ -52,10 +53,18 @@
     }
   }
 
-  /* 1280px - 1600px -- laptop */
+  /* 1280px - 1440px -- laptop */
   @if $breakpoint == laptop {
-    /* 1280px/16px = 80em | 1600px/16px = 100em */
-    @media (min-width: 80em) and (max-width: 100em) {
+    /* 1280px/16px = 80em | 1440px/16px = 90em */
+    @media (min-width: 80em) and (max-width: 90em) {
+      @content;
+    }
+  }
+
+  /* 1440px - 1600px -- laptop */
+  @if $breakpoint == desktop {
+    /* 1440px/16px = 90em | 1600px/16px = 100em */
+    @media (min-width: 90em) and (max-width: 100em) {
       @content;
     }
   }
@@ -69,7 +78,7 @@
   }
 
   /* 1800px - infinity -- desktop */
-  @if $breakpoint == desktop {
+  @if $breakpoint == screens {
     /* 1800px/16px = 112.5em */
     @media (min-width: 112.5em) {
       @content;

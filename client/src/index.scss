@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@import "./sass/mixins";
+
+:root {
+  font-size: 62.5%;
+
+  @include responsive(iphone) {
+    /* 1rem = 6px */
+    font-size: 37.5%;
+  }
+
+  @include responsive(android) {
+    /* 1rem = 7px */
+    font-size: 43.75%;
+  }
+
+  @include responsive(ipad) {
+    /* 1rem = 8px */
+    font-size: 50%;
+  }
+
+  @include responsive(tablet) {
+    /* 1rem = 9px */
+    font-size: 56.25%;
+  }
+
+  @include responsive(mac) {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+  }
+
+  @include responsive(laptop) {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+  }
+
+  @include responsive(desktop) {
+    /* 1rem = 12px */
+    font-size: 75%;
+  }
+
+  @include responsive(imac) {
+    /* 1rem = 14px */
+    font-size: 87.5%;
+  }
+
+  @include responsive(screens) {
+    /* 1rem = 16px */
+    font-size: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
