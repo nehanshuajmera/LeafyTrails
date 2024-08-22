@@ -115,11 +115,13 @@
     @include responsive(iphone) {
       height: 6rem;
       width: 6rem;
+      transition: transform 0.8s ease-in-out;
     }
 
     @include responsive(android) {
       height: 6rem;
       width: 6rem;
+      transition: transform 0.8s ease-in-out;
     }
   }
 
@@ -132,6 +134,14 @@
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+
+    @include responsive(iphone) {
+      transition: all .8s ease-in-out;
+    }
+
+    @include responsive(android) {
+      transition: all .8s ease-in-out;
+    }
   }
 
   &__list {
@@ -187,11 +197,11 @@
     transform: scale(80);
 
     @include responsive(iphone) {
-      transform: scale(100);
+      transform: scale(85);
     }
 
     @include responsive(android) {
-      transform: scale(100);
+      transform: scale(85);
     }
   }
 
