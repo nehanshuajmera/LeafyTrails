@@ -4,7 +4,6 @@
       rgba(46, 49, 146, 0.75),
       rgba(27, 255, 255, 0.75)
     ),
-    // url("https://cdn.pixabay.com/photo/2024/01/10/21/02/mountains-8500373_1280.jpg");
     url("../../assets/feature-bg.jpg");
   background-position: bottom;
   background-size: cover;
@@ -16,7 +15,25 @@
   align-items: center;
   justify-content: center;
 
+  @include responsive(iphone){
+    transform: skewy(-11deg);
+    margin-top: -9rem;
+  }
+
+  @include responsive(android){
+    transform: skewy(-11deg);
+    margin-top: -9rem;
+  }
+
   & > * {
     transform: skewY(6deg);
+
+    @include responsive(iphone){
+      transform: skewy(11deg);
+    }
+  
+    @include responsive(android){
+      transform: skewy(11deg);
+    }
   }
 }
