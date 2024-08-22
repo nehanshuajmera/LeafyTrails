@@ -1,39 +1,49 @@
+import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./popup.styles.scss";
 
-export const Popup = () => {
+export const Popup = ({ isOpen, onClose, title, heading, content, images }) => {
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isVisible, setIsVisible] = useState(isOpen);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsVisible(true);
+      setTimeout(() => setIsTransitioning(true), 10); // Delay for smooth transition
+    } else {
+      setIsTransitioning(false);
+      setTimeout(() => setIsVisible(false), 300); // Delay for smooth transition out
+    }
+  }, [isOpen]);
+
+  if (!isVisible) return null;
+
   return (
-    <div className="popup" id="popup">
-      <div className="popup__content">
+    <div className={`popup ${isTransitioning ? 'popup--open' : ''}`}>
+      <div className={`popup__content ${isTransitioning ? 'popup__content--open' : ''}`}>
         <div className="popup__left">
-          <img
-            src="https://t3.ftcdn.net/jpg/03/04/88/18/240_F_304881889_yJ1S3butl9gVs0kMptYTU2N1EVmEJbz8.jpg"
-            alt="Tour Image"
-            className="popup__img"
-          />
-          <img
-            src="https://t3.ftcdn.net/jpg/02/94/55/16/240_F_294551680_vfJaTbjGtCzFrnggdai31XxM7GFyCMEy.jpg"
-            alt="Tour Image"
-            className="popup__img"
-          />
+          {images && images.slice(0, 2).map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`tour ${index}`}
+              className="popup__img"
+            />
+          ))}
         </div>
         <div className="popup__right">
-          <a href='#tours' className="popup__close">&times;</a>
+          <Link onClick={onClose} className='popup__close'>
+            &times;
+          </Link>
           <h2 className="heading-secondary utility-margin-btm-small">
-            Dive Into the Sea Adventure
+            {title}
           </h2>
           <h3 className="heading-tertiary utility-margin-btm-small">
-            Explore the Sea with Comfort & Ease
+            {heading}
           </h3>
           <p className="popup__text utility-margin-btm-small">
-            The Sea Explorer is a thrilling 3-day adventure perfect for sea
-            lovers! Accommodating up to 30 guests, this tour offers a chance to
-            bond with friends, family, or new travel buddies while exploring
-            hidden gems with our expert guides. After each day's exciting
-            activities, unwind in cozy hotels that provide all the comforts you
-            need. Designed for all fitness levels, this easy-going adventure
-            lets you relax and enjoy unforgettable experiences without the
-            hassle—just pure fun and lasting memories.
+            {content}
           </p>
           <AnimatedButton color="blue">Book Now</AnimatedButton>
         </div>

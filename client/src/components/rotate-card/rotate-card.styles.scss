@@ -66,6 +66,7 @@
     .card__heading {
       text-align: right;
       font-size: 2.6rem;
+      font-style: italic;
       text-transform: uppercase;
       color: $color-white;
       font-weight: 300;
@@ -73,6 +74,7 @@
       position: absolute;
       top: 9rem;
       right: 1.5rem;
+      font-family: 'merriweather';
     }
 
     .card-heading-span {

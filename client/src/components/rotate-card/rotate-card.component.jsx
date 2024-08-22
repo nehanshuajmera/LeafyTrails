@@ -1,3 +1,4 @@
+import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./rotate-card.styles.scss";
 
 export const RotateCard = ({
@@ -5,6 +6,7 @@ export const RotateCard = ({
   cardHeading,
   details,
   price,
+  handleClick,
 }) => {
   return (
     <div className="rotate-card">
@@ -33,9 +35,7 @@ export const RotateCard = ({
             <div className="price--value">{price}</div>
           </div>
           <div className="card__btn">
-            <a className="anchor__btn anchor__btn--white" href="#popup">
-              Buy Now !
-            </a>
+            <AnimatedButton onClick={handleClick} color="white">Buy now !</AnimatedButton>
           </div>
         </div>
       </div>
