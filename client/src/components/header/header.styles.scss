@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .header {
   height: 95vh;
@@ -15,12 +15,12 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  @include responsive(iphone){
+  @include responsive(iphone) {
     height: 50vh;
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   }
 
-  @include responsive(android){
+  @include responsive(android) {
     height: 50vh;
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   }
@@ -42,5 +42,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @include responsive(iphone) {
+      width: 80%;
+    }
+
+    @include responsive(android) {
+      width: 80%;
+    }
   }
 }

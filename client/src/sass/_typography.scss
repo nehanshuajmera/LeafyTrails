@@ -4,15 +4,17 @@
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-  font-family: 'merriweather';
+  font-family: "merriweather";
   font-style: italic;
 
   @include responsive(iphone) {
     margin-bottom: 4rem;
+    // border: 1px solid red;
   }
 
   @include responsive(android) {
     margin-bottom: 4rem;
+    // border: 1px solid blue;
   }
 
   .heading__primary--main {
@@ -24,12 +26,10 @@
 
     @include responsive(iphone) {
       letter-spacing: 1rem;
-      font-size: 5.2rem;
     }
-    
+
     @include responsive(android) {
       letter-spacing: 1rem;
-      font-size: 5.2rem;
     }
   }
 
@@ -41,11 +41,11 @@
     animation: MoveInRight 1s ease-out;
 
     @include responsive(iphone) {
-      letter-spacing: .8rem;
+      letter-spacing: 0.8rem;
     }
-    
+
     @include responsive(android) {
-      letter-spacing: .8rem;
+      letter-spacing: 0.8rem;
     }
   }
 }
@@ -67,7 +67,7 @@
   color: transparent;
   transition: all 0.2s;
   cursor: pointer;
-  font-family: 'merriweather';
+  font-family: "merriweather";
   font-style: italic;
 
   &:hover {
