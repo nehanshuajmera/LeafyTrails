@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import "../../App.scss";
 
 .feature-card {
   background-color: rgba($color-white, 0.8);
@@ -7,8 +7,26 @@
   text-align: center;
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
-  transition: transform .3s;
+  transition: transform 0.3s;
   cursor: pointer;
+
+  @include responsive(iphone) {
+    font-size: 2rem;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @include responsive(android) {
+    font-size: 2rem;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   &__icon {
     font-size: 6rem;
@@ -22,13 +40,21 @@
     color: transparent;
     display: inline-block;
     padding: 0.3rem;
+
+    @include responsive(iphone) {
+      font-size: 8rem;
+    }
+
+    @include responsive(android) {
+      font-size: 8rem;
+    }
   }
 
   &__text {
     font-weight: 500;
   }
 
-  &:hover{
+  &:hover {
     transform: translateY(-1.5rem) scale(1.02);
   }
 }
