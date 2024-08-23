@@ -106,13 +106,6 @@
         width: fit-content;
         margin-top: 2rem;
 
-        @include responsive(iphone) {
-          margin-top: 1rem;
-        }
-        @include responsive(android) {
-          margin-top: 1rem;
-        }
-
         & > * {
           font-size: 1.5rem;
           font-weight: 100;

@@ -8,26 +8,57 @@
     rgba(#09c6f9, 0.8),
     rgba(#045de9, 0.8)
   );
-  // color: $color-white;
   font-family: "Merriweather";
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 
+  @include responsive(iphone) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+  @include responsive(android) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
   &__tagline {
     width: 90%;
     height: fit-content;
+
+    @include responsive(iphone) {
+      width: 100%;
+    }
+    @include responsive(android) {
+      width: 100%;
+    }
 
     &--main {
       font-size: 7rem;
       margin-bottom: 3rem;
       font-weight: 500;
+
+      @include responsive(iphone) {
+        font-size: 4.5rem;
+      }
+      @include responsive(android) {
+        font-size: 4.5rem;
+      }
     }
 
     &--sub {
       font-size: 4rem;
       font-weight: 300;
+
+      @include responsive(iphone) {
+        font-size: 3rem;
+      }
+      @include responsive(android) {
+        font-size: 3rem;
+      }
     }
   }
 
@@ -37,9 +68,25 @@
     justify-content: space-between;
     width: 90%;
 
+    @include responsive(iphone) {
+      width: 100%;
+    }
+    @include responsive(android) {
+      width: 100%;
+    }
+
     .footer__logo {
       width: 20rem;
       height: 20rem;
+
+      @include responsive(iphone) {
+        width: 15rem;
+        height: 15rem;
+      }
+      @include responsive(android) {
+        width: 15rem;
+        height: 15rem;
+      }
 
       & img {
         height: 100%;
@@ -67,6 +114,13 @@
             transform: scale(1.1);
             text-shadow: 0 1.2rem 2rem rgba($color-black, .25);
             color: $outline-secondary;
+
+            @include responsive(iphone) {
+              transform: scale(1);
+            }
+            @include responsive(android) {
+              transform: scale(1);
+            }
           }
         }
       }
@@ -93,6 +147,13 @@
             &:hover {
               transform: scale(1.1);
               box-shadow: 0 1.2rem 2rem rgba($color-black, .25);
+
+              @include responsive(iphone) {
+                transform: scale(1);
+              }
+              @include responsive(android) {
+                transform: scale(1);
+              }
             }
           }
         }
