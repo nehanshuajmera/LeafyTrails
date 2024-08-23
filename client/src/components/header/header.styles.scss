@@ -30,6 +30,15 @@
     top: 0.5rem;
     left: 2rem;
 
+    @include responsive(iphone) {
+      top: 2rem;
+      left: 2.5rem;
+    }
+    @include responsive(android) {
+      top: 2rem;
+      left: 2.5rem;
+    }
+
     .header__logo {
       height: 12rem;
       cursor: pointer;
