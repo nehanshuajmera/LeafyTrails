@@ -14,16 +14,18 @@
   justify-content: center;
 
   @include responsive(iphone){
-    max-height: 110vh;
+    max-height: 100vh;
+    min-height: 95vh;
     margin-top: -10vh;
-    padding-top: 12vh;
+    padding-top: 14vh;
     justify-content: start;
   }
 
   @include responsive(android){
-    height: 95vh;
+    max-height: 100vh;
+    min-height: 95vh;
     margin-top: -10vh;
-    padding-top: 12vh;
+    padding-top: 14vh;
     justify-content: start;
   }
 
