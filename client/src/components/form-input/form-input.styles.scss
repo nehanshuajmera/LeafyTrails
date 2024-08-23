@@ -18,6 +18,13 @@
     background-color: rgba($color-white, .4);
     transition: all .5s;
 
+    @include responsive(iphone) {
+      width: 85%;
+    }
+    @include responsive(android) {
+      width: 85%;
+    }
+
     &:focus {
       outline: none;
       border-bottom: 3px solid $outline-secondary;

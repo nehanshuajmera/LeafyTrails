@@ -17,6 +17,13 @@
     font-weight: 400;
     color: $scrollbar-thumb-hover;
 
+    @include responsive(iphone) {
+      padding-left: 2.5rem;
+    }
+    @include responsive(android) {
+      padding-left: 2.5rem;
+    }
+
     .radio-btn {
       height: 3rem;
       width: 3rem;
@@ -27,6 +34,19 @@
       left: 0;
       transform: translateY(-5px);
       display: inline-block;
+
+      @include responsive(iphone) {
+        height: 2rem;
+        width: 2rem;
+        border: 2px solid $outline-secondary;
+        transform: translateY(0);
+      }
+      @include responsive(android) {
+        height: 2rem;
+        width: 2rem;
+        border: 2px solid $outline-secondary;
+        transform: translateY(0);
+      }
 
       &::after {
         content: "";
@@ -41,6 +61,15 @@
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity .4s;
+
+        @include responsive(iphone) {
+          height: 1rem;
+          width: 1rem;
+        }
+        @include responsive(android) {
+          height: 1rem;
+          width: 1rem;
+        }
       }
     }
   }
