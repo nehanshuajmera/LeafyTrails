@@ -25,6 +25,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
   }
 
+  @include responsive(ipad) {
+    height: 60vh;
+    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  }
+
   .header__logo-box {
     position: absolute;
     top: 0.5rem;
@@ -34,13 +39,19 @@
       top: 2rem;
       left: 2.5rem;
     }
+
     @include responsive(android) {
       top: 2rem;
       left: 2.5rem;
     }
 
+    @include responsive(ipad) {
+      top: 2.5rem;
+      left: 3rem;
+    }
+
     .header__logo {
-      height: 12rem;
+      height: 15rem;
       cursor: pointer;
     }
   }
