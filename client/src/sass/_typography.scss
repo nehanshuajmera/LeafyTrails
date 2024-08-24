@@ -23,6 +23,11 @@
       letter-spacing: 1rem;
       font-size: 6rem;
     }
+
+    @include responsive(ipad) {
+      letter-spacing: 2rem;
+      font-size: 8rem;
+    }
   }
 
   .heading__primary--sub {
@@ -40,6 +45,11 @@
     @include responsive(android) {
       letter-spacing: 0.8rem;
       font-size: 2rem;
+    }
+
+    @include responsive(ipad) {
+      letter-spacing: 1rem;
+      font-size: 3rem;
     }
   }
 }
@@ -74,6 +84,11 @@
     margin: 0 0.5rem;
   }
 
+  @include responsive(ipad) {
+    font-size: 4.5rem;
+    margin: 0 0.5rem;
+  }
+
   &:hover {
     transform: scale(1.05);
     text-shadow: 0rem 1rem 2rem rgba($color-black, 0.2); // rgba(color, opacity)
@@ -83,6 +98,10 @@
     }
 
     @include responsive(android) {
+      transform: scale(1);
+    }
+
+    @include responsive(ipad) {
       transform: scale(1);
     }
   }

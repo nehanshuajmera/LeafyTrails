@@ -6,7 +6,7 @@
   &:visited {
     color: $outline-secondary;
     border-bottom: 1.5px solid $outline-secondary;
-    padding: .7rem;
+    padding: 0.7rem;
     // border-radius: .5rem;
     font-size: 1.6rem;
     font-weight: 600;
@@ -41,9 +41,14 @@
     transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
-    font-family: 'merriweather';
+    font-family: "merriweather";
     font-style: italic;
     letter-spacing: 1.2px;
+
+    @include responsive(ipad){
+      font-size: 2rem;
+      padding: 1.5rem 3rem;
+    }
   }
 
   &:hover {
@@ -86,11 +91,11 @@
 }
 
 .anchor__btn--blue {
-  background-image: linear-gradient(to right bottom, #2C69D1, #0ABCF9);
+  background-image: linear-gradient(to right bottom, #2c69d1, #0abcf9);
   color: $color-white;
 
   &::after {
-    background-image: linear-gradient(to right bottom, #2C69D1, #0ABCF9);
+    background-image: linear-gradient(to right bottom, #2c69d1, #0abcf9);
   }
 }
 

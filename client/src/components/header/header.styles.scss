@@ -70,5 +70,9 @@
     @include responsive(android) {
       width: 80%;
     }
+
+    @include responsive(ipad) {
+      width: 80%;
+    }
   }
 }

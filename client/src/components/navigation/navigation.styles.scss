@@ -34,6 +34,11 @@
       height: 7rem;
       width: 7rem;
     }
+
+    @include responsive(ipad) {
+      height: 9rem;
+      width: 9rem;
+    }
   }
 
   /* icon hamburger */
@@ -58,6 +63,10 @@
       @include responsive(android) {
         width: 3rem;
       }
+
+      @include responsive(ipad) {
+        width: 4rem;
+      }
     }
 
     &::before,
@@ -78,6 +87,10 @@
       @include responsive(android) {
         top: -.9rem;
       }
+
+      @include responsive(ipad) {
+        top: -1rem;
+      }
     }
 
     &:after {
@@ -89,6 +102,10 @@
   
       @include responsive(android) {
         top: .9rem;
+      }
+
+      @include responsive(ipad) {
+        top: 1rem;
       }
     }
   }
@@ -111,6 +128,21 @@
     z-index: 20;
     background-image: radial-gradient($color-dark-blue, $color-light-blue);
     transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
+
+    @include responsive(iphone) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include responsive(android) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include responsive(ipad) {
+      height: 8rem;
+      width: 8rem;
+    }
   }
 
   &__navbar {
@@ -189,6 +221,10 @@
     }
 
     @include responsive(android) {
+      transform: scale(85);
+    }
+
+    @include responsive(ipad) {
       transform: scale(85);
     }
   }

@@ -16,6 +16,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @include responsive(ipad) {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   & > *:nth-child(3) {
     @include responsive(iphone) {
       grid-column: 1/-1;
@@ -23,6 +28,11 @@
     }
 
     @include responsive(android) {
+      grid-column: 1/-1;
+      justify-self: center;
+    }
+
+    @include responsive(ipad) {
       grid-column: 1/-1;
       justify-self: center;
     }

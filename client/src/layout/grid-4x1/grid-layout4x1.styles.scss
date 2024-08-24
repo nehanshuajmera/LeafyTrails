@@ -16,4 +16,9 @@
     grid-template-columns: repeat(2, 1fr);
     max-width: 80%;
   }
+
+  @include responsive(ipad){
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80%;
+  }
 }
