@@ -16,10 +16,12 @@
   justify-content: center;
 
   @include responsive(iphone) {
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
   }
   @include responsive(android) {
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
   }
 
   &__container {

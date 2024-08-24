@@ -18,13 +18,15 @@
   justify-content: center;
 
   @include responsive(iphone) {
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     transform: skewy(-11deg);
     margin-top: -9rem;
   }
 
   @include responsive(android) {
-    height: 80vh;
+    min-height: 80vh;
+    height: auto;
     transform: skewy(-11deg);
     margin-top: -9rem;
   }
