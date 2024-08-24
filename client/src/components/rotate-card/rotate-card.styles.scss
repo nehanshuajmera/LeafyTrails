@@ -4,6 +4,7 @@
   width: 28rem;
   position: relative;
   height: 40rem;
+  cursor: pointer;
 
   @supports (perspective: 150rem) and (-webkit-perspective: 150rem) {
     perspective: 150rem;

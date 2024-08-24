@@ -1,12 +1,12 @@
-@import './sass/_variables';
-@import './sass/mixins';
-@import './sass/_typography';
-@import './sass/button';
-@import './sass/animation';
-@import './sass/_utilities';
+@import "./sass/_variables";
+@import "./sass/mixins";
+@import "./sass/_typography";
+@import "./sass/button";
+@import "./sass/animation";
+@import "./sass/_utilities";
 
 body {
-  font-family: 'karla';
+  font-family: "karla";
   // font-family: 'merriweather';
   // font-style: italic;
   box-sizing: border-box;
@@ -23,6 +23,10 @@ body {
   }
 }
 
+::selection {
+  background-color: rgba($outline-primary, .6);
+  color: $color-black;
+}
 
 /* Style for the entire scrollbar */
 ::-webkit-scrollbar {

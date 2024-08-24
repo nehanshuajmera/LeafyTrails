@@ -19,7 +19,14 @@
     padding: 3rem;
     justify-content: space-evenly;
   }
+
   @include responsive(android) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
+  @include responsive(ipad) {
     height: 35vh;
     padding: 3rem;
     justify-content: space-evenly;
@@ -32,7 +39,12 @@
     @include responsive(iphone) {
       width: 100%;
     }
+
     @include responsive(android) {
+      width: 100%;
+    }
+
+    @include responsive(ipad) {
       width: 100%;
     }
 
@@ -44,8 +56,13 @@
       @include responsive(iphone) {
         font-size: 4.5rem;
       }
+
       @include responsive(android) {
         font-size: 4.5rem;
+      }
+
+      @include responsive(ipad) {
+        font-size: 6rem;
       }
     }
 
@@ -56,8 +73,13 @@
       @include responsive(iphone) {
         font-size: 3rem;
       }
+
       @include responsive(android) {
         font-size: 3rem;
+      }
+
+      @include responsive(ipad) {
+        font-size: 4rem;
       }
     }
   }
@@ -71,7 +93,12 @@
     @include responsive(iphone) {
       width: 100%;
     }
+
     @include responsive(android) {
+      width: 100%;
+    }
+
+    @include responsive(ipad) {
       width: 100%;
     }
 
@@ -83,7 +110,13 @@
         width: 15rem;
         height: 15rem;
       }
+
       @include responsive(android) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include responsive(ipad) {
         width: 15rem;
         height: 15rem;
       }
@@ -108,17 +141,22 @@
         .page-link {
           padding: 1.5rem;
           font-size: 2rem;
-          transition: all .5s ease-in-out;
+          transition: all 0.5s ease-in-out;
 
           &:hover {
             transform: scale(1.1);
-            text-shadow: 0 1.2rem 2rem rgba($color-black, .25);
+            text-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
             color: $outline-secondary;
 
             @include responsive(iphone) {
               transform: scale(1);
             }
+
             @include responsive(android) {
+              transform: scale(1);
+            }
+
+            @include responsive(ipad) {
               transform: scale(1);
             }
           }
@@ -142,16 +180,21 @@
 
           & img {
             height: 100%;
-            transition: all .5s;
+            transition: all 0.5s;
 
             &:hover {
               transform: scale(1.1);
-              box-shadow: 0 1.2rem 2rem rgba($color-black, .25);
+              box-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
 
               @include responsive(iphone) {
                 transform: scale(1);
               }
+
               @include responsive(android) {
+                transform: scale(1);
+              }
+
+              @include responsive(ipad) {
                 transform: scale(1);
               }
             }
