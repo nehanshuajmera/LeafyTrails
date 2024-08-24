@@ -21,7 +21,12 @@
     @include responsive(iphone) {
       width: 85%;
     }
+
     @include responsive(android) {
+      width: 85%;
+    }
+
+    @include responsive(ipad) {
       width: 85%;
     }
 

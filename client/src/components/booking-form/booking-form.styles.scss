@@ -19,7 +19,13 @@
     min-height: 50vh;
     height: auto;
   }
+
   @include responsive(android) {
+    min-height: 50vh;
+    height: auto;
+  }
+
+  @include responsive(ipad) {
     min-height: 50vh;
     height: auto;
   }
@@ -60,6 +66,17 @@
         url("../../assets/form.jpg");
     }
 
+    @include responsive(ipad) {
+      width: 85%;
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-white, 0.7) 0%,
+          rgba($color-white, 0.7) 60%,
+          transparent 60%
+        ),
+        url("../../assets/form.jpg");
+    }
+
     .form {
       width: 50%;
       padding: 4rem;
@@ -70,7 +87,13 @@
         width: 60%;
         padding: 2rem;
       }
+
       @include responsive(android) {
+        width: 60%;
+        padding: 2rem;
+      }
+
+      @include responsive(ipad) {
         width: 60%;
         padding: 2rem;
       }
@@ -92,13 +115,23 @@
           margin-bottom: 2rem;
         }
 
+        @include responsive(ipad) {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+
         &:hover {
           transform: scale(1.02);
 
           @include responsive(iphone) {
             transform: scale(1);
           }
+
           @include responsive(android) {
+            transform: scale(1);
+          }
+
+          @include responsive(ipad) {
             transform: scale(1);
           }
         }

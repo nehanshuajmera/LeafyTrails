@@ -20,8 +20,14 @@
     @include responsive(iphone) {
       padding-left: 2.5rem;
     }
+
     @include responsive(android) {
       padding-left: 2.5rem;
+    }
+
+    @include responsive(ipad) {
+      padding-left: 2.5rem;
+      font-size: 2rem;
     }
 
     .radio-btn {
@@ -41,11 +47,19 @@
         border: 2px solid $outline-secondary;
         transform: translateY(0);
       }
+
       @include responsive(android) {
         height: 2rem;
         width: 2rem;
         border: 2px solid $outline-secondary;
         transform: translateY(0);
+      }
+
+      @include responsive(ipad) {
+        height: 2rem;
+        width: 2rem;
+        border: 2px solid $outline-secondary;
+        transform: translateY(2px);
       }
 
       &::after {
@@ -66,7 +80,13 @@
           height: 1rem;
           width: 1rem;
         }
+
         @include responsive(android) {
+          height: 1rem;
+          width: 1rem;
+        }
+
+        @include responsive(ipad) {
           height: 1rem;
           width: 1rem;
         }
