@@ -1,7 +1,7 @@
 @import "../../App.scss";
 
 .feature-card {
-  background-color: rgba($color-white, 0.8);
+  background-color: rgba($color-white, 0.6);
   font-size: 1.3rem;
   padding: 4rem 2rem;
   text-align: center;
@@ -16,6 +16,11 @@
 
   @include responsive(android) {
     font-size: 2rem;
+  }
+
+  @include responsive(ipad) {
+    font-size: 2rem;
+    padding: 5rem;
   }
 
   &__icon {
@@ -36,6 +41,10 @@
     }
 
     @include responsive(android) {
+      font-size: 10rem;
+    }
+
+    @include responsive(ipad) {
       font-size: 10rem;
     }
   }

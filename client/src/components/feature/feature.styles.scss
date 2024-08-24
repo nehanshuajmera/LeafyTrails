@@ -31,6 +31,13 @@
     margin-top: -9rem;
   }
 
+  @include responsive(ipad) {
+    min-height: 80vh;
+    height: auto;
+    transform: skewy(-8deg);
+    margin-top: -8rem;
+  }
+
   & > * {
     transform: skewY(6deg);
 
@@ -40,6 +47,10 @@
 
     @include responsive(android) {
       transform: skewy(11deg);
+    }
+
+    @include responsive(ipad) {
+      transform: skewy(8deg);
     }
   }
 }

@@ -35,7 +35,7 @@ export const LandingAbout = () => {
 
           <Link to="#" className="btn-text">
             Learn More&nbsp;
-            <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
+            <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.6rem" }} />
           </Link>
 
           {/* <AnimatedButton to="#" color="blue">
