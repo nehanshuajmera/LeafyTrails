@@ -17,6 +17,10 @@
     height: 80vh;
   }
 
+  @include responsive(ipad) {
+    height: 80vh;
+  }
+
   .heading-secondary {
     background-image: linear-gradient(
       to right,
@@ -32,6 +36,11 @@
     @include responsive(android) {
       text-align: center;
       margin: 0 1rem;
+    }
+
+    @include responsive(ipad) {
+      text-align: center;
+      margin: 0 2rem;
     }
   }
 
