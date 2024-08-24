@@ -41,6 +41,19 @@
       font-size: 2.4rem;
     }
 
+    .heading-tertiary {
+      font-family: 'merriweather';
+      font-style: italic;
+      
+      @include responsive(iphone){
+        font-size: 2.4rem;
+      }
+    
+      @include responsive(android){
+        font-size: 2.4rem;
+      }
+    }
+
     .grid__content--paragraph {
       font-weight: 400;
 
