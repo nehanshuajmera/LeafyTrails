@@ -24,7 +24,8 @@ export const Navigation = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <Link to="/" className="navigation__link" onClick={closeNavigation}>
-              <span>01</span>Leafy Trails
+              <span>01</span>
+              Leafy Trails
             </Link>
           </li>
           <li className="navigation__item">
