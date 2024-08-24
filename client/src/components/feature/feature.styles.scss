@@ -32,7 +32,7 @@
   }
 
   @include responsive(ipad) {
-    min-height: 80vh;
+    min-height: 90vh;
     height: auto;
     transform: skewy(-8deg);
     margin-top: -8rem;

@@ -25,4 +25,10 @@
     min-height: 90vh;
     height: auto; 
   }
+
+  @include responsive(ipad){
+    padding-top: 7rem;
+    min-height: 150vh;
+    height: auto;
+  }
 }
