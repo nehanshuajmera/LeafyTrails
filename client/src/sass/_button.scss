@@ -1,19 +1,28 @@
 /* Button Secondary */
 .btn-text {
-  // background-color: rgba( $color-white, .7);
 
   &:link,
   &:visited {
     color: $outline-secondary;
     border-bottom: 1.5px solid $outline-secondary;
     padding: 0.7rem;
-    // border-radius: .5rem;
     font-size: 1.6rem;
     font-weight: 600;
     transition: all 0.2s;
+    width: fit-content;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
-    width: fit-content;
+
+    @include responsive(android) {
+      font-size: 1.8rem;
+    }
+
+    @include responsive(ipad) {
+      font-size: 2rem;
+      padding: 0.8rem;
+      font-weight: 500;
+    }
   }
 
   &:hover {
@@ -45,7 +54,7 @@
     font-style: italic;
     letter-spacing: 1.2px;
 
-    @include responsive(ipad){
+    @include responsive(ipad) {
       font-size: 2rem;
       padding: 1.5rem 3rem;
     }
