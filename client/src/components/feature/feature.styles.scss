@@ -38,6 +38,13 @@
     margin-top: -8rem;
   }
 
+  @include responsive(tab) {
+    min-height: 90vh;
+    height: auto;
+    transform: skewy(-8deg);
+    margin-top: -7rem;
+  }
+
   & > * {
     transform: skewY(6deg);
 
@@ -50,6 +57,10 @@
     }
 
     @include responsive(ipad) {
+      transform: skewy(8deg);
+    }
+
+    @include responsive(tab) {
       transform: skewy(8deg);
     }
   }

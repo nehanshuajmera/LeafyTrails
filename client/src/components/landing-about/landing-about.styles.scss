@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
 
-  /* media query */ 
+  /* media query */
   @include responsive(iphone) {
     height: auto;
     min-height: 95vh;
