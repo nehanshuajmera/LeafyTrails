@@ -17,6 +17,10 @@
   @include responsive(ipad){
     margin-bottom: 6rem;
   }
+
+  @include responsive(tab){
+    margin-bottom: 6rem;
+  }
 }
 
 .utility-margin-btm-md-1 {
@@ -31,6 +35,10 @@
   }
 
   @include responsive(ipad){
+    margin-bottom: 5rem;
+  }
+
+  @include responsive(tab){
     margin-bottom: 5rem;
   }
 }
@@ -49,6 +57,10 @@
   @include responsive(ipad){
     margin-bottom: 3rem;
   }
+
+  @include responsive(tab){
+    margin-bottom: 3rem;
+  }
 }
 
 .utility-margin-btm-small {
@@ -63,6 +75,10 @@
   }
 
   @include responsive(ipad){
+    margin-bottom: 1.5rem;
+  }
+
+  @include responsive(tab){
     margin-bottom: 1.5rem;
   }
 }
