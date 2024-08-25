@@ -13,7 +13,6 @@ import { StoryPage } from "./pages/story-page/story-page.component";
 import { BookingPage } from "./pages/booking-page/booking-page.component";
 
 /* hooks and utility component import */
-// import ScrollToSection from "./components/scroll-to-section/scroll-to-section";
 import useScrollToTop from "./hooks/scroll-to-top/scroll-to-top";
 
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {/* <ScrollToSection /> */}
       <div className="pages">
         <Routes>
           <Route path="/" element={<HomePage />} />

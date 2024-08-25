@@ -251,6 +251,15 @@
       color: $outline-primary;
       transform: translateX(-1rem);
     }
+
+    &.active{
+      background-color: $color-white;
+      color: $outline-primary;
+
+      // &:hover{
+      //   transform: translateX(0);
+      // }
+    }
   }
 
   &__checkbox:checked ~ &__background {

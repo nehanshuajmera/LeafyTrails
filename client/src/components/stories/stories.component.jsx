@@ -29,7 +29,7 @@ export const Stories = () => {
           content="Exploring breathtaking landscapes, we hiked through lush forests, wandered along serene leafy trails, and connected with nature like never before. This unforgettable week with my family was a perfect blend of adventure and tranquility."
         />
       </div>
-      <Link to="#" className="btn-text">
+      <Link to="/stories" className="btn-text">
         Read all stories&nbsp;
         <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
       </Link>

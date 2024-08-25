@@ -1,5 +1,5 @@
 import "./navigation.styles.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Navigation = () => {
   const closeNavigation = () => {
@@ -23,55 +23,55 @@ export const Navigation = () => {
       <nav className="navigation__navbar">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/" className="navigation__link" onClick={closeNavigation}>
+            <NavLink to="/" className="navigation__link" onClick={closeNavigation}>
               <span>01</span>
               Leafy Trails
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link
+            <NavLink
               to="/about"
               className="navigation__link"
               onClick={closeNavigation}
             >
               <span>02</span>About Us
-            </Link>
+            </NavLink>
           </li>
           {/* <li className="navigation__item">
-            <Link
+            <NavLink
               to="/your-benifits"
               className="navigation__link"
               onClick={closeNavigation}
             >
               <span>03</span>Your Benefits
-            </Link>
+            </NavLink>
           </li> */}
           <li className="navigation__item">
-            <Link
+            <NavLink
               to="/tours"
               className="navigation__link"
               onClick={closeNavigation}
             >
               <span>03</span>Popular Tours
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link
+            <NavLink
               to="/stories"
               className="navigation__link"
               onClick={closeNavigation}
             >
               <span>04</span>Stories
-            </Link>
+            </NavLink>
           </li>
           <li className="navigation__item">
-            <Link
+            <NavLink
               to="/booking"
               className="navigation__link"
               onClick={closeNavigation}
             >
               <span>05</span>Book Now
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>

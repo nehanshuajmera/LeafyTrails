@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
 import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
 
-import image1Grid from '../../assets/about-1.jpg'
-import image2Grid from '../../assets/about-2.jpg'
+import image1Grid from '../../assets/traveller-large.jpg'
+import image2Grid from '../../assets/header-booking-small.jpeg'
 import image3Grid from '../../assets/about-3.jpg'
 
 export const LandingAbout = () => {
@@ -33,15 +33,10 @@ export const LandingAbout = () => {
             exhilarating experiences, where each journey is uniquely exciting.
           </p>
 
-          <Link to="#" className="btn-text">
+          <Link to="about" className="btn-text">
             Learn More&nbsp;
             <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.6rem" }} />
           </Link>
-
-          {/* <AnimatedButton to="#" color="blue">
-            Learn More{" "}
-            <i className="fa-solid fa-arrow-right" style={{ fontSize: "1.5rem" }} />
-          </AnimatedButton> */}
         </div>
         <div className="landing-about__grid--images">
           <div className="composition">
@@ -51,7 +46,7 @@ export const LandingAbout = () => {
               className="composition__photo composition__photo--p1"
             />
             <img
-              src='https://t3.ftcdn.net/jpg/03/96/72/38/240_F_396723837_eoPYyOmhJKwBPnKHoQJnM2htCHKD7WHc.jpg'
+              src={image2Grid}
               alt="photo 2"
               className="composition__photo composition__photo--p2"
             />
