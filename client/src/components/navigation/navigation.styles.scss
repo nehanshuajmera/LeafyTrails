@@ -188,6 +188,7 @@
     z-index: 30;
     opacity: 0;
     width: 0;
+    visibility: hidden;
     transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 
     /* media query */
@@ -278,6 +279,7 @@
   &__checkbox:checked ~ &__navbar {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
 
   /* targeting the span line */
