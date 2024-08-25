@@ -30,15 +30,21 @@
     height: 15rem;
     width: 15rem;
     float: left;
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
     transform: translateX(-4rem) skewX(12deg);
     position: relative;
     transition: all 0.5s;
     backface-visibility: hidden;
     -moz-backface-visibility: hidden;
+
+    @supports (shape-outside: circle()) and (-webkit-shape-outside: circle()) {
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+    }
+
+    @supports (-webkit-clip-path: circle()) and (clip-path: circle()) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
   }
 
   .testimonial--image {
@@ -72,7 +78,7 @@
   }
 
   .heading-tertiary {
-    font-family: 'merriweather';
+    font-family: "merriweather";
     font-style: italic;
     letter-spacing: 1.2px;
     font-size: 1.6rem;

@@ -25,30 +25,31 @@
     height: 80vh;
   }
 
+  @include responsive(desktop) {
+    height: 100vh;
+  }
+
   .heading-secondary {
     background-image: linear-gradient(
       to right,
       $outline-primary,
       $outline-secondary
     );
+    text-align: center;
 
     @include responsive(iphone) {
-      text-align: center;
       margin: 0 1rem;
     }
 
     @include responsive(android) {
-      text-align: center;
       margin: 0 1rem;
     }
 
     @include responsive(ipad) {
-      text-align: center;
       margin: 0 2rem;
     }
 
     @include responsive(tab) {
-      text-align: center;
       margin: 0 2rem;
     }
   }
