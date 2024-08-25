@@ -68,6 +68,9 @@
     font-style: italic;
     letter-spacing: 1.2px;
 
+    border: none;
+    cursor: pointer;
+
     /* media query */ 
     @include responsive(ipad) {
       font-size: 2rem;

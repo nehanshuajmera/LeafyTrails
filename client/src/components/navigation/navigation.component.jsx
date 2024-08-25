@@ -37,7 +37,7 @@ export const Navigation = () => {
               <span>02</span>About Us
             </Link>
           </li>
-          <li className="navigation__item">
+          {/* <li className="navigation__item">
             <Link
               to="/your-benifits"
               className="navigation__link"
@@ -45,14 +45,14 @@ export const Navigation = () => {
             >
               <span>03</span>Your Benefits
             </Link>
-          </li>
+          </li> */}
           <li className="navigation__item">
             <Link
               to="/tours"
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>04</span>Popular Tours
+              <span>03</span>Popular Tours
             </Link>
           </li>
           <li className="navigation__item">
@@ -61,16 +61,16 @@ export const Navigation = () => {
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>05</span>Stories
+              <span>04</span>Stories
             </Link>
           </li>
           <li className="navigation__item">
             <Link
-              to="/booknow"
+              to="/booking"
               className="navigation__link"
               onClick={closeNavigation}
             >
-              <span>06</span>Book Now
+              <span>05</span>Book Now
             </Link>
           </li>
         </ul>

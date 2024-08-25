@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./header.styles.scss";
 import { Navigation } from "../navigation/navigation.component";
+import DiscoverToursButton from "../discover-button/discover-button.component";
 
 export const Header = () => {
   return (
@@ -18,12 +18,7 @@ export const Header = () => {
             <span className="heading__primary--main">Outdoors</span>
             <span className="heading__primary--sub">is where life happens</span>
           </h1>
-          <a
-            href="#tours"
-            className="anchor__btn anchor__btn--white anchor__btn--animated"
-          >
-            Discover Our Tours
-          </a>
+          <DiscoverToursButton />
         </div>
       </header>
     </>

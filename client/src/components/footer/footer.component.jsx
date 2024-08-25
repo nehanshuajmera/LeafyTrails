@@ -34,7 +34,10 @@ export const Footer = () => {
               <Link to="/tours">Tours</Link>
             </div>
             <div className="page-link">
-              <Link to="/contactus">Contact Us</Link>
+              <Link to="/Stories">Stories</Link>
+            </div>
+            <div className="page-link">
+              <Link to="/booking">Book Now</Link>
             </div>
           </div>
           <div className="social-media__links">
