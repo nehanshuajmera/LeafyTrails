@@ -45,6 +45,13 @@
     margin-top: -7rem;
   }
 
+  @include responsive(desktop) {
+    min-height: 90vh;
+    height: auto;
+    transform: skewy(-7deg);
+    margin-top: -9rem;
+  }
+
   & > * {
     transform: skewY(6deg);
 
@@ -62,6 +69,10 @@
 
     @include responsive(tab) {
       transform: skewy(8deg);
+    }
+
+    @include responsive(desktop) {
+      transform: skewy(7deg);
     }
   }
 }
