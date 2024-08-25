@@ -30,6 +30,11 @@
       font-size: 2rem;
     }
 
+    @include responsive(tab) {
+      padding-left: 3.5rem;
+      font-size: 2rem;
+    }
+
     .radio-btn {
       height: 3rem;
       width: 3rem;
@@ -60,6 +65,10 @@
         width: 2rem;
         border: 2px solid $outline-secondary;
         transform: translateY(2px);
+      }
+
+      @include responsive(tab) {
+        transform: translateY(-3px);
       }
 
       &::after {
