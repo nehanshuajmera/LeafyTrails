@@ -9,13 +9,13 @@
   align-items: center;
   justify-content: center;
 
+  /* media query */ 
   @include responsive(iphone) {
     height: auto;
     min-height: 95vh;
     margin-top: -10vh;
     padding-top: 14vh;
     justify-content: start;
-    // overflow: hidden;
   }
 
   @include responsive(android) {
@@ -27,6 +27,14 @@
   }
 
   @include responsive(ipad) {
+    height: auto;
+    min-height: 100vh;
+    margin-top: -10vh;
+    padding-top: 12vh;
+    justify-content: start;
+  }
+
+  @include responsive(tab) {
     height: auto;
     min-height: 100vh;
     margin-top: -10vh;
@@ -49,6 +57,10 @@
       font-size: 2.4rem;
     }
 
+    @include responsive(tab) {
+      font-size: 2.4rem;
+    }
+
     .heading-tertiary {
       font-family: "merriweather";
       font-style: italic;
@@ -62,6 +74,10 @@
       }
 
       @include responsive(ipad) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(tab) {
         font-size: 2.4rem;
       }
     }
@@ -102,6 +118,10 @@
 
           &:hover {
             outline: 1.5rem solid $outline-primary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-primary;
+            }
           }
         }
 
@@ -111,6 +131,10 @@
 
           &:hover {
             outline: 1.5rem solid $outline-secondary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-secondary;
+            }
           }
         }
 
@@ -120,6 +144,10 @@
 
           &:hover {
             outline: 1.5rem solid $outline-tertiary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-tertiary;
+            }
           }
         }
 

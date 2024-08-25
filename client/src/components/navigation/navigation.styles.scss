@@ -10,6 +10,7 @@
     display: none;
   }
 
+  /* outer White button style */
   &__button {
     height: 5rem;
     width: 5rem;
@@ -25,6 +26,7 @@
     justify-content: center;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
+    /* button media query */
     @include responsive(iphone) {
       height: 7rem;
       width: 7rem;
@@ -63,10 +65,11 @@
       background-color: $color-black;
       display: inline-block;
 
+      /* media query */
       @include responsive(iphone) {
         width: 3rem;
       }
-  
+
       @include responsive(android) {
         width: 3rem;
       }
@@ -92,12 +95,13 @@
     &:before {
       top: -0.7rem;
 
+      /* media query */
       @include responsive(iphone) {
-        top: -.9rem;
+        top: -0.9rem;
       }
-  
+
       @include responsive(android) {
-        top: -.9rem;
+        top: -0.9rem;
       }
 
       @include responsive(ipad) {
@@ -112,12 +116,13 @@
     &:after {
       top: 0.7rem;
 
+      /* media query */
       @include responsive(iphone) {
-        top: .9rem;
+        top: 0.9rem;
       }
-  
+
       @include responsive(android) {
-        top: .9rem;
+        top: 0.9rem;
       }
 
       @include responsive(ipad) {
@@ -138,6 +143,7 @@
     top: 0.8rem;
   }
 
+  /* backgroung styles of navigation */
   &__background {
     height: 4rem;
     width: 4rem;
@@ -149,6 +155,7 @@
     background-image: radial-gradient($color-dark-blue, $color-light-blue);
     transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
 
+    /* media query */
     @include responsive(iphone) {
       height: 6rem;
       width: 6rem;
@@ -172,6 +179,7 @@
     }
   }
 
+  /* navigation */
   &__navbar {
     height: 100vh;
     position: inherit;
@@ -182,15 +190,17 @@
     width: 0;
     transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 
+    /* media query */
     @include responsive(iphone) {
-      transition: all .8s ease-in-out;
+      transition: all 0.8s ease-in-out;
     }
 
     @include responsive(android) {
-      transition: all .8s ease-in-out;
+      transition: all 0.8s ease-in-out;
     }
   }
 
+  /* navigation ul */
   &__list {
     height: inherit;
     width: 100%;
@@ -201,10 +211,12 @@
     list-style: none;
   }
 
+  /* naqvigation ul > li */
   &__item {
     margin: 1rem;
   }
 
+  /* single navigation link styling */
   &__link {
     &:link,
     &:visited {
@@ -243,6 +255,7 @@
   &__checkbox:checked ~ &__background {
     transform: scale(80);
 
+    /* media query */
     @include responsive(iphone) {
       transform: scale(85);
     }
@@ -260,21 +273,27 @@
     }
   }
 
+  /* when checkbox is checked, targeting navbar which is sibling of checkbox */
+  /* making navigation visible as soon checkbox is checked */
   &__checkbox:checked ~ &__navbar {
     opacity: 1;
     width: 100%;
   }
 
+  /* targeting the span line */
+  /* as soon as checkbox is checked the line created through the span element is converted to transparent */
   &__checkbox:checked + &__button &__icon {
     background-color: transparent;
     transition: rotate 0.2s ease-in-out;
   }
 
+  /* targeting before element of span */
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
     rotate: 135deg;
   }
 
+  /* targeting after element of span */
   &__checkbox:checked + &__button &__icon::after {
     top: 0;
     rotate: -135deg;

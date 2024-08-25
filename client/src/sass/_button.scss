@@ -1,4 +1,5 @@
 /* Button Secondary */
+/* used in landing about and stories section */ 
 .btn-text {
 
   &:link,
@@ -23,6 +24,12 @@
       padding: 0.8rem;
       font-weight: 500;
     }
+
+    @include responsive(tab) {
+      font-size: 2rem;
+      padding: 0.8rem;
+      font-weight: 500;
+    }
   }
 
   &:hover {
@@ -38,6 +45,8 @@
   }
 }
 
+/* anchor button used in header to navigate to the tours page */ 
+/* Styles of primary button */ 
 .anchor__btn {
   &,
   &:link,
@@ -54,6 +63,7 @@
     font-style: italic;
     letter-spacing: 1.2px;
 
+    /* media query */ 
     @include responsive(ipad) {
       font-size: 2rem;
       padding: 1.5rem 3rem;
@@ -69,6 +79,7 @@
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 
+    /* after effect of primary button */ 
     &::after {
       transform: scaleX(1.3) scaleY(1.5);
       opacity: 0;
@@ -95,6 +106,7 @@
   }
 }
 
+/* White color button */ 
 .anchor__btn--white {
   background-color: $color-white;
   color: #777;
