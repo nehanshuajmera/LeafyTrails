@@ -3,7 +3,7 @@
 /*  320px - 480px -- iphone       | 1rem = 6px
     480px - 600px -- android      | 1rem = 7px
     600px - 800px -- ipad         | 1rem = 8px
-    800px - 1024px -- tablet      | 1rem = 9px
+    800px - 1024px -- tab         | 1rem = 9px
     1024px - 1280px -- mac        | 1rem = 10px
     1280px - 14400px -- laptop    | 1rem = 10px
     14400px - 1600px -- desktop   | 1rem = 12px
@@ -37,8 +37,8 @@
     }
   }
 
-  /* 800px - 1024px -- tablet */
-  @if $breakpoint == tablet {
+  /* 800px - 1024px -- tab */
+  @if $breakpoint == tab {
     /* 800px/16px = 50em | 1024px/16px = 64em */
     @media (min-width: 50em) and (max-width: 64em) {
       @content;

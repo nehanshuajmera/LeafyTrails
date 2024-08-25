@@ -26,7 +26,7 @@
     font-size: 50%;
   }
 
-  @include responsive(tablet) {
+  @include responsive(tab) {
     /* 1rem = 9px */
     font-size: 56.25%;
   }
