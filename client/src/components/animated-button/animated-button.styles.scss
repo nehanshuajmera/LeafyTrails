@@ -21,6 +21,11 @@
       font-size: 2rem;
       padding: 1.5rem 3rem;
     }
+
+    @include responsive(tab) {
+      font-size: 2rem;
+      padding: 1.5rem 3rem;
+    }
   }
 
   &:hover {

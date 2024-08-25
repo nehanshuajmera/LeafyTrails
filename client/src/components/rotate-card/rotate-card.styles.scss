@@ -1,16 +1,20 @@
 @import "../../App.scss";
 
+/* main container, that contains card as one entity */
+/* 3D effect property container */
 .rotate-card {
   width: 28rem;
   position: relative;
   height: 40rem;
   cursor: pointer;
 
+  /* Future query: if browser supports it then apply */
   @supports (perspective: 150rem) and (-webkit-perspective: 150rem) {
     perspective: 150rem;
     -moz-perspective: 150rem;
   }
 
+  /* container containing both the sides of the card i.e. front and back */
   .card__side {
     width: 100%;
     height: 100%;
@@ -19,11 +23,17 @@
     top: 0;
     left: 0;
     transition: all 0.8s ease;
-    backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+
+    /* Future query: if browser supports it then apply */
+    @supports (backface-visibility: hidden) and
+      (-webkit-backface-visibility: hidden) {
+      backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+    }
   }
 
+  /* Front side of card styles */
   .card__side--front {
     background-color: $color-white;
 
@@ -37,12 +47,14 @@
       border-top-left-radius: 0.3rem;
       border-top-right-radius: 0.3rem;
 
+      /* Future query: if browser supports it then apply */
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       }
     }
 
+    /* Statically typed background image for front side of card */
     .picture-orange {
       background-image: linear-gradient(
           to right bottom,
@@ -52,6 +64,7 @@
         url("../../assets/card-1.jpg");
     }
 
+    /* Statically typed background image for front side of card */
     .picture-green {
       background-image: linear-gradient(
           to right bottom,
@@ -61,6 +74,7 @@
         url("../../assets/card-2.jpg");
     }
 
+    /* Statically typed background image for front side of card */
     .picture-blue {
       background-image: linear-gradient(
           to right bottom,
@@ -70,6 +84,7 @@
         url("../../assets/card-3.jpg");
     }
 
+    /* Main heading of card i.e. title of card styles */
     .card__heading {
       text-align: right;
       font-size: 2.6rem;
@@ -86,10 +101,17 @@
 
     .card-heading-span {
       padding: 0.5rem 1.5rem;
-      -webkit-box-decoration-break: clone;
-      box-decoration-break: clone;
+
+      /* Future query: if browser supports it then apply */
+      @supports (-webkit-box-decoration-break: clone) and
+        (box-decoration-break: clone) {
+        /* setting every item of span to apply every property on every break */
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
     }
 
+    /* heading background color style */
     .heading-orange {
       background-image: linear-gradient(
         to right bottom,
@@ -98,6 +120,7 @@
       );
     }
 
+    /* heading background color style */
     .heading-green {
       background-image: linear-gradient(
         to right bottom,
@@ -106,6 +129,7 @@
       );
     }
 
+    /* heading background color style */
     .heading-blue {
       background-image: linear-gradient(
         to right bottom,
@@ -114,6 +138,7 @@
       );
     }
 
+    /* card content style */
     .card__details {
       padding: 3rem;
 
@@ -135,6 +160,7 @@
     }
   }
 
+  /* back side of card styles */
   .card__side--back {
     transform: rotateY(180deg);
 
@@ -165,6 +191,7 @@
     }
   }
 
+  /* style background of back side of card */
   .back-orange {
     background-image: linear-gradient(
       to right bottom,
@@ -173,6 +200,7 @@
     );
   }
 
+  /* style background of back side of card */
   .back-green {
     background-image: linear-gradient(
       to right bottom,
@@ -181,6 +209,7 @@
     );
   }
 
+  /* style background of back side of card */
   .back-blue {
     background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
   }
@@ -194,6 +223,7 @@
   }
 }
 
+/* media query for ipad */
 @include responsive(ipad) {
   .rotate-card {
     width: 35rem;
@@ -261,6 +291,88 @@
     .back-orange,
     .back-green,
     .back-blue {
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover .card__side--front {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+/* media query for tablet */
+@include responsive(tab) {
+  .rotate-card {
+    width: 40rem;
+    height: 70rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+    border-radius: 3px;
+    background-color: $color-white;
+
+    .card__side {
+      height: auto;
+      position: relative;
+      transition: all 0.8s ease;
+      box-shadow: none;
+      border-radius: none;
+    }
+
+    .card__side--front {
+      height: 75%;
+
+      .card__heading {
+        font-size: 4rem;
+        width: 85%;
+      }
+
+      .card__details {
+        padding: 3rem;
+
+        ul {
+          width: 100%;
+
+          li {
+            font-size: 2.4rem;
+            padding: 1rem;
+          }
+        }
+      }
+    }
+
+    .card__side--back {
+      transform: rotateY(0deg);
+      height: 30%;
+
+      .card__action {
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+        padding-top: 0;
+        margin-top: 0;
+
+        .price--only {
+          text-transform: uppercase;
+          font-size: 1.4rem;
+        }
+
+        .price--value {
+          font-size: 5rem;
+          font-weight: 100;
+        }
+      }
+    }
+
+    .back-orange,
+    .back-green,
+    .back-blue {
+      margin-top: -3rem;
+
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
