@@ -33,6 +33,10 @@
       letter-spacing: 2rem;
       font-size: 8rem;
     }
+
+    @include responsive(desktop) {
+      font-size: 8rem;
+    }
   }
 
   .heading__primary--sub {
@@ -60,6 +64,10 @@
     @include responsive(tab) {
       letter-spacing: 1rem;
       font-size: 3rem;
+    }
+
+    @include responsive(desktop) {
+      font-size: 2.8rem;
     }
   }
 }
@@ -100,6 +108,11 @@
   }
 
   @include responsive(tab) {
+    font-size: 4.5rem;
+    margin: 0 1rem;
+  }
+
+  @include responsive(desktop) {
     font-size: 4.5rem;
     margin: 0 1rem;
   }

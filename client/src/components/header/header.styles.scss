@@ -12,27 +12,42 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
 
   @include responsive(iphone) {
     height: 50vh;
-    clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
   }
 
   @include responsive(android) {
     height: 50vh;
-    clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
   }
 
   @include responsive(ipad) {
     height: 60vh;
-    clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    }
   }
 
   @include responsive(tab) {
     height: 70vh;
-    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    }
   }
 
   .header__logo-box {
@@ -86,6 +101,10 @@
     }
 
     @include responsive(tab) {
+      width: 80%;
+    }
+
+    @include responsive(desktop) {
       width: 80%;
     }
   }
