@@ -42,6 +42,12 @@
     justify-content: start;
   }
 
+  @include responsive(desktop) {
+    height: auto;
+    min-height: 120vh;
+    padding-top: 10rem;
+  }
+
   .landing-about__grid--content {
     font-size: 1.6rem;
 
@@ -58,6 +64,10 @@
     }
 
     @include responsive(tab) {
+      font-size: 2.4rem;
+    }
+
+    @include responsive(desktop) {
       font-size: 2.4rem;
     }
 
@@ -78,6 +88,10 @@
       }
 
       @include responsive(tab) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(desktop) {
         font-size: 2.4rem;
       }
     }
@@ -116,6 +130,10 @@
           top: -2rem;
           left: 0;
 
+          @include responsive(desktop) {
+            top: 8rem;
+          }
+
           &:hover {
             outline: 1.5rem solid $outline-primary;
 
@@ -129,6 +147,10 @@
           right: 0;
           top: 2rem;
 
+          @include responsive(desktop) {
+            top: 13rem;
+          }
+
           &:hover {
             outline: 1.5rem solid $outline-secondary;
 
@@ -141,6 +163,11 @@
         &--p3 {
           top: 8rem;
           left: 20%;
+
+          @include responsive(desktop) {
+            top: 20rem;
+            left: 15%;
+          }
 
           &:hover {
             outline: 1.5rem solid $outline-tertiary;

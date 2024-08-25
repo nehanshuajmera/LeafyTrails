@@ -30,6 +30,11 @@
       padding: 0.8rem;
       font-weight: 500;
     }
+
+    @include responsive(desktop) {
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
   }
 
   &:hover {
@@ -70,6 +75,11 @@
     }
 
     @include responsive(tab) {
+      font-size: 2.2rem;
+      padding: 1.5rem 3rem;
+    }
+
+    @include responsive(desktop) {
       font-size: 2.2rem;
       padding: 1.5rem 3rem;
     }
