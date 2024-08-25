@@ -32,6 +32,12 @@
     justify-content: space-evenly;
   }
 
+  @include responsive(tab) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
   &__tagline {
     width: 90%;
     height: fit-content;
@@ -45,6 +51,10 @@
     }
 
     @include responsive(ipad) {
+      width: 100%;
+    }
+
+    @include responsive(tab) {
       width: 100%;
     }
 
@@ -64,6 +74,10 @@
       @include responsive(ipad) {
         font-size: 6rem;
       }
+
+      @include responsive(tab) {
+        font-size: 6rem;
+      }
     }
 
     &--sub {
@@ -79,6 +93,10 @@
       }
 
       @include responsive(ipad) {
+        font-size: 4rem;
+      }
+
+      @include responsive(tab) {
         font-size: 4rem;
       }
     }
@@ -102,6 +120,10 @@
       width: 100%;
     }
 
+    @include responsive(tab) {
+      width: 100%;
+    }
+
     .footer__logo {
       width: 20rem;
       height: 20rem;
@@ -117,6 +139,11 @@
       }
 
       @include responsive(ipad) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include responsive(tab) {
         width: 15rem;
         height: 15rem;
       }
@@ -159,6 +186,10 @@
             @include responsive(ipad) {
               transform: scale(1);
             }
+
+            @include responsive(tab) {
+              transform: scale(1);
+            }
           }
         }
       }
@@ -195,6 +226,10 @@
               }
 
               @include responsive(ipad) {
+                transform: scale(1);
+              }
+
+              @include responsive(tab) {
                 transform: scale(1);
               }
             }
