@@ -384,3 +384,59 @@
     }
   }
 }
+
+@include responsive(desktop) {
+  .rotate-card {
+    width: 32rem;
+    height: 50rem;
+
+    /* Front side of card styles */
+    .card__side--front {
+      .card__picture {
+        height: 44%;
+      }
+
+      /* Main heading of card i.e. title of card styles */
+      .card__heading {
+        font-size: 3.2rem;
+        top: 13rem;
+        right: 1.6rem;
+      }
+
+      .card-heading-span {
+        padding: 0.8rem 1.8rem;
+      }
+
+      /* card content style */
+      .card__details {
+        ul {
+          width: 90%;
+
+          li {
+            font-size: 2rem;
+            padding: 1rem;
+
+            &:not(:last-child) {
+              border-bottom: 1.5px solid #eee;
+            }
+          }
+        }
+      }
+    }
+
+    /* back side of card styles */
+    .card__side--back {
+      .card__action {
+        .price__box {
+          .price--only {
+            font-size: 1.8rem;
+          }
+
+          .price--value {
+            font-size: 6rem;
+          }
+        }
+      }
+    }
+  }
+}

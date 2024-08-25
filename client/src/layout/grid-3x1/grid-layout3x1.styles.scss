@@ -26,6 +26,18 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  @include responsive(desktop) {
+    max-width: 100%;
+  }
+
+  @include responsive(imac) {
+    max-width: 100%;
+  }
+
+  @include responsive(screens) {
+    max-width: 100%;
+  }
+
   & > *:nth-child(3) {
     @include responsive(iphone) {
       grid-column: 1/-1;

@@ -37,4 +37,10 @@
     min-height: 150vh;
     height: auto;
   }
+
+  @include responsive(desktop){
+    padding-top: 7rem;
+    min-height: 120vh;
+    height: auto;
+  }
 }
