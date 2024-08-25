@@ -18,6 +18,14 @@
     width: 75%;
   }
 
+  @include responsive(ipad) {
+    width: 75%;
+  }
+
+  @include responsive(tab) {
+    width: 75%;
+  }
+
   &__image--shape {
     height: 15rem;
     width: 15rem;

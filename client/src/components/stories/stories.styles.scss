@@ -21,6 +21,10 @@
     height: 80vh;
   }
 
+  @include responsive(tab) {
+    height: 80vh;
+  }
+
   .heading-secondary {
     background-image: linear-gradient(
       to right,
@@ -39,6 +43,11 @@
     }
 
     @include responsive(ipad) {
+      text-align: center;
+      margin: 0 2rem;
+    }
+
+    @include responsive(tab) {
       text-align: center;
       margin: 0 2rem;
     }
