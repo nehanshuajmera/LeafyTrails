@@ -28,6 +28,11 @@
       rgba(27, 255, 255, 0.6)
     ),
     url("../../assets/header-about.jpg");
+
+    // @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
+    //   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 90vh, 0 75vh);
+    // }
   }
 
   &--tours {

@@ -256,9 +256,9 @@
       background-color: $color-white;
       color: $outline-primary;
 
-      // &:hover{
-      //   transform: translateX(0);
-      // }
+      &:hover{
+        transform: translateX(0);
+      }
     }
   }
 
