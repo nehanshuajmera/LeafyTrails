@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Story } from "../models/storyModel";
+import { Story } from "../models/storyModel.js";
 
 export const getStories = async (req, res) => {
   try {
