@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./landing-about.styles.scss";
 import { GridLayout2x1 } from "../../layout/grid-2x1/grid-layout2x1.component";
 
-import image1Grid from '../../assets/traveller-large.jpg'
+import image1Grid from '../../assets/traveller-small.jpg'
 import image2Grid from '../../assets/header-booking-small.jpeg'
 import image3Grid from '../../assets/about-3.jpg'
 

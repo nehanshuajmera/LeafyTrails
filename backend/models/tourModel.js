@@ -28,8 +28,10 @@ export const tourSchema = new Schema({
   },
   details: [
     {
-      type: String,
-      required: true,
+      item: {
+        type: String,
+        required: true,
+      },
     },
   ],
   popupTitle: {
@@ -52,4 +54,4 @@ export const tourSchema = new Schema({
   ],
 });
 
-export const Tour = mongoose.model('Tour', tourSchema);
+export const Tour = mongoose.model("Tour", tourSchema);

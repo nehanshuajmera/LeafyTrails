@@ -27,7 +27,7 @@
       rgba(46, 49, 146, 0.6),
       rgba(27, 255, 255, 0.6)
     ),
-    url("../../assets/header-about.jpg");
+    url("../../assets/header-about-small.jpg");
 
     // @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
     //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
@@ -41,7 +41,7 @@
       rgba(46, 49, 146, 0.7),
       rgba(27, 255, 255, 0.7)
     ),
-    url("../../assets/header-tours.jpg");
+    url("../../assets/header-tours-small.jpg");
   }
 
   &--story {
@@ -50,7 +50,7 @@
       rgba(46, 49, 146, 0.6),
       rgba(27, 255, 255, 0.6)
     ),
-    url("../../assets/header-story.jpg");
+    url("../../assets/header-story-small.jpg");
     background-position: top;
   }
 
