@@ -14,9 +14,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
-app.use("/public", express.static("public"));
+app.use(express.static("./public"));
 
 // Routes
+app.get('/', (req, res) => {
+  res.status(200).json("Backend Working, Happy Coding");
+})
 app.use("/api/stories", storyRoutes);
 
 const connect = async () => {
