@@ -1,3 +1,31 @@
+/* background image linear gradient mixin */
+@mixin gradientImage($color-1, $color-2, $image) {
+  background-image: linear-gradient(
+      to right bottom,
+      $color-1,
+      $color-2
+    ),
+    url($image);
+}
+
+/* linear gradient */ 
+@mixin linearGradient($color-1, $color-2){
+  background-image: linear-gradient(
+      to right bottom,
+      $color-1,
+      $color-2
+    );
+}
+
+/* card mixins */
+@mixin headingGradient($color-1, $color-2) {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-1, 0.85),
+    rgba($color-2, 0.85)
+  );
+}
+
 /* media query manager */
 
 /*  320px - 480px -- iphone       | 1rem = 6px
@@ -15,7 +43,7 @@
 @mixin responsive($breakpoint) {
   /* 320px - 480px -- iphone */
   @if $breakpoint == iphone {
-    /* 320px/16px = 20em | 480px/16px = 30em */ 
+    /* 320px/16px = 20em | 480px/16px = 30em */
     @media (min-width: 20em) and (max-width: 30em) {
       @content;
     }

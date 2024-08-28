@@ -1,3 +1,30 @@
+export const Colors = [
+  "orange",
+  "green",
+  "blue",
+  "brown",
+  "green",
+  "darkblue",
+  "cyan",
+  "red",
+  "gray",
+  "lightblue",
+  "darkgreen",
+  "orange",
+  "pink",
+  "lavender",
+  "lightgreen",
+  "yellow",
+  "turquoise",
+  "silver",
+  "crimson",
+  "lightpink",
+  "goldenrod",
+  "forestgreen",
+  "lightblue",
+  "khaki"
+]
+
 export const toursData = [
   {
     id: 1,
@@ -508,7 +535,7 @@ export const toursData = [
   {
     id: 20,
     cardHeading: "Lovers' Escape to Paris",
-    backgroundColor: "lightpink",
+    backgroundColor: "pink",
     price: "₹95000",
     category: "Couple Tours",
     details: [

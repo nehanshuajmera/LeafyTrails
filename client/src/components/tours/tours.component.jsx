@@ -20,7 +20,6 @@ export const Tours = () => {
   const handleClosePopup = () => {
     setActivePopup(null);
   };
-
   return (
     <div className="tours">
       <h2 className="heading-secondary" id="tours">

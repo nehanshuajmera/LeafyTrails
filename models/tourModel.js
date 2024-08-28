@@ -5,6 +5,7 @@ export const tourSchema = new Schema({
   cardHeading: {
     type: String,
     required: true,
+    unique: true,
   },
   backgroundColor: {
     type: String,

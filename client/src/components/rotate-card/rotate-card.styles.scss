@@ -1,5 +1,12 @@
 @import "../../App.scss";
 
+/* background image - frontside, 
+card heading background - frontside, 
+background color - backside 
+styles(css) is written in sass folder _card.color.scss, 
+any updation to this particular part need to be done their 
+in order to achieve needed styles related to this 3D card */ 
+
 /* main container, that contains card as one entity */
 /* 3D effect property container */
 .rotate-card {
@@ -54,36 +61,6 @@
       }
     }
 
-    /* Statically typed background image for front side of card */
-    .picture-orange {
-      background-image: linear-gradient(
-          to right bottom,
-          $light-orange,
-          $dark-orange
-        ),
-        url("../../assets/card-1.jpg");
-    }
-
-    /* Statically typed background image for front side of card */
-    .picture-green {
-      background-image: linear-gradient(
-          to right bottom,
-          $light-green,
-          $dark-green
-        ),
-        url("../../assets/card-2.jpg");
-    }
-
-    /* Statically typed background image for front side of card */
-    .picture-blue {
-      background-image: linear-gradient(
-          to right bottom,
-          $light-blue,
-          $dark-blue
-        ),
-        url("../../assets/card-3.jpg");
-    }
-
     /* Main heading of card i.e. title of card styles */
     .card__heading {
       text-align: right;
@@ -109,33 +86,6 @@
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
       }
-    }
-
-    /* heading background color style */
-    .heading-orange {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($light-orange, 0.85),
-        rgba($dark-orange, 0.85)
-      );
-    }
-
-    /* heading background color style */
-    .heading-green {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($light-green, 0.85),
-        rgba($dark-green, 0.85)
-      );
-    }
-
-    /* heading background color style */
-    .heading-blue {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba($light-blue, 0.85),
-        rgba($dark-blue, 0.85)
-      );
     }
 
     /* card content style */
@@ -189,29 +139,6 @@
         }
       }
     }
-  }
-
-  /* style background of back side of card */
-  .back-orange {
-    background-image: linear-gradient(
-      to right bottom,
-      $light-orange,
-      $dark-orange
-    );
-  }
-
-  /* style background of back side of card */
-  .back-green {
-    background-image: linear-gradient(
-      to right bottom,
-      $light-green,
-      $dark-green
-    );
-  }
-
-  /* style background of back side of card */
-  .back-blue {
-    background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
   }
 
   &:hover .card__side--front {
