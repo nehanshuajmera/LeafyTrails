@@ -8,14 +8,12 @@ import { storyRoutes } from "./routes/storyRoute.js";
 import { tourRoutes } from "./routes/tourRoute.js";
 
 const PORT = process.env.PORT;
-const FRONT_PROD = process.env.FRONT_PROD;
-const FRONT_DEV = process.env.FRONT_DEV;
 
 const app = express();
 
 // CORS options based on environment
 const corsOptions = {
-  origin: [FRONT_PROD, FRONT_DEV],
+  origin: ["https://leafytrails.netlify.app", "http://localhost:5173"],
   credentials: true, // Allow credentials such as cookies to be sent
 };
 
