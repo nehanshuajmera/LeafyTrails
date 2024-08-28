@@ -31,7 +31,7 @@ export const Stories = () => {
       </h2>
       <div className="stories__container">
         {stories &&
-          stories.map((story) => (
+          stories.slice(0, 2).map((story) => (
             <TestimonialCard
               key={story._id}
               title={story.title}

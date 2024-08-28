@@ -7,12 +7,14 @@ import cookieParser from "cookie-parser";
 import { storyRoutes } from "./routes/storyRoute.js";
 
 const PORT = process.env.PORT;
+const FRONT_PROD = process.env.FRONT_PROD;
+const FRONT_DEV = process.env.FRONT_DEV;
 
 const app = express();
 
 // CORS options based on environment
 const corsOptions = {
-  origin: "https://leafytrails.netlify.app",
+  origin: [FRONT_PROD, FRONT_DEV],
   credentials: true, // Allow credentials such as cookies to be sent
 };
 
