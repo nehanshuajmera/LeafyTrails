@@ -12,7 +12,7 @@ const app = express();
 
 // CORS options based on environment
 const corsOptions = {
-  origin: "https://leafytrails.netlify.app/",
+  origin: "https://leafytrails.netlify.app",
   credentials: true, // Allow credentials such as cookies to be sent
 };
 
