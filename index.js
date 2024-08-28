@@ -12,7 +12,10 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https:leafytrails.netlify.app',
+  credentials: true,
+}));
 app.use(cookieParser());
 app.use(express.static("./public"));
 
