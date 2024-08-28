@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ToursContext } from "../../contexts/tour.context";
 import { GridLayout3x1 } from "../../layout/grid-3x1/grid-layout3x1.component";
 import { RotateCard } from "../rotate-card/rotate-card.component";
 import { AnimatedButton } from "../animated-button/animated-button.component";
@@ -6,9 +7,10 @@ import { Popup } from "../popup/popup.component";
 import "./tours.styles.scss";
 
 // importing data
-import { toursData } from "./tour-data";
+// import { toursData } from "./tour-data";
 
 export const Tours = () => {
+  const { tours, loading, error } = useContext(ToursContext);
   const [activePopup, setActivePopup] = useState(null);
 
   const handleOpenPopup = (tour) => {
@@ -25,9 +27,15 @@ export const Tours = () => {
         Most popular tours
       </h2>
       <div className="tours__cards">
+        {loading && <div className="loading--data">Loading.....</div>}
+        {error && (
+          <div className="error--fetching">
+            <span>Error Fetching Tours:</span> <span>{error}</span>
+          </div>
+        )}
         <GridLayout3x1>
-          {toursData &&
-            toursData
+          {tours &&
+            tours
               .filter((tour) => tour.category === "Popular Tours")
               .slice(0, 3)
               .map((tour) => (

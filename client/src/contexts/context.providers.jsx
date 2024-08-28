@@ -1,9 +1,12 @@
 import { StoryProvider } from "./story.context.jsx";
+import { ToursProvider } from "./tour.context.jsx";
 
-export const ContextProviders = ({children}) => {
+export const ContextProviders = ({ children }) => {
   return (
     <StoryProvider>
-      {children}
+      <ToursProvider>
+        {children}
+      </ToursProvider>
     </StoryProvider>
-  )
-}
+  );
+};

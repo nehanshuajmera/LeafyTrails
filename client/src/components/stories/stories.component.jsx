@@ -19,7 +19,11 @@ export const Stories = () => {
       </h2>
       <div className="stories__container">
         {loading && <div className="loading--data">Loading.....</div>}
-        {error && <div className="error--fetching">Error Fetching Data: {error}</div>}
+        {error && (
+          <div className="error--fetching">
+            <span>Error Fetching Stories:</span> <span>{error}</span>
+          </div>
+        )}
         {stories &&
           stories
             .slice(0, 2)
