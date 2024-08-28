@@ -7,18 +7,22 @@ import cookieParser from "cookie-parser";
 import { storyRoutes } from "./routes/storyRoute.js";
 
 const PORT = process.env.PORT;
-const FRONTEND_URL = process.env.FRONTEND_URL;
+const FRONTEND_URL_PROD = process.env.FRONTEND_URL_PROD;
+const FRONTEND_URL_DEV = process.env.FRONTEND_URL_DEV;
 
 const app = express();
 
-const corsOption = {
-  origin: FRONTEND_URL,
-  credentials: true,
+const isProduction = process.env.NODE_ENV === 'production';
+
+// CORS options based on environment
+const corsOptions = {
+  origin: isProduction ? FRONTEND_URL_PROD : FRONTEND_URL_DEV,
+  credentials: true, // Allow credentials such as cookies to be sent
 };
 
 // Middleware
 app.use(express.json());
-app.use(cors(corsOption));
+app.use(cors(corsOptions));
 app.use(cookieParser());
 app.use(express.static("./public"));
 
