@@ -11,16 +11,17 @@ export const Header = () => {
   let backgroundClass = "";
 
   if (route === "/about") {
-    backgroundClass = "header--about";
+    backgroundClass = "header--default header--about";
   } else if (route === "/tours") {
-    backgroundClass = "header--tours";
+    backgroundClass = "header--default header--tours";
   } else if (route === "/stories") {
-    backgroundClass = "header--story";
+    backgroundClass = "header--default header--story";
   } else if (route === "/booking") {
-    backgroundClass = "header--booking";
+    backgroundClass = "header--default header--booking";
   } else {
     backgroundClass = "header--default"; // For the home page or other routes
   }
+  
 
   return (
     <>

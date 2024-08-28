@@ -15,43 +15,31 @@
   &--default {
     background-image: linear-gradient(
       to right bottom,
-      rgba(46, 49, 146, 0.7),
-      rgba(27, 255, 255, 0.7)
+      rgba(46, 49, 146, 0.6),
+      rgba(27, 255, 255, 0.6)
     ),
-    url("../../assets/hero-small.jpg");
+    url("../../assets/header--default.jpg");
   }
 
   &--about {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(46, 49, 146, 0.6),
-      rgba(27, 255, 255, 0.6)
-    ),
-    url("../../assets/header-about-small.jpg");
-
-    // @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-    //   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
-    //   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 90vh, 0 75vh);
-    // }
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 95vh, 0 75vh);
+    }
   }
 
   &--tours {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(46, 49, 146, 0.7),
-      rgba(27, 255, 255, 0.7)
-    ),
-    url("../../assets/header-tours-small.jpg");
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 95vh, 0 75vh);
+    }
   }
 
   &--story {
-    background-image: linear-gradient(
-      to right bottom,
-      rgba(46, 49, 146, 0.6),
-      rgba(27, 255, 255, 0.6)
-    ),
-    url("../../assets/header-story-small.jpg");
-    background-position: top;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 75vh);
+      clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 95vh, 0 75vh);
+    }
   }
 
   &--booking {
@@ -60,7 +48,7 @@
       rgba(46, 49, 146, 0.6),
       rgba(27, 255, 255, 0.6)
     ),
-    url("../../assets/header-booking-small.jpeg");
+    url("../../assets/booking-bg.jpeg");
   }
 
   /* media query */ 
