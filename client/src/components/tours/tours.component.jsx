@@ -28,6 +28,7 @@ export const Tours = () => {
         <GridLayout3x1>
           {toursData &&
             toursData
+              .filter((tour) => tour.category === "Popular Tours")
               .slice(0, 3)
               .map((tour) => (
                 <RotateCard
