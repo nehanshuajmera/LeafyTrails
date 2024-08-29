@@ -1,6 +1,6 @@
 import { AnimatedButton } from "../animated-button/animated-button.component";
 import "./rotate-card.styles.scss";
-import './card.colors.scss';
+import './rotate-card.colors.scss';
 
 export const RotateCard = ({
   backgroundColor,

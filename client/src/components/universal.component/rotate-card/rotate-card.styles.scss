@@ -3,7 +3,7 @@
 /* background image - frontside, 
 card heading background - frontside, 
 background color - backside 
-styles(css) is written in sass folder _card.color.scss, 
+styles(css) is written in rotate-card folder rotate-card.color.scss, 
 any updation to this particular part need to be done their 
 in order to achieve needed styles related to this 3D card */ 
 
@@ -69,15 +69,15 @@ in order to achieve needed styles related to this 3D card */
       text-transform: uppercase;
       color: $color-white;
       font-weight: 300;
-      width: 75%;
+      width: 80%;
       position: absolute;
-      top: 9rem;
+      top: 8rem;
       right: 1.5rem;
       font-family: "merriweather";
     }
 
     .card-heading-span {
-      padding: 0.5rem 1.5rem;
+      padding: 0.5rem 1rem;
 
       /* Future query: if browser supports it then apply */
       @supports (-webkit-box-decoration-break: clone) and
@@ -95,7 +95,7 @@ in order to achieve needed styles related to this 3D card */
       ul {
         margin: 0 auto;
         list-style: none;
-        width: 80%;
+        width: 90%;
 
         li {
           font-size: 1.5rem;

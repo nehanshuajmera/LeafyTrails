@@ -15,12 +15,12 @@ export const Tours = () => {
 
   const handleOpenPopup = (tour) => {
     setActivePopup(tour);
-    navigate(`${location.pathname}?tourId=${tour._id}`);  // Update URL with tour ID
+    navigate(`${location.pathname}?tourId=${tour._id}`); // Update URL with tour ID
   };
 
   const handleClosePopup = () => {
     setActivePopup(null);
-    navigate(location.pathname);  // Remove tour ID from the URL when closing popup
+    navigate(location.pathname); // Remove tour ID from the URL when closing popup
   };
 
   return (

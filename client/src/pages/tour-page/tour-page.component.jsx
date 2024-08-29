@@ -1,3 +1,4 @@
+import { FeaturedTours } from "../../components/tours.component/featured-tours/featured-tours.component";
 import { LandingGallery } from "../../components/tours.component/landing-gallery/landing-gallery.component";
 import { SignatureTours } from "../../components/tours.component/signature-tours/signature-tours.component";
 import "./tour-page.styles.scss";
@@ -14,6 +15,7 @@ export const TourPage = () => {
 
       <LandingGallery/>
 
+      <FeaturedTours />
       <div className="tour__page--card">
         <SignatureTours />
       </div>
