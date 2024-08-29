@@ -2,8 +2,8 @@ import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 
 /* universal component import */
-import { Header } from "./components/header/header.component";
-import { Footer } from "./components/footer/footer.component";
+import { Header } from "./components/universal.component/header/header.component";
+import { Footer } from "./components/universal.component/footer/footer.component";
 
 /* pages import */
 import { HomePage } from "./pages/homepage/homepage-component";

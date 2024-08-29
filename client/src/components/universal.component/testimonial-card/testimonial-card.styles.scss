@@ -1,0 +1,100 @@
+@import "../../../App.scss";
+
+.testimonial-card {
+  width: 60%;
+  padding: 4rem;
+  padding-left: 8rem;
+  background-color: rgba($color-white, 0.5);
+  border-radius: 0.3rem;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.15);
+  font-size: 1.6rem;
+  transform: skewX(-12deg);
+
+  @include responsive(iphone) {
+    width: 75%;
+  }
+
+  @include responsive(android) {
+    width: 75%;
+  }
+
+  @include responsive(ipad) {
+    width: 75%;
+  }
+
+  @include responsive(tab) {
+    width: 75%;
+  }
+
+  &__image--shape {
+    height: 15rem;
+    width: 15rem;
+    float: left;
+    transform: translateX(-4rem) skewX(12deg);
+    position: relative;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+
+    @supports (shape-outside: circle()) and (-webkit-shape-outside: circle()) {
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+    }
+
+    @supports (-webkit-clip-path: circle()) and (clip-path: circle()) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+    }
+  }
+
+  .testimonial--image {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    transform: translateX(-4rem) scale(1.2);
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  .image--caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  &__content {
+    transform: skewX(12deg);
+    padding: 0.5rem 0;
+  }
+
+  .heading-tertiary {
+    font-family: "merriweather";
+    font-style: italic;
+    letter-spacing: 1.2px;
+    font-size: 1.6rem;
+  }
+
+  .testimonial__content--desc {
+    line-height: 2.5rem;
+  }
+
+  &:hover .image--caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover .testimonial--image {
+    filter: blur(3px) brightness(90%);
+    transform: translateX(-4rem) scale(1);
+  }
+}

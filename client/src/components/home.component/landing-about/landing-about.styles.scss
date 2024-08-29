@@ -1,0 +1,195 @@
+@import "../../../App.scss";
+
+.landing-about {
+  height: 120vh;
+  margin-top: -20vh;
+  background-image: linear-gradient(to right, $dark-grey, $light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* media query */
+  @include responsive(iphone) {
+    height: auto;
+    min-height: 95vh;
+    margin-top: -10vh;
+    padding-top: 14vh;
+    justify-content: start;
+  }
+
+  @include responsive(android) {
+    height: auto;
+    min-height: 95vh;
+    margin-top: -10vh;
+    padding-top: 14vh;
+    justify-content: start;
+  }
+
+  @include responsive(ipad) {
+    height: auto;
+    min-height: 100vh;
+    margin-top: -10vh;
+    padding-top: 12vh;
+    justify-content: start;
+  }
+
+  @include responsive(tab) {
+    height: auto;
+    min-height: 100vh;
+    margin-top: -10vh;
+    padding-top: 12vh;
+    justify-content: start;
+  }
+
+  @include responsive(desktop) {
+    height: auto;
+    min-height: 120vh;
+    padding-top: 10rem;
+  }
+
+  .landing-about__grid--content {
+    font-size: 1.6rem;
+
+    @include responsive(iphone) {
+      font-size: 2.4rem;
+    }
+
+    @include responsive(android) {
+      font-size: 2.4rem;
+    }
+
+    @include responsive(ipad) {
+      font-size: 2.4rem;
+    }
+
+    @include responsive(tab) {
+      font-size: 2.4rem;
+    }
+
+    @include responsive(desktop) {
+      font-size: 2.4rem;
+    }
+
+    .heading-tertiary {
+      font-family: "merriweather";
+      font-style: italic;
+
+      @include responsive(iphone) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(android) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(ipad) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(tab) {
+        font-size: 2.4rem;
+      }
+
+      @include responsive(desktop) {
+        font-size: 2.4rem;
+      }
+    }
+
+    .grid__content--paragraph {
+      font-weight: 400;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .landing-about__grid--images {
+    .composition {
+      position: relative;
+
+      &__photo {
+        width: 55%;
+        position: absolute;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        z-index: 1;
+        transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        outline-offset: 1.8rem;
+        cursor: pointer;
+
+        @include responsive(iphone) {
+          width: 60%;
+        }
+
+        @include responsive(android) {
+          width: 60%;
+        }
+
+        &--p1 {
+          top: -2rem;
+          left: 0;
+
+          @include responsive(desktop) {
+            top: 8rem;
+          }
+
+          &:hover {
+            outline: 1.5rem solid $outline-primary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-primary;
+            }
+          }
+        }
+
+        &--p2 {
+          right: 0;
+          top: 2rem;
+
+          @include responsive(desktop) {
+            top: 13rem;
+          }
+
+          &:hover {
+            outline: 1.5rem solid $outline-secondary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-secondary;
+            }
+          }
+        }
+
+        &--p3 {
+          top: 8rem;
+          left: 20%;
+
+          @include responsive(desktop) {
+            top: 20rem;
+            left: 15%;
+          }
+
+          &:hover {
+            outline: 1.5rem solid $outline-tertiary;
+
+            @include responsive(tab) {
+              outline: 2rem solid $outline-tertiary;
+            }
+          }
+        }
+
+        &:hover {
+          z-index: 10;
+          transform: scale(1.05) translateY(-0.5rem);
+          box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+        }
+      }
+
+      &:hover {
+        .composition__photo:not(:hover) {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}

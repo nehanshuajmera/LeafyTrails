@@ -1,0 +1,64 @@
+@import "../../../App.scss";
+
+.stories {
+  height: 130vh;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  @include responsive(iphone) {
+    height: 80vh;
+  }
+
+  @include responsive(android) {
+    height: 80vh;
+  }
+
+  @include responsive(ipad) {
+    height: 80vh;
+  }
+
+  @include responsive(tab) {
+    height: 80vh;
+  }
+
+  @include responsive(desktop) {
+    height: 100vh;
+  }
+
+  .heading-secondary {
+    background-image: linear-gradient(
+      to right,
+      $outline-primary,
+      $outline-secondary
+    );
+    text-align: center;
+
+    @include responsive(iphone) {
+      margin: 0 1rem;
+    }
+
+    @include responsive(android) {
+      margin: 0 1rem;
+    }
+
+    @include responsive(ipad) {
+      margin: 0 2rem;
+    }
+
+    @include responsive(tab) {
+      margin: 0 2rem;
+    }
+  }
+
+  &__container {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}

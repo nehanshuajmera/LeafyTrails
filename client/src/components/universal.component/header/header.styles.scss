@@ -1,0 +1,145 @@
+@import "../../../App.scss";
+
+.header {
+  height: 95vh;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+  &--default {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(46, 49, 146, 0.6),
+        rgba(27, 255, 255, 0.6)
+      ),
+      url("../../../assets/header--default.jpg");
+  }
+
+  &--about {
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+      clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+    }
+  }
+
+  &--tours {
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+      clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+    }
+  }
+
+  &--story {
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+      clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+    }
+  }
+
+  &--booking {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(46, 49, 146, 0.6),
+        rgba(27, 255, 255, 0.6)
+      ),
+      url("../../../assets/booking-bg.jpeg");
+  }
+
+  /* media query */
+  @include responsive(iphone) {
+    height: 50vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
+  }
+
+  @include responsive(android) {
+    height: 50vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
+  }
+
+  @include responsive(ipad) {
+    height: 60vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+    }
+  }
+
+  @include responsive(tab) {
+    height: 70vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    }
+  }
+
+  .header__logo-box {
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+
+    @include responsive(iphone) {
+      top: 2rem;
+      left: 2.5rem;
+    }
+
+    @include responsive(android) {
+      top: 2rem;
+      left: 2.5rem;
+    }
+
+    @include responsive(ipad) {
+      top: 2.5rem;
+      left: 3rem;
+    }
+
+    @include responsive(tab) {
+      top: 1rem;
+      left: 3rem;
+    }
+
+    .header__logo {
+      height: 15rem;
+      cursor: pointer;
+    }
+  }
+
+  .header__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @include responsive(iphone) {
+      width: 80%;
+    }
+
+    @include responsive(android) {
+      width: 80%;
+    }
+
+    @include responsive(ipad) {
+      width: 80%;
+    }
+
+    @include responsive(tab) {
+      width: 80%;
+    }
+
+    @include responsive(desktop) {
+      width: 80%;
+    }
+  }
+}

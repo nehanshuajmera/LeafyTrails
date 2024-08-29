@@ -1,0 +1,88 @@
+@import "../../../App.scss";
+
+.input-group {
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  .form-input {
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    border: none;
+    font-family: inherit;
+    color: inherit;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    width: 90%;
+    display: block;
+    background-color: rgba($color-white, .4);
+    transition: all .5s;
+
+    @include responsive(iphone) {
+      width: 85%;
+      font-size: 1.6rem;
+    }
+
+    @include responsive(android) {
+      width: 85%;
+      font-size: 1.6rem;
+    }
+
+    @include responsive(ipad) {
+      width: 85%;
+      font-size: 1.6rem;
+    }
+
+    @include responsive(tab) {
+      width: 85%;
+      font-size: 1.8rem;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom: 3px solid $outline-secondary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+
+      &:invalid {
+        border-bottom: 3px solid $error;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      color: #888;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+  }
+
+  .form-input-label {
+    display: block;
+    margin: 1rem 0 0 1.2rem;
+    font-size: 1.4rem;
+    color: #888;
+    font-weight: 700;
+    transition: all .4s;
+
+    @include responsive(iphone) {
+      font-size: 1.6rem;
+    }
+
+    @include responsive(android) {
+      font-size: 1.6rem;
+    }
+
+    @include responsive(ipad) {
+      font-size: 1.6rem;
+    }
+
+    @include responsive(tab) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .form-input:placeholder-shown + .form-input-label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+  }
+}

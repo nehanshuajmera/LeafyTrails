@@ -1,0 +1,18 @@
+@import '../../App.scss';
+
+.tour-page {
+  margin-top: -25vh;
+  padding-top: 15vh;
+  @include linearGradient($dark-grey, $light-grey);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .heading-secondary {
+    margin: 2rem;
+  }
+
+  
+}

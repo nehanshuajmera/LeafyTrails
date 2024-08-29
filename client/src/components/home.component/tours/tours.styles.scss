@@ -1,0 +1,46 @@
+@import "../../../App.scss";
+
+.tours {
+  margin-top: -7rem;
+  padding-top: 6rem;
+  height: 130vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to right,
+    $dark-grey,
+    $light-grey
+  );
+
+  @include responsive(iphone){
+    padding-top: 7rem;
+    min-height: 90vh;
+    height: auto;
+  }
+
+  @include responsive(android){
+    padding-top: 7rem;
+    min-height: 90vh;
+    height: auto; 
+  }
+
+  @include responsive(ipad){
+    padding-top: 7rem;
+    min-height: 150vh;
+    height: auto;
+  }
+
+  @include responsive(tab){
+    padding-top: 7rem;
+    min-height: 150vh;
+    height: auto;
+  }
+
+  @include responsive(desktop){
+    padding-top: 7rem;
+    min-height: 120vh;
+    height: auto;
+  }
+}

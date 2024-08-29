@@ -4,15 +4,15 @@
 /* Background Image Card Front Side */
 /* Statically typed background image for front side of card */
 .picture-orange {
-  @include gradientImage($light-orange, $dark-orange, "../../assets/card-1.jpg");
+  @include gradientImage($light-orange, $dark-orange, "../../../assets/card-1.jpg");
 }
 
 .picture-green {
-  @include gradientImage($light-green, $dark-green, "../../assets/card-2.jpg");
+  @include gradientImage($light-green, $dark-green, "../../../assets/card-2.jpg");
 }
 
 .picture-blue {
-  @include gradientImage($light-blue, $dark-blue, "../../assets/card-3.jpg");
+  @include gradientImage($light-blue, $dark-blue, "../../../assets/card-3.jpg");
 }
 
 .picture-brown {

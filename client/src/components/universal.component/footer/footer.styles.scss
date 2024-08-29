@@ -1,0 +1,242 @@
+@import "../../../App.scss";
+
+.footer {
+  height: 98vh;
+  padding: 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(#09c6f9, 0.8),
+    rgba(#045de9, 0.8)
+  );
+  font-family: "Merriweather";
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+
+  @include responsive(iphone) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
+  @include responsive(android) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
+  @include responsive(ipad) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
+  @include responsive(tab) {
+    height: 35vh;
+    padding: 3rem;
+    justify-content: space-evenly;
+  }
+
+  &__tagline {
+    width: 90%;
+    height: fit-content;
+
+    @include responsive(iphone) {
+      width: 100%;
+    }
+
+    @include responsive(android) {
+      width: 100%;
+    }
+
+    @include responsive(ipad) {
+      width: 100%;
+    }
+
+    @include responsive(tab) {
+      width: 100%;
+    }
+
+    &--main {
+      font-size: 7rem;
+      margin-bottom: 3rem;
+      font-weight: 500;
+
+      @include responsive(iphone) {
+        font-size: 4.5rem;
+      }
+
+      @include responsive(android) {
+        font-size: 4.5rem;
+      }
+
+      @include responsive(ipad) {
+        font-size: 6rem;
+      }
+
+      @include responsive(tab) {
+        font-size: 6rem;
+      }
+    }
+
+    &--sub {
+      font-size: 4rem;
+      font-weight: 300;
+
+      @include responsive(iphone) {
+        font-size: 3rem;
+      }
+
+      @include responsive(android) {
+        font-size: 3rem;
+      }
+
+      @include responsive(ipad) {
+        font-size: 4rem;
+      }
+
+      @include responsive(tab) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  &__logo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+
+    @include responsive(iphone) {
+      width: 100%;
+    }
+
+    @include responsive(android) {
+      width: 100%;
+    }
+
+    @include responsive(ipad) {
+      width: 100%;
+    }
+
+    @include responsive(tab) {
+      width: 100%;
+    }
+
+    .footer__logo {
+      width: 20rem;
+      height: 20rem;
+
+      @include responsive(iphone) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include responsive(android) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include responsive(ipad) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      @include responsive(tab) {
+        width: 15rem;
+        height: 15rem;
+      }
+
+      & img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 70%;
+
+      .webpage__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .page-link {
+          padding: 1.5rem;
+          font-size: 2rem;
+          transition: all 0.5s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+            text-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
+            color: $outline-secondary;
+
+            @include responsive(iphone) {
+              transform: scale(1);
+            }
+
+            @include responsive(android) {
+              transform: scale(1);
+            }
+
+            @include responsive(ipad) {
+              transform: scale(1);
+            }
+
+            @include responsive(tab) {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+
+      .social-media__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: flex-end;
+
+        .media-link {
+          width: 6rem;
+          height: 6rem;
+          padding: 1.5rem;
+
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+
+          & img {
+            height: 100%;
+            transition: all 0.5s;
+
+            &:hover {
+              transform: scale(1.1);
+              box-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
+
+              @include responsive(iphone) {
+                transform: scale(1);
+              }
+
+              @include responsive(android) {
+                transform: scale(1);
+              }
+
+              @include responsive(ipad) {
+                transform: scale(1);
+              }
+
+              @include responsive(tab) {
+                transform: scale(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

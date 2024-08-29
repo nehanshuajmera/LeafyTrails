@@ -1,0 +1,129 @@
+@import "../../../App.scss";
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: rgba($color-black, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+
+  &__content {
+    width: 75%;
+    background-color: $color-white;
+    border-radius: 5px;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    display: table;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+    -webkit-transition: all 0.4s 0.2s ;
+    -moz-transition: all 0.4s 0.2s;
+    -ms-transition: all 0.4s 0.2s;
+    -o-transition: all 0.4s 0.2s;
+    transition: all 0.4s 0.2s;
+  }
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &--open &__content--open {
+    opacity: 1;
+    -webkit-transform: scale(01);
+    -moz-transform: scale(01);
+    -ms-transform: scale(01);
+    -o-transform: scale(01);
+    transform: scale(01);
+  }
+
+  &__left {
+    width: 33.333333%;
+    display: table-cell;
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+  }
+
+  &__right {
+    width: 66.666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3.5rem;
+      line-height: 0;
+      display: block;
+      transition: all 0.2s;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      color: $outline-primary;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.2;
+
+    -webkit-column-count: 2; /* Safari and Chrome */
+    -moz-column-count: 2; /* Firefox */
+    -ms-column-count: 2; /* Internet Explorer 10+ */
+    column-count: 2; /* Standard syntax */
+
+    -webkit-column-gap: 5rem;
+    -moz-column-gap: 5rem;
+    -ms-column-gap: 5rem;
+    column-gap: 5rem;
+
+    -webkit-column-rule: 0.2rem solid #eaeaea;
+    -moz-column-rule: 0.2rem solid #eaeaea;
+    -ms-column-rule: 0.2rem solid #eaeaea;
+    column-rule: 0.2rem solid #eaeaea;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
+}
