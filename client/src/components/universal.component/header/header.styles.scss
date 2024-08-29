@@ -29,9 +29,10 @@
   }
 
   &--tours {
+    height: 75vh;
     @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
-      clip-path: polygon(0 0, 100% 0, 100% 70vh, 50% 85vh, 0 70vh);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+      clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
     }
   }
 

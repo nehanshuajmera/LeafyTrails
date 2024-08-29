@@ -6,7 +6,6 @@ import { AnimatedButton } from "../../universal.component/animated-button/animat
 import { Popup } from "../../universal.component/popup/popup.component";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./tours.styles.scss";
-import './card.colors.scss';
 
 export const Tours = () => {
   const { tours, loading, error } = useContext(ToursContext);
