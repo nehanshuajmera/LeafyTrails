@@ -1,244 +1,292 @@
-/* card colors */
-/* card-section */
+// /* card colors */
+// /* card-section */
 
-/* Background Image Card Front Side */
-/* Statically typed background image for front side of card */
-.picture-orange {
-  @include gradientImage($light-orange, $dark-orange, "../../../assets/card-1.jpg");
-}
+// /* Background Image Card Front Side */
+// /* Statically typed background image for front side of card */
+// .picture-orange {
+//   @include gradientImage(
+//     $light-orange,
+//     $dark-orange,
+//     "../../../assets/card-1.jpg"
+//   );
+// }
 
-.picture-green {
-  @include gradientImage($light-green, $dark-green, "../../../assets/card-2.jpg");
-}
+// .picture-green {
+//   @include gradientImage(
+//     $light-green,
+//     $dark-green,
+//     "../../../assets/card-2.jpg"
+//   );
+// }
 
-.picture-blue {
-  @include gradientImage($light-blue, $dark-blue, "../../../assets/card-3.jpg");
-}
+// .picture-blue {
+//   @include gradientImage($light-blue, $dark-blue, "../../../assets/card-3.jpg");
+// }
 
-.picture-brown {
-  @include gradientImage($light-brown, $dark-brown, "../../assets/card-4.jpg");
-}
+// .picture-brown {
+//   @include gradientImage($light-brown, $dark-brown, "../../assets/card-4.jpg");
+// }
 
-.picture-darkblue {
-  @include gradientImage($light-dark-blue, $dark-dark-blue, "../../assets/card-5.jpg");
-}
+// .picture-darkblue {
+//   @include gradientImage(
+//     $light-dark-blue,
+//     $dark-dark-blue,
+//     "../../assets/card-5.jpg"
+//   );
+// }
 
-.picture-cyan {
-  @include gradientImage($light-cyan, $dark-cyan, "../../assets/card-6.jpg");
-}
+// .picture-cyan {
+//   @include gradientImage($light-cyan, $dark-cyan, "../../assets/card-6.jpg");
+// }
 
-.picture-red {
-  @include gradientImage($light-red, $dark-red, "../../assets/card-7.jpg");
-}
+// .picture-red {
+//   @include gradientImage($light-red, $dark-red, "../../assets/card-7.jpg");
+// }
 
-.picture-gray {
-  @include gradientImage($light-gray, $dark-gray, "../../assets/card-8.jpg");
-}
+// .picture-gray {
+//   @include gradientImage($light-gray, $dark-gray, "../../assets/card-8.jpg");
+// }
 
-.picture-lightblue {
-  @include gradientImage($light-light-blue, $dark-light-blue, "../../assets/card-9.jpg");
-}
+// .picture-lightblue {
+//   @include gradientImage(
+//     $light-light-blue,
+//     $dark-light-blue,
+//     "../../assets/card-9.jpg"
+//   );
+// }
 
-.picture-darkgreen {
-  @include gradientImage($light-dark-green, $dark-dark-green, "../../assets/card-10.jpg");
-}
+// .picture-darkgreen {
+//   @include gradientImage(
+//     $light-dark-green,
+//     $dark-dark-green,
+//     "../../assets/card-10.jpg"
+//   );
+// }
 
-.picture-pink {
-  @include gradientImage($light-pink, $dark-pink, "../../assets/card-11.jpg");
-}
+// .picture-pink {
+//   @include gradientImage($light-pink, $dark-pink, "../../assets/card-11.jpg");
+// }
 
-.picture-lavender {
-  @include gradientImage($light-lavender, $dark-lavender, "../../assets/card-12.jpg");
-}
+// .picture-lavender {
+//   @include gradientImage(
+//     $light-lavender,
+//     $dark-lavender,
+//     "../../assets/card-12.jpg"
+//   );
+// }
 
-.picture-yellow {
-  @include gradientImage($light-yellow, $dark-yellow, "../../assets/card-13.jpg");
-}
+// .picture-yellow {
+//   @include gradientImage(
+//     $light-yellow,
+//     $dark-yellow,
+//     "../../assets/card-13.jpg"
+//   );
+// }
 
-.picture-turquoise {
-  @include gradientImage($light-turquoise, $dark-turquoise, "../../assets/card-14.jpg");
-}
+// .picture-turquoise {
+//   @include gradientImage(
+//     $light-turquoise,
+//     $dark-turquoise,
+//     "../../assets/card-14.jpg"
+//   );
+// }
 
-.picture-silver {
-  @include gradientImage($light-silver, $dark-silver, "../../assets/card-15.jpg");
-}
+// .picture-silver {
+//   @include gradientImage(
+//     $light-silver,
+//     $dark-silver,
+//     "../../assets/card-15.jpg"
+//   );
+// }
 
-.picture-crimson {
-  @include gradientImage($light-crimson, $dark-crimson, "../../assets/card-16.jpg");
-}
+// .picture-crimson {
+//   @include gradientImage(
+//     $light-crimson,
+//     $dark-crimson,
+//     "../../assets/card-16.jpg"
+//   );
+// }
 
-.picture-goldenrod {
-  @include gradientImage($light-goldenrod, $dark-goldenrod, "../../assets/card-17.jpg");
-}
+// .picture-goldenrod {
+//   @include gradientImage(
+//     $light-goldenrod,
+//     $dark-goldenrod,
+//     "../../assets/card-17.jpg"
+//   );
+// }
 
-.picture-forestgreen {
-  @include gradientImage($light-forest-green, $dark-forest-green, "../../assets/card-18.jpg");
-}
+// .picture-forestgreen {
+//   @include gradientImage(
+//     $light-forest-green,
+//     $dark-forest-green,
+//     "../../assets/card-18.jpg"
+//   );
+// }
 
-.picture-khaki {
-  @include gradientImage($light-khaki, $dark-khaki, "../../assets/card-19.jpg");
-}
+// .picture-khaki {
+//   @include gradientImage($light-khaki, $dark-khaki, "../../assets/card-19.jpg");
+// }
 
-/* --------------------- X ---------------------- */ 
+// /* --------------------- X ---------------------- */
 
-/* Card Heading Styles Front Side*/
-/* heading background color style */
-.heading-orange {
-  @include headingGradient($light-orange, $dark-orange);
-}
+// /* Card Heading Styles Front Side*/
+// /* heading background color style */
+// .heading-orange {
+//   @include headingGradient($light-orange, $dark-orange);
+// }
 
-.heading-green {
-  @include headingGradient($light-green, $dark-green);
-}
+// .heading-green {
+//   @include headingGradient($light-green, $dark-green);
+// }
 
-.heading-blue {
-  @include headingGradient($light-blue, $dark-blue);
-}
+// .heading-blue {
+//   @include headingGradient($light-blue, $dark-blue);
+// }
 
-.heading-brown {
-  @include headingGradient($light-brown, $dark-brown);
-}
+// .heading-brown {
+//   @include headingGradient($light-brown, $dark-brown);
+// }
 
-.heading-darkblue {
-  @include headingGradient($light-dark-blue, $dark-dark-blue);
-}
+// .heading-darkblue {
+//   @include headingGradient($light-dark-blue, $dark-dark-blue);
+// }
 
-.heading-cyan {
-  @include headingGradient($light-cyan, $dark-cyan);
-}
+// .heading-cyan {
+//   @include headingGradient($light-cyan, $dark-cyan);
+// }
 
-.heading-red {
-  @include headingGradient($light-red, $dark-red);
-}
+// .heading-red {
+//   @include headingGradient($light-red, $dark-red);
+// }
 
-.heading-gray {
-  @include headingGradient($light-gray, $dark-gray);
-}
+// .heading-gray {
+//   @include headingGradient($light-gray, $dark-gray);
+// }
 
-.heading-lightblue {
-  @include headingGradient($light-light-blue, $dark-light-blue);
-}
+// .heading-lightblue {
+//   @include headingGradient($light-light-blue, $dark-light-blue);
+// }
 
-.heading-darkgreen {
-  @include headingGradient($light-dark-green, $dark-dark-green);
-}
+// .heading-darkgreen {
+//   @include headingGradient($light-dark-green, $dark-dark-green);
+// }
 
-.heading-pink {
-  @include headingGradient($light-pink, $dark-pink);
-}
+// .heading-pink {
+//   @include headingGradient($light-pink, $dark-pink);
+// }
 
-.heading-lavender {
-  @include headingGradient($light-lavender, $dark-lavender);
-}
+// .heading-lavender {
+//   @include headingGradient($light-lavender, $dark-lavender);
+// }
 
-.heading-yellow {
-  @include headingGradient($light-yellow, $dark-yellow);
-}
+// .heading-yellow {
+//   @include headingGradient($light-yellow, $dark-yellow);
+// }
 
-.heading-turquoise {
-  @include headingGradient($light-turquoise, $dark-turquoise);
-}
+// .heading-turquoise {
+//   @include headingGradient($light-turquoise, $dark-turquoise);
+// }
 
-.heading-silver {
-  @include headingGradient($light-silver, $dark-silver);
-}
+// .heading-silver {
+//   @include headingGradient($light-silver, $dark-silver);
+// }
 
-.heading-crimson {
-  @include headingGradient($light-crimson, $dark-crimson);
-}
+// .heading-crimson {
+//   @include headingGradient($light-crimson, $dark-crimson);
+// }
 
-.heading-lightpink {
-  @include headingGradient($light-pink, $dark-pink);
-}
+// .heading-lightpink {
+//   @include headingGradient($light-pink, $dark-pink);
+// }
 
-.heading-goldenrod {
-  @include headingGradient($light-goldenrod, $dark-goldenrod);
-}
+// .heading-goldenrod {
+//   @include headingGradient($light-goldenrod, $dark-goldenrod);
+// }
 
-.heading-forestgreen {
-  @include headingGradient($light-forest-green, $dark-forest-green);
-}
+// .heading-forestgreen {
+//   @include headingGradient($light-forest-green, $dark-forest-green);
+// }
 
-.heading-khaki {
-  @include headingGradient($light-khaki, $dark-khaki);
-}
+// .heading-khaki {
+//   @include headingGradient($light-khaki, $dark-khaki);
+// }
 
-/* --------------------- X ---------------------- */ 
+// /* --------------------- X ---------------------- */
 
-/* Backgrounf color Backside of card */
-/* style background of back side of card */
-.back-orange {
-  @include linearGradient($light-orange, $dark-orange);
-}
+// /* Backgrounf color Backside of card */
+// /* style background of back side of card */
+// .back-orange {
+//   @include linearGradient($light-orange, $dark-orange);
+// }
 
-.back-green {
-  @include linearGradient($light-green, $dark-green);
-}
+// .back-green {
+//   @include linearGradient($light-green, $dark-green);
+// }
 
-.back-blue {
-  @include linearGradient($light-blue, $dark-blue);
-}
+// .back-blue {
+//   @include linearGradient($light-blue, $dark-blue);
+// }
 
-.back-brown {
-  @include linearGradient($light-brown, $dark-brown);
-}
+// .back-brown {
+//   @include linearGradient($light-brown, $dark-brown);
+// }
 
-.back-darkblue {
-  @include linearGradient($light-dark-blue, $dark-dark-blue);
-}
+// .back-darkblue {
+//   @include linearGradient($light-dark-blue, $dark-dark-blue);
+// }
 
-.back-cyan {
-  @include linearGradient($light-cyan, $dark-cyan);
-}
+// .back-cyan {
+//   @include linearGradient($light-cyan, $dark-cyan);
+// }
 
-.back-red {
-  @include linearGradient($light-red, $dark-red);
-}
+// .back-red {
+//   @include linearGradient($light-red, $dark-red);
+// }
 
-.back-gray {
-  @include linearGradient($light-gray, $dark-gray);
-}
+// .back-gray {
+//   @include linearGradient($light-gray, $dark-gray);
+// }
 
-.back-lightblue {
-  @include linearGradient($light-light-blue, $dark-light-blue);
-}
+// .back-lightblue {
+//   @include linearGradient($light-light-blue, $dark-light-blue);
+// }
 
-.back-darkgreen {
-  @include linearGradient($light-dark-green, $dark-dark-green);
-}
+// .back-darkgreen {
+//   @include linearGradient($light-dark-green, $dark-dark-green);
+// }
 
-.back-pink {
-  @include linearGradient($light-pink, $dark-pink);
-}
+// .back-pink {
+//   @include linearGradient($light-pink, $dark-pink);
+// }
 
-.back-lavender {
-  @include linearGradient($light-lavender, $dark-lavender);
-}
+// .back-lavender {
+//   @include linearGradient($light-lavender, $dark-lavender);
+// }
 
-.back-yellow {
-  @include linearGradient($light-yellow, $dark-yellow);
-}
+// .back-yellow {
+//   @include linearGradient($light-yellow, $dark-yellow);
+// }
 
-.back-turquoise {
-  @include linearGradient($light-turquoise, $dark-turquoise);
-}
+// .back-turquoise {
+//   @include linearGradient($light-turquoise, $dark-turquoise);
+// }
 
-.back-silver {
-  @include linearGradient($light-silver, $dark-silver);
-}
+// .back-silver {
+//   @include linearGradient($light-silver, $dark-silver);
+// }
 
-.back-crimson {
-  @include linearGradient($light-crimson, $dark-crimson);
-}
+// .back-crimson {
+//   @include linearGradient($light-crimson, $dark-crimson);
+// }
 
-.back-goldenrod {
-  @include linearGradient($light-goldenrod, $dark-goldenrod);
-}
+// .back-goldenrod {
+//   @include linearGradient($light-goldenrod, $dark-goldenrod);
+// }
 
-.back-forestgreen {
-  @include linearGradient($light-forest-green, $dark-forest-green);
-}
+// .back-forestgreen {
+//   @include linearGradient($light-forest-green, $dark-forest-green);
+// }
 
-.back-khaki {
-  @include linearGradient($light-khaki, $dark-khaki);
-}
+// .back-khaki {
+//   @include linearGradient($light-khaki, $dark-khaki);
+// }

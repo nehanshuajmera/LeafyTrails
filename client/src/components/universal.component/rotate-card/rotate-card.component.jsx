@@ -20,7 +20,7 @@ export const RotateCard = ({
         <div className="card__details">
           <ul>
             {details.map((detail) => (
-              <li key={detail.id}>{detail.item}</li>
+              <li key={detail._id}>{detail.item}</li>
             ))}
           </ul>
         </div>

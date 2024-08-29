@@ -6,6 +6,7 @@ import { AnimatedButton } from "../../universal.component/animated-button/animat
 import { Popup } from "../../universal.component/popup/popup.component";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./tours.styles.scss";
+import './card.colors.scss';
 
 export const Tours = () => {
   const { tours, loading, error } = useContext(ToursContext);
@@ -42,7 +43,7 @@ export const Tours = () => {
               .slice(0, 3)
               .map((tour) => (
                 <RotateCard
-                  key={tour.id}
+                  key={tour._id}
                   backgroundColor={tour.backgroundColor}
                   cardHeading={tour.cardHeading}
                   details={tour.details}
