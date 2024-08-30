@@ -117,6 +117,10 @@
           height: fit-content;
           position: relative;
 
+          .input-group {
+            margin-bottom: 0;
+          }
+
           .form-input {
             background-color: rgba($light-grey, .8);
             font-family: 'karla';

@@ -82,7 +82,7 @@ export const Footer = () => {
                   name="Email"
                   type="email"
                   handleChange={handleChange}
-                  // label="Email"
+                  label="Email"
                   required
                 />
                 <button onSubmit={handleSubmit} className="footer-btn">

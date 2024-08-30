@@ -13,7 +13,7 @@ export const BookingForm = () => {
       <div className="booking-form__container">
         <form className="form" onSubmit={handleSubmit}>
           <h2 className="heading-secondary utility-margin-btm-md-2">
-            Start booking now
+            Tour Inquiry Form
           </h2>
           <div className="input-container">
             <FormInput
@@ -53,7 +53,7 @@ export const BookingForm = () => {
           </div>
           <div className="form-submit-btn">
             <AnimatedButton color="blue" merriweather>
-              Next Step &nbsp;
+              Submit &nbsp;
               <i
                 className="fa-solid fa-arrow-right"
                 style={{ fontSize: "1.5rem" }}
