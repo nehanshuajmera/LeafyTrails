@@ -2,240 +2,170 @@
 
 .footer {
   height: 98vh;
-  padding: 5rem;
   background-image: linear-gradient(
     to right bottom,
-    rgba(#09c6f9, 0.8),
-    rgba(#045de9, 0.8)
+    rgba($color-dark-blue, 0.7),
+    rgba($color-light-blue, 0.7)
   );
   font-family: "Merriweather";
   font-style: italic;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
 
-  @include responsive(iphone) {
-    height: 35vh;
-    padding: 3rem;
-    justify-content: space-evenly;
-  }
-
-  @include responsive(android) {
-    height: 35vh;
-    padding: 3rem;
-    justify-content: space-evenly;
-  }
-
-  @include responsive(ipad) {
-    height: 35vh;
-    padding: 3rem;
-    justify-content: space-evenly;
-  }
-
-  @include responsive(tab) {
-    height: 35vh;
-    padding: 3rem;
-    justify-content: space-evenly;
-  }
-
-  &__tagline {
+  &__container {
     width: 90%;
-    height: fit-content;
-
-    @include responsive(iphone) {
-      width: 100%;
-    }
-
-    @include responsive(android) {
-      width: 100%;
-    }
-
-    @include responsive(ipad) {
-      width: 100%;
-    }
-
-    @include responsive(tab) {
-      width: 100%;
-    }
-
-    &--main {
-      font-size: 7rem;
-      margin-bottom: 3rem;
-      font-weight: 500;
-
-      @include responsive(iphone) {
-        font-size: 4.5rem;
-      }
-
-      @include responsive(android) {
-        font-size: 4.5rem;
-      }
-
-      @include responsive(ipad) {
-        font-size: 6rem;
-      }
-
-      @include responsive(tab) {
-        font-size: 6rem;
-      }
-    }
-
-    &--sub {
-      font-size: 4rem;
-      font-weight: 300;
-
-      @include responsive(iphone) {
-        font-size: 3rem;
-      }
-
-      @include responsive(android) {
-        font-size: 3rem;
-      }
-
-      @include responsive(ipad) {
-        font-size: 4rem;
-      }
-
-      @include responsive(tab) {
-        font-size: 4rem;
-      }
-    }
-  }
-
-  &__logo-content {
+    height: 70vh;
+    border-radius: 0.4rem;
+    background-image: linear-gradient(
+      101deg,
+      rgba($dark-grey, 1) 0%,
+      rgba($dark-grey, 1) 40%,
+      rgba($color-white, 1) 40%
+    );
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.5);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    width: 90%;
 
-    @include responsive(iphone) {
-      width: 100%;
-    }
-
-    @include responsive(android) {
-      width: 100%;
-    }
-
-    @include responsive(ipad) {
-      width: 100%;
-    }
-
-    @include responsive(tab) {
-      width: 100%;
-    }
-
-    .footer__logo {
-      width: 20rem;
-      height: 20rem;
-
-      @include responsive(iphone) {
-        width: 15rem;
-        height: 15rem;
-      }
-
-      @include responsive(android) {
-        width: 15rem;
-        height: 15rem;
-      }
-
-      @include responsive(ipad) {
-        width: 15rem;
-        height: 15rem;
-      }
-
-      @include responsive(tab) {
-        width: 15rem;
-        height: 15rem;
-      }
-
-      & img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    .footer__links {
+    &--logo {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 70%;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 25%;
+      padding: 2rem 0;
 
-      .webpage__links {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+      .logo-design {
+        width: 25%;
+        height: 2px;
+        background-color: $color-black;
+      }
+
+      .heading-secondary {
+        font-size: 4.5rem;
+        letter-spacing: 1.5px;
+        background-image: linear-gradient(to right, #000000, #130f40);
+      }
+    }
+
+    &--links {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 65%;
+
+      .heading-tertiary {
+        font-size: 2.5rem;
+        padding: 0.5rem 2rem;
+      }
+
+      .page-links {
+        width: 20%;
 
         .page-link {
-          padding: 1.5rem;
           font-size: 2rem;
-          transition: all 0.5s ease-in-out;
+          padding: 0.5rem 2rem;
+        }
+      }
 
-          &:hover {
-            transform: scale(1.1);
-            text-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
-            color: $outline-secondary;
+      .social-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-            @include responsive(iphone) {
-              transform: scale(1);
+        .social-media {
+          display: flex;
+
+          .media-link {
+            width: 5rem;
+            height: 5rem;
+            padding: 1rem;
+            margin: 0 0.5rem;
+  
+            & img {
+              width: 100%;
+              height: 100%;
             }
+          }
+        }
 
-            @include responsive(android) {
-              transform: scale(1);
-            }
+        .footer-links-design {
+          width: 15%;
+          rotate: 90deg;
+          height: 2px;
+          background-color: $color-black;
+        }
 
-            @include responsive(ipad) {
-              transform: scale(1);
-            }
+        .get-in-touch {
+          margin-bottom: 1rem;
 
-            @include responsive(tab) {
-              transform: scale(1);
+          .footer-main-heading {
+            font-size: 2.5rem;
+            padding: .5rem 0;
+          }
+
+          .footer-main-tagline {
+            font-size: 2rem;
+            padding: .5rem 0;
+            margin-bottom: 1rem;
+          }
+        }
+
+        .footer-form {
+          display: flex;
+          height: fit-content;
+          position: relative;
+
+          .form-input {
+            background-color: rgba($light-grey, .8);
+            font-family: 'karla';
+            width: 120%;
+          }
+  
+          .form-input-label {
+            font-family: 'karla';
+          }
+  
+          .footer-btn {
+            padding: .4rem;
+            border: none;
+            cursor: pointer;
+            height: 4.5rem;
+            background-color: transparent;
+            position: absolute;
+            top: 2px;
+            right: 0;
+
+            & img {
+              height: 100%;
             }
           }
         }
       }
 
-      .social-media__links {
+      .terms-conditions {
+        width: 20%;
+
+        .page-link {
+          font-size: 2rem;
+          padding: 0.5rem 2rem;
+        }
+      }
+    }
+
+    &--copyright {
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0;
+
+      .copyright-content {
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        align-self: flex-end;
-
-        .media-link {
-          width: 6rem;
-          height: 6rem;
-          padding: 1.5rem;
-
-          &:not(:last-child) {
-            margin-right: 2rem;
-          }
-
-          & img {
-            height: 100%;
-            transition: all 0.5s;
-
-            &:hover {
-              transform: scale(1.1);
-              box-shadow: 0 1.2rem 2rem rgba($color-black, 0.25);
-
-              @include responsive(iphone) {
-                transform: scale(1);
-              }
-
-              @include responsive(android) {
-                transform: scale(1);
-              }
-
-              @include responsive(ipad) {
-                transform: scale(1);
-              }
-
-              @include responsive(tab) {
-                transform: scale(1);
-              }
-            }
-          }
-        }
+        justify-content: center;
+        font-size: 1.6rem;
       }
     }
   }
