@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 /* universal component import */
 import { Header } from "./components/universal.component/header/header.component";
 import { Footer } from "./components/universal.component/footer/footer.component";
+import { ByNehanshu } from "./components/universal.component/by-me/by-me.component";
 
 /* pages import */
 import { HomePage } from "./pages/homepage/homepage-component";
@@ -30,6 +31,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
+      <ByNehanshu />
     </div>
   );
 };

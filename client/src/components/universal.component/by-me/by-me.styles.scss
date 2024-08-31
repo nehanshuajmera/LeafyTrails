@@ -1,0 +1,23 @@
+@import "../../../App.scss";
+
+.by-nehanshu {
+  height: 6vh;
+  @include linearGradient($dark-grey, $light-grey);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .heading-secondary {
+    font-size: 1.6rem;
+    background-image: linear-gradient(
+      to right,
+      $outline-primary,
+      $outline-secondary
+    );
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
