@@ -170,3 +170,47 @@
     }
   }
 }
+
+/* media query android */ 
+@include responsive(android) {
+  .popup {
+    background-color: rgba($color-black, 0.3);
+  
+    &__content {
+      box-shadow: 0 2rem 4rem rgba($color-black, 0.3);
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__left {
+      width: 100%;
+      display: flex;
+      order: 2;
+    }
+  
+    &__img {
+      width: 50%;
+    }
+  
+    &__right {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 3rem 4rem;
+    }
+  
+    &__text {
+      font-size: 1.8rem;
+    }
+  
+    .heading-secondary {
+      font-size: 3rem;
+    }
+  
+    .heading-tertiary {
+      font-size: 2rem;
+    }
+  }
+}
+
+
