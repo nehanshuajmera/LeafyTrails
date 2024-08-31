@@ -10,10 +10,16 @@ export const Popup = ({ isOpen, onClose, title, heading, content, images }) => {
   useEffect(() => {
     if (isOpen) {
       setIsVisible(true);
-      setTimeout(() => setIsTransitioning(true), 10); // Delay for smooth transition
+      setTimeout(
+        () => setIsTransitioning(true),
+        10
+      ); /* Delay for smooth transition */
     } else {
       setIsTransitioning(false);
-      setTimeout(() => setIsVisible(false), 300); // Delay for smooth transition out
+      setTimeout(
+        () => setIsVisible(false),
+        300
+      ); /* Delay for smooth transition out */
     }
   }, [isOpen]);
 
