@@ -20,21 +20,25 @@
   @include responsive(iphone) {
     min-height: 35vh;
     height: auto;
+    background-attachment: scroll;
   }
 
   @include responsive(android) {
     min-height: 45vh;
     height: auto;
+    background-attachment: scroll;
   }
 
   @include responsive(ipad) {
     min-height: 50vh;
     height: auto;
+    background-attachment: scroll;
   }
 
   @include responsive(tab) {
     min-height: 50vh;
     height: auto;
+    background-attachment: scroll;
   }
 
   &__container {
@@ -60,7 +64,7 @@
           rgba($color-white, 0.7) 60%,
           transparent 60%
         ),
-        url("../../assets/form.jpg");
+        url("../../../assets/form.jpg");
     }
 
     @include responsive(android) {
@@ -71,7 +75,7 @@
           rgba($color-white, 0.7) 60%,
           transparent 60%
         ),
-        url("../../assets/form.jpg");
+        url("../../../assets/form.jpg");
     }
 
     @include responsive(ipad) {
@@ -82,7 +86,7 @@
           rgba($color-white, 0.7) 60%,
           transparent 60%
         ),
-        url("../../assets/form.jpg");
+        url("../../../assets/form.jpg");
     }
 
     @include responsive(tab) {
@@ -93,7 +97,7 @@
           rgba($color-white, 0.7) 60%,
           transparent 60%
         ),
-        url("../../assets/form.jpg");
+        url("../../../assets/form.jpg");
     }
 
     /* Form container: present on White side */
@@ -134,21 +138,17 @@
 
         @include responsive(iphone) {
           font-size: 2.5rem;
-          // margin-bottom: 2rem;
         }
         @include responsive(android) {
           font-size: 2.5rem;
-          // margin-bottom: 2rem;
         }
 
         @include responsive(ipad) {
           font-size: 3rem;
-          // margin-bottom: 2rem;
         }
 
         @include responsive(tab) {
           font-size: 3rem;
-          // margin-bottom: 2rem;
         }
 
         &:hover {
