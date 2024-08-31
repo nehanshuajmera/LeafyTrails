@@ -15,14 +15,14 @@
   );
 
   @include responsive(iphone){
-    padding-top: 7rem;
-    min-height: 90vh;
+    padding-top: 10rem;
+    min-height: 110vh;
     height: auto;
   }
 
   @include responsive(android){
-    padding-top: 7rem;
-    min-height: 90vh;
+    padding-top: 10rem;
+    min-height: 110vh;
     height: auto; 
   }
 
