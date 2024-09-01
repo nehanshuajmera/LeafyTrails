@@ -81,18 +81,18 @@
     }
 
     @include responsive(ipad) {
-      height: 60vh;
+      height: 50vh;
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-        clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 50% 50vh, 0 45vh);
+        clip-path: polygon(0 0, 100% 0, 100% 45vh, 50% 50vh, 0 45vh);
       }
     }
 
     @include responsive(tab) {
-      height: 70vh;
+      height: 60vh;
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-        clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 55vh, 50% 60vh, 0 55vh);
+        clip-path: polygon(0 0, 100% 0, 100% 55vh, 50% 60vh, 0 55vh);
       }
     }
   }

@@ -16,21 +16,6 @@
     );
   }
 
-  @include responsive(iphone){
-    height: 30vh;
-    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 25vh, 50% 30vh, 0 25vh);
-      -webkit-clip-path: polygon(
-        0 0,
-        50% 5vh,
-        100% 0,
-        100% 25vh,
-        50% 30vh,
-        0 25vh
-      );
-    }
-  }
-
   &__images {
     width: 100%;
     height: inherit;
@@ -69,3 +54,62 @@
     }
   }
 }
+
+/* media quesries */
+/* iphone */
+@include responsive(iphone) {
+  .landing-gallery {
+    margin-top: -10vh;
+    height: 80vh;
+  
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 70vh, 50% 80vh, 0 70vh);
+      -webkit-clip-path: polygon(
+        0 0,
+        50% 5vh,
+        100% 0,
+        100% 70vh,
+        50% 80vh,
+        0 70vh
+      );
+    }
+  
+    &__images {
+      width: 100%;
+      height: inherit;
+      display: flex;
+      transition: all 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  
+      .gallery__img {
+        width: 33.3333333%;
+        height: 100%;
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: all 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        overflow: hidden;
+      }
+  
+      &:hover {
+        .gallery__img:hover {
+          width: 80%;
+        }
+      }
+  
+      .img--p-1 {
+        background-image: url("../../../assets/booking-bg.jpeg");
+        background-position: right;
+      }
+  
+      .img--p-2 {
+        background-image: url("../../../assets/form.jpg");
+      }
+  
+      .img--p-3 {
+        background-image: url("../../../assets/header--default.jpg");
+      }
+    }
+  }
+} 

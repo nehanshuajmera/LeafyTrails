@@ -5,7 +5,7 @@ card heading background - frontside,
 background color - backside 
 styles(css) is written in rotate-card folder rotate-card.color.scss, 
 any updation to this particular part need to be done their 
-in order to achieve needed styles related to this 3D card */ 
+in order to achieve needed styles related to this 3D card */
 
 /* main container, that contains card as one entity */
 /* 3D effect property container */
@@ -183,7 +183,7 @@ in order to achieve needed styles related to this 3D card */
 
           li {
             font-size: 2rem;
-            padding: .8rem;
+            padding: 0.8rem;
           }
         }
       }
@@ -217,7 +217,25 @@ in order to achieve needed styles related to this 3D card */
 
     .back-orange,
     .back-green,
-    .back-blue {
+    .back-blue,
+    .back-brown,
+    .back-darkblue,
+    .back-cyan,
+    .back-red,
+    .back-gray,
+    .back-lightblue,
+    .back-darkgreen,
+    .back-pink,
+    .back-lavender,
+    .back-lightgreen,
+    .back-yellow,
+    .back-turquoise,
+    .back-silver,
+    .back-crimson,
+    .back-lightpink,
+    .back-goldenrod,
+    .back-forestgreen,
+    .back-khaki {
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -263,7 +281,7 @@ in order to achieve needed styles related to this 3D card */
 
           li {
             font-size: 2rem;
-            padding: .8rem;
+            padding: 0.8rem;
           }
         }
       }
@@ -297,7 +315,25 @@ in order to achieve needed styles related to this 3D card */
 
     .back-orange,
     .back-green,
-    .back-blue {
+    .back-blue,
+    .back-brown,
+    .back-darkblue,
+    .back-cyan,
+    .back-red,
+    .back-gray,
+    .back-lightblue,
+    .back-darkgreen,
+    .back-pink,
+    .back-lavender,
+    .back-lightgreen,
+    .back-yellow,
+    .back-turquoise,
+    .back-silver,
+    .back-crimson,
+    .back-lightpink,
+    .back-goldenrod,
+    .back-forestgreen,
+    .back-khaki {
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -377,7 +413,25 @@ in order to achieve needed styles related to this 3D card */
 
     .back-orange,
     .back-green,
-    .back-blue {
+    .back-blue,
+    .back-brown,
+    .back-darkblue,
+    .back-cyan,
+    .back-red,
+    .back-gray,
+    .back-lightblue,
+    .back-darkgreen,
+    .back-pink,
+    .back-lavender,
+    .back-lightgreen,
+    .back-yellow,
+    .back-turquoise,
+    .back-silver,
+    .back-crimson,
+    .back-lightpink,
+    .back-goldenrod,
+    .back-forestgreen,
+    .back-khaki {
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
         -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -457,7 +511,25 @@ in order to achieve needed styles related to this 3D card */
 
     .back-orange,
     .back-green,
-    .back-blue {
+    .back-blue,
+    .back-brown,
+    .back-darkblue,
+    .back-cyan,
+    .back-red,
+    .back-gray,
+    .back-lightblue,
+    .back-darkgreen,
+    .back-pink,
+    .back-lavender,
+    .back-lightgreen,
+    .back-yellow,
+    .back-turquoise,
+    .back-silver,
+    .back-crimson,
+    .back-lightpink,
+    .back-goldenrod,
+    .back-forestgreen,
+    .back-khaki {
       margin-top: -3rem;
 
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
