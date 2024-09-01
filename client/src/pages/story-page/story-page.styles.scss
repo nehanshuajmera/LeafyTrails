@@ -20,6 +20,23 @@
       );
     }
 
+    @include responsive(iphone) {
+      // height: 30vh;
+      // margin-top: -5vh;
+
+      // @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      //   clip-path: polygon(0 0, 50% 10vh, 100% 0, 100% 30vh, 50% 35vh, 0 30vh);
+      //   -webkit-clip-path: polygon(
+      //     0 0,
+      //     50% 10vh,
+      //     100% 0,
+      //     100% 30vh,
+      //     50% 35vh,
+      //     0 30vh
+      //   );
+      // }
+    }
+
     .heading-secondary {
       margin: 2rem;
     }

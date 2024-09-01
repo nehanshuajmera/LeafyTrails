@@ -21,41 +21,8 @@
       url("../../../assets/header--default.jpg");
   }
 
-  &--about {
-    height: 75vh;
-    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-      clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-    }
-  }
-
-  &--tours {
-    height: 75vh;
-    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-      clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-    }
-  }
-
-  &--story {
-    height: 75vh;
-    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-      clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
-    }
-  }
-
-  &--booking {
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(46, 49, 146, 0.6),
-        rgba(27, 255, 255, 0.6)
-      ),
-      url("../../../assets/booking-bg.jpeg");
-  }
-
-  /* media query */
-  @include responsive(iphone) {
+   /* media query */
+   @include responsive(iphone) {
     height: 50vh;
     @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
@@ -85,6 +52,58 @@
       clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
     }
+  }
+
+  &--about,
+  &--tours,
+  &--story {
+    height: 75vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+      clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+    }
+
+    /* media query */
+    @include responsive(iphone) {
+      height: 40vh;
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+        clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+      }
+    }
+
+    @include responsive(android) {
+      height: 40vh;
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+        clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+      }
+    }
+
+    @include responsive(ipad) {
+      height: 60vh;
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+        clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+      }
+    }
+
+    @include responsive(tab) {
+      height: 70vh;
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+        clip-path: polygon(0 0, 100% 0, 100% 65vh, 50% 75vh, 0 65vh);
+      }
+    }
+  }
+
+  &--booking {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(46, 49, 146, 0.6),
+        rgba(27, 255, 255, 0.6)
+      ),
+      url("../../../assets/booking-bg.jpeg");
   }
 
   .header__logo-box {
