@@ -59,27 +59,27 @@
 /* iphone */
 @include responsive(iphone) {
   .landing-gallery {
-    margin-top: -10vh;
+    margin-top: -5vh;
     height: 80vh;
-  
+
     @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
-      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 70vh, 50% 80vh, 0 70vh);
+      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 75vh, 50% 80vh, 0 75vh);
       -webkit-clip-path: polygon(
         0 0,
         50% 5vh,
         100% 0,
-        100% 70vh,
+        100% 75vh,
         50% 80vh,
-        0 70vh
+        0 75vh
       );
     }
-  
+
     &__images {
       width: 100%;
       height: inherit;
       display: flex;
       transition: all 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-  
+
       .gallery__img {
         width: 33.3333333%;
         height: 100%;
@@ -91,25 +91,85 @@
         transition: all 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
         overflow: hidden;
       }
-  
+
       &:hover {
         .gallery__img:hover {
           width: 80%;
         }
       }
-  
+
       .img--p-1 {
         background-image: url("../../../assets/booking-bg.jpeg");
         background-position: right;
       }
-  
+
       .img--p-2 {
         background-image: url("../../../assets/form.jpg");
       }
-  
+
       .img--p-3 {
         background-image: url("../../../assets/header--default.jpg");
       }
     }
   }
-} 
+}
+
+/* android */
+@include responsive(android) {
+  .landing-gallery {
+    margin-top: -5vh;
+    height: 80vh;
+
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 75vh, 50% 80vh, 0 75vh);
+      -webkit-clip-path: polygon(
+        0 0,
+        50% 5vh,
+        100% 0,
+        100% 75vh,
+        50% 80vh,
+        0 75vh
+      );
+    }
+  }
+}
+
+/* ipad */
+@include responsive(ipad) {
+  .landing-gallery {
+    margin-top: -5vh;
+    height: 80vh;
+
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 75vh, 50% 80vh, 0 75vh);
+      -webkit-clip-path: polygon(
+        0 0,
+        50% 5vh,
+        100% 0,
+        100% 75vh,
+        50% 80vh,
+        0 75vh
+      );
+    }
+  }
+}
+
+/* tab */
+@include responsive(tab) {
+  .landing-gallery {
+    margin-top: -5vh;
+    height: 80vh;
+
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 75vh, 50% 80vh, 0 75vh);
+      -webkit-clip-path: polygon(
+        0 0,
+        50% 5vh,
+        100% 0,
+        100% 75vh,
+        50% 80vh,
+        0 75vh
+      );
+    }
+  }
+}

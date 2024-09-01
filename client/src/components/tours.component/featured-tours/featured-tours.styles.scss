@@ -2,10 +2,32 @@
 
 .featured-tours {
   margin-top: -10vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 90vh;
+  height: 100vh;
+  @include linearGradient($dark-grey, $light-grey);
+
+  @include responsive(iphone) {
+    height: 100vh;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
+  @include responsive(android) {
+    height: 100vh;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
+  @include responsive(ipad) {
+    height: 130vh;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
+  @include responsive(tab) {
+    height: 130vh;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
 }
