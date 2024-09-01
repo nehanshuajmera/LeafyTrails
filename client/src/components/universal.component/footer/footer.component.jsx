@@ -7,7 +7,7 @@ import facebook from "../../../assets/facebook-1.png";
 import twitter from "../../../assets/twitter-1.png";
 import youtube from "../../../assets/youtube-1.png";
 import threads from "../../../assets/threads-1.png";
-import arrowRight from "../../../assets/right-arrow.png";
+import arrowRight from "../../../assets/arrow-right.png";
 
 export const Footer = () => {
   const handleChange = {};
@@ -70,7 +70,7 @@ export const Footer = () => {
                 </Link>
               </div>
             </div>
-            {/* <span className="footer-links-design">&nbsp;</span> */}
+            <span className="footer-links-design">&nbsp;</span>
             <div className="get-in-touch">
               <div className="footer-main-heading">Ready for an Adventure?</div>
               <div className="footer-main-tagline">
