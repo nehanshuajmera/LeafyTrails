@@ -1,0 +1,112 @@
+@import "../../../App.scss";
+
+.our-mission {
+  height: 100vh;
+  margin-top: -10vh;
+  padding-top: 10vh;
+  @include linearGradient($color-dark-blue, $color-light-blue);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__img {
+    width: 30%;
+    // border: 1px solid red;
+
+    .container--img {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      padding: 2rem 2.5rem;
+
+      .img-grid {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0.4rem;
+        background-repeat: no-repeat;
+        background-size: 300% 300%; /* Scale the background so that each grid shows a portion */
+      }
+
+      .msn-img--1 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: top left;
+      }
+
+      .msn-img--2 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: top center;
+      }
+
+      .msn-img--3 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: top right;
+      }
+
+      .msn-img--4 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: left center;
+      }
+
+      .msn-img--5 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: center center;
+      }
+
+      .msn-img--6 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: right center;
+      }
+
+      .msn-img--7 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: bottom left;
+      }
+
+      .msn-img--8 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: bottom center;
+      }
+
+      .msn-img--9 {
+        background-image: url("../../../assets/card-9.jpg");
+        background-position: bottom right;
+      }
+    }
+  }
+
+  &__container {
+    width: 50%;
+    // border: 1px solid greenyellow;
+    position: relative;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    @include linearGradient(rgba($color-white, 0.4), rgba($color-white, 0.4));
+
+    .heading-tertiary {
+      @include headingGradient($light-blue, $dark-blue);
+      position: absolute;
+      font-family: "merriweather";
+      font-style: italic;
+      font-size: 3.5rem;
+      top: -5rem;
+      left: -4rem;
+      padding: 1rem 1.5rem;
+      text-transform: uppercase;
+
+      /* Future query: if browser supports it then apply */
+      @supports (-webkit-box-decoration-break: clone) and
+        (box-decoration-break: clone) {
+        /* setting every item of span to apply every property on every break */
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+      }
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+  }
+}

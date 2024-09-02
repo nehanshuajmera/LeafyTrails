@@ -1,0 +1,111 @@
+@import "../../App.scss";
+
+.about-page {
+  &__main--heading {
+    margin-top: -10vh;
+    padding-top: 10vh;
+    height: 35vh;
+    @include linearGradient($dark-grey, $light-grey);
+    text-align: center;
+
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 50% 10vh, 100% 0, 100% 25vh, 50% 35vh, 0 25vh);
+      -webkit-clip-path: polygon(
+        0 0,
+        50% 10vh,
+        100% 0,
+        100% 25vh,
+        50% 35vh,
+        0 25vh
+      );
+    }
+
+    @include responsive(iphone) {
+      height: 30vh;
+      margin-top: -5vh;
+      padding-top: 3vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 25vh, 50% 30vh, 0 25vh);
+        -webkit-clip-path: polygon(
+          0 0,
+          50% 5vh,
+          100% 0,
+          100% 25vh,
+          50% 30vh,
+          0 25vh
+        );
+      }
+    }
+
+    @include responsive(android) {
+      height: 30vh;
+      margin-top: -5vh;
+      padding-top: 3vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 25vh, 50% 30vh, 0 25vh);
+        -webkit-clip-path: polygon(
+          0 0,
+          50% 5vh,
+          100% 0,
+          100% 25vh,
+          50% 30vh,
+          0 25vh
+        );
+      }
+    }
+
+    @include responsive(ipad) {
+      height: 30vh;
+      margin-top: -5vh;
+      padding-top: 3vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 25vh, 50% 30vh, 0 25vh);
+        -webkit-clip-path: polygon(
+          0 0,
+          50% 5vh,
+          100% 0,
+          100% 25vh,
+          50% 30vh,
+          0 25vh
+        );
+      }
+    }
+
+    @include responsive(tab) {
+      height: 30vh;
+      margin-top: -5vh;
+      padding-top: 3vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 0, 50% 5vh, 100% 0, 100% 25vh, 50% 30vh, 0 25vh);
+        -webkit-clip-path: polygon(
+          0 0,
+          50% 5vh,
+          100% 0,
+          100% 25vh,
+          50% 30vh,
+          0 25vh
+        );
+      }
+    }
+
+    .heading-secondary {
+      margin: 2rem;
+    }
+  }
+}

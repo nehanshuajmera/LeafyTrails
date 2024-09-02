@@ -25,34 +25,34 @@
 }
 
 .picture-brown {
-  @include gradientImage($light-brown, $dark-brown, "../../../assets/card-1.jpg");
+  @include gradientImage($light-brown, $dark-brown, "../../../assets/card-15.jpg");
 }
 
 .picture-darkblue {
   @include gradientImage(
     $light-dark-blue,
     $dark-dark-blue,
-    "../../../assets/card-2.jpg"
+    "../../../assets/card-12.jpg"
   );
 }
 
 .picture-cyan {
-  @include gradientImage($light-cyan, $dark-cyan, "../../../assets/card-1.jpg");
+  @include gradientImage($light-cyan, $dark-cyan, "../../../assets/card-11.jpg");
 }
 
 .picture-red {
-  @include gradientImage($light-red, $dark-red, "../../../assets/card-1.jpg");
+  @include gradientImage($light-red, $dark-red, "../../../assets/card-8.jpg");
 }
 
 .picture-gray {
-  @include gradientImage($light-gray, $dark-gray, "../../../assets/card-1.jpg");
+  @include gradientImage($light-gray, $dark-gray, "../../../assets/card-13.jpg");
 }
 
 .picture-lightblue {
   @include gradientImage(
     $light-light-blue,
     $dark-light-blue,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-14.jpg"
   );
 }
 
@@ -60,19 +60,19 @@
   @include gradientImage(
     $light-dark-green,
     $dark-dark-green,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-6.jpg"
   );
 }
 
 .picture-pink {
-  @include gradientImage($light-pink, $dark-pink, "../../../assets/card-1.jpg");
+  @include gradientImage($light-pink, $dark-pink, "../../../assets/card-16.jpg");
 }
 
 .picture-lavender {
   @include gradientImage(
     $light-lavender,
     $dark-lavender,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-5.jpg"
   );
 }
 
@@ -80,7 +80,7 @@
   @include gradientImage(
     $light-yellow,
     $dark-yellow,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-10.jpg"
   );
 }
 
@@ -88,7 +88,7 @@
   @include gradientImage(
     $light-turquoise,
     $dark-turquoise,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-7.jpg"
   );
 }
 
@@ -96,7 +96,7 @@
   @include gradientImage(
     $light-silver,
     $dark-silver,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-9.jpg"
   );
 }
 
@@ -104,7 +104,7 @@
   @include gradientImage(
     $light-crimson,
     $dark-crimson,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-4.jpg"
   );
 }
 
@@ -112,7 +112,7 @@
   @include gradientImage(
     $light-goldenrod,
     $dark-goldenrod,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-15.jpg"
   );
 }
 
@@ -120,12 +120,12 @@
   @include gradientImage(
     $light-forest-green,
     $dark-forest-green,
-    "../../../assets/card-1.jpg"
+    "../../../assets/card-12.jpg"
   );
 }
 
 .picture-khaki {
-  @include gradientImage($light-khaki, $dark-khaki, "../../../assets/card-1.jpg");
+  @include gradientImage($light-khaki, $dark-khaki, "../../../assets/card-11.jpg");
 }
 
 /* --------------------- X ---------------------- */
