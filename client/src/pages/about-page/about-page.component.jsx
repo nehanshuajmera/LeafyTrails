@@ -16,7 +16,7 @@ export const AboutPage = () => {
       <OurMission />
 
       {/* Our Vision */}
-      {/* <OurVision /> */}
+      <OurVision />
 
 
     </div>
