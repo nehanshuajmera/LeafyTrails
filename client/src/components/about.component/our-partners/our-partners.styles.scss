@@ -1,0 +1,45 @@
+@import "../../../App.scss";
+
+.our-partners {
+  overflow: hidden;
+  @include linearGradient($dark-grey, $light-grey);
+
+  .heading-secondary{
+    text-align: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .slider {
+    width: 100%;
+    margin: 1rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: max-content;
+
+    & img {
+      width: 10rem;
+      height: 10rem;
+      padding: 1rem;
+      margin: 0 1.2rem;
+      animation: scroll 25s linear infinite;
+      cursor: pointer;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translate3d(0, 0, 0); // Start position
+    }
+    100% {
+      transform: translate3d(-1200%, 0, 0); // Move halfway across the container
+    }
+  }
+}

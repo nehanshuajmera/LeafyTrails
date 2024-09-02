@@ -1,4 +1,5 @@
 import { OurMission } from "../../components/about.component/our-mission/our-mission.component";
+import { OurPartners } from "../../components/about.component/our-partners/our-partners.component";
 import { OurVision } from "../../components/about.component/our-vision/our-vision.component";
 import "./about-page.styles.scss";
 
@@ -18,7 +19,8 @@ export const AboutPage = () => {
       {/* Our Vision */}
       <OurVision />
 
-
+      {/* Our Partners */}
+      <OurPartners />
     </div>
   );
 };
