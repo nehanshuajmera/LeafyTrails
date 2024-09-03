@@ -1,3 +1,4 @@
+import { AllStories } from "../../components/story.component/all-stories/all-stories.component";
 import "./story-page.styles.scss";
 
 export const StoryPage = () => {
@@ -10,6 +11,8 @@ export const StoryPage = () => {
         </h2>
       </div>
 
+    {/* All Stories */}
+    <AllStories />
       
     </div>
   );

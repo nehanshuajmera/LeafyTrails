@@ -1,4 +1,4 @@
-@import '../../../App.scss';
+@import "../../../App.scss";
 /* card colors */
 /* card-section */
 
@@ -9,7 +9,7 @@
     $light-orange,
     $dark-orange,
     "../../../assets/card-1.jpg"
-    );
+  );
 }
 
 .picture-green {
@@ -25,7 +25,11 @@
 }
 
 .picture-brown {
-  @include gradientImage($light-brown, $dark-brown, "../../../assets/card-15.jpg");
+  @include gradientImage(
+    $light-brown,
+    $dark-brown,
+    "../../../assets/card-15.jpg"
+  );
 }
 
 .picture-darkblue {
@@ -37,7 +41,11 @@
 }
 
 .picture-cyan {
-  @include gradientImage($light-cyan, $dark-cyan, "../../../assets/card-11.jpg");
+  @include gradientImage(
+    $light-cyan,
+    $dark-cyan,
+    "../../../assets/card-11.jpg"
+  );
 }
 
 .picture-red {
@@ -45,7 +53,11 @@
 }
 
 .picture-gray {
-  @include gradientImage($light-gray, $dark-gray, "../../../assets/card-13.jpg");
+  @include gradientImage(
+    $light-gray,
+    $dark-gray,
+    "../../../assets/card-13.jpg"
+  );
 }
 
 .picture-lightblue {
@@ -65,7 +77,11 @@
 }
 
 .picture-pink {
-  @include gradientImage($light-pink, $dark-pink, "../../../assets/card-16.jpg");
+  @include gradientImage(
+    $light-pink,
+    $dark-pink,
+    "../../../assets/card-16.jpg"
+  );
 }
 
 .picture-lavender {
@@ -125,7 +141,11 @@
 }
 
 .picture-khaki {
-  @include gradientImage($light-khaki, $dark-khaki, "../../../assets/card-11.jpg");
+  @include gradientImage(
+    $light-khaki,
+    $dark-khaki,
+    "../../../assets/card-11.jpg"
+  );
 }
 
 /* --------------------- X ---------------------- */

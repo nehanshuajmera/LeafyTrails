@@ -1,0 +1,29 @@
+@import "../../../App.scss";
+
+.all-stories {
+  @include linearGradient($light-light-blue, $dark-light-blue);
+  margin-top: -10vh;
+  padding-top: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+
+    .single-story {
+      margin: 2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .heading-secondary {
+    margin-top: 2rem;
+    @include linearGradient($light-dark-blue, $dark-dark-blue);
+  }
+}
