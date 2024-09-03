@@ -23,15 +23,23 @@ export const FormStyle2 = () => {
       return;
     }
     setParticipants([...participants, { name: "", age: "" }]);
-    setCurrentPage(participants.length); // Go to the new page
+    setCurrentPage(participants.length); /* Go to the new page */
   };
 
   const handleRemoveParticipant = (index) => {
+    /* Prevent removal if there's only one participant left */
+    if (participants.length === 1) {
+      alert("At least one member must be present.");
+      return;
+    }
+
     const values = [...participants];
     values.splice(index, 1);
     setParticipants(values);
+
+    /* Adjust currentPage if necessary */
     if (currentPage >= values.length) {
-      setCurrentPage(values.length - 1); // Adjust page if necessary
+      setCurrentPage(values.length - 1);
     }
   };
 
@@ -76,6 +84,7 @@ export const FormStyle2 = () => {
             <button
               type="button"
               onClick={() => handleRemoveParticipant(currentPage)}
+              disabled={participants.length === 1}
             >
               Remove Member
             </button>
@@ -92,17 +101,29 @@ export const FormStyle2 = () => {
           <button
             type="button"
             onClick={handleNextPage}
-            disabled={!isValidParticipant() || currentPage >= participants.length - 1}
+            disabled={
+              !isValidParticipant() || currentPage >= participants.length - 1
+            }
           >
             Next
           </button>
-          <button
-            type="button"
-            onClick={handleAddParticipant}
-          >
+          <button type="button" onClick={handleAddParticipant}>
             Add Member
           </button>
         </div>
+        <FormInput
+          name="nationality"
+          type="text"
+          placeholder="Nationality"
+          label="Nationality"
+          required
+        />
+        <FormInput
+          type="textarea"
+          name="specialRequest"
+          placeholder="Special Request"
+          label="Special Request"
+        />
       </div>
     </div>
   );

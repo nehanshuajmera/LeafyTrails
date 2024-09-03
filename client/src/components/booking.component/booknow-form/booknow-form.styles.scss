@@ -6,7 +6,7 @@
   &__container {
     // @include linearGradient($dark-grey, $light-grey);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -14,7 +14,6 @@
 
     .form-inner-box {
       width: 75%;
-      height: 75vh;
       box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
       border-radius: 0.5rem;
       position: absolute;
@@ -35,7 +34,7 @@
         rgba($color-white, 0.2),
         rgba($color-white, 0.2)
       ),
-      url("../../../assets/card-8.jpg");
+      url("https://img.freepik.com/free-photo/empty-frame-with-airplanes-leaves-fruit_23-2148169801.jpg?w=740&t=st=1725404561~exp=1725405161~hmac=2725bdbfc619e48e68d1ca5dfd518e7ea0180ebfa51d047f55b3eddb4d28da43");
   }
 
   .form-img--2 {
@@ -44,7 +43,8 @@
         rgba($color-white, 0.2),
         rgba($color-white, 0.2)
       ),
-      url("../../../assets/card-12.jpg");
+      url("https://img.freepik.com/premium-photo/travel-luggage-globe-travel-time_639785-56530.jpg?w=740");
+      background-position: bottom;
   }
 
   .form-img--3 {
@@ -53,6 +53,7 @@
         rgba($color-white, 0.2),
         rgba($color-white, 0.2)
       ),
-      url("../../../assets/card-6.jpg");
+      url("https://img.freepik.com/premium-photo/plane-is-flying-globe-words-airplane_605423-188347.jpg?w=740");
+      background-position: top;
   }
 }

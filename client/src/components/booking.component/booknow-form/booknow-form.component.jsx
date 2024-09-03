@@ -9,12 +9,12 @@ export const BooknowForm = () => {
       <div className="booknow-form__container form-img--1">
         <FormStyle1 />
       </div>
-      {/* <div className="booknow-form__container form-img--2">
+      <div className="booknow-form__container form-img--2">
         <FormStyle2 />
       </div>
       <div className="booknow-form__container form-img--3">
         <div className="form-inner-box form-style--3">hello</div>
-      </div> */}
+      </div>
     </form>
   );
 };
