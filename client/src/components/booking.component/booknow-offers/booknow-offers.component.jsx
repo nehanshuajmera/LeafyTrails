@@ -6,20 +6,19 @@ export const BooknowOffers = () => {
   const [isCopied, setIsCopied] = useState(false);
 
   /* Function to copy coupon code and show popup */
-  const copyToClipboard = () => {
+  const copyToClipboard = async () => {
     const couponCode = "FunFamily30";
-    navigator.clipboard.writeText(couponCode).then(
-      () => {
-        setIsCopied(true); /* Show popup */
-        setTimeout(
-          () => setIsCopied(false),
-          3000
-        ); /* Hide popup after 3 seconds */
-      },
-      () => {
-        alert("Failed to copy the coupon code.");
-      }
-    );
+
+    try {
+      await navigator.clipboard.writeText(couponCode);
+      setIsCopied(true); /* Show popup */
+      setTimeout(
+        () => setIsCopied(false),
+        3000
+      ); /* Hide the popup after 3 seconds */
+    } catch (error) {
+      alert("Failed to copy the coupon code.");
+    }
   };
 
   return (
@@ -27,7 +26,10 @@ export const BooknowOffers = () => {
       <div className="booknow-offers__container">
         <div className="booknow-offers__container--box">
           <div className="offer--name">Limited Time Offer</div>
-          <div className="offer--title">Family Fun, Discounted Fun!</div>
+          <div className="offer--title">
+            Family Fun, <br />
+            Discounted Fun!
+          </div>
           <div className="offer--content">
             Book Your Family Adventure Today and Enjoy 30% Off All Tours. Create
             unforgettable memories with your loved ones. Explore breathtaking
