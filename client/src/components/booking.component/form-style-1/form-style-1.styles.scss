@@ -1,0 +1,43 @@
+@import '../../../App.scss';
+
+.form-style--1{
+  transform: translate(-55%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-textbox{
+    width: 50%;
+
+    .heading-secondary {
+      @include linearGradient($dark-yellow, $light-yellow);
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-instructions {
+    width: 45%;
+    align-self: flex-start;
+    padding: 2rem;
+
+    & h3 {
+      font-size: 2rem;
+      font-family: 'merriweather';
+      font-style: italic;
+      // text-align: right;
+    }   
+    
+    & ul {
+      padding: 2rem;
+
+      & li {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+
+        & span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

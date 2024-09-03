@@ -9,7 +9,7 @@ import { Popup } from "../../universal.component/popup/popup.component";
 export const SignatureTours = () => {
   const { tours, loading, error } = useContext(ToursContext);
   const [activePopup, setActivePopup] = useState(null);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const location = useLocation();
 
   const handleOpenPopup = (tour) => {
@@ -21,7 +21,6 @@ export const SignatureTours = () => {
     setActivePopup(null);
     navigate(location.pathname);
   };
-
   return (
     <div className="signature-tours">
       <h2 className="heading-secondary">All tours</h2>
