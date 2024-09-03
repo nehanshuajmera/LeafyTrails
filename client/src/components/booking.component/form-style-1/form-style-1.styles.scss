@@ -10,7 +10,7 @@
     width: 50%;
 
     .heading-secondary {
-      @include linearGradient($dark-yellow, $light-yellow);
+      @include linearGradient($outline-primary, $outline-secondary);
       margin-bottom: 3rem;
     }
   }
