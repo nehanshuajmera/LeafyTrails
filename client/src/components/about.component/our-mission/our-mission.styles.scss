@@ -13,20 +13,28 @@
   justify-content: space-evenly;
 
   @include responsive(iphone) {
+    margin-top: -5vh;
+    padding-top: 5vh;
     flex-direction: column;
     height: 70vh;
   }
 
   @include responsive(android) {
+    margin-top: -5vh;
+    padding-top: 5vh;
     flex-direction: column;
     height: 70vh;
   }
 
   @include responsive(ipad) {
+    margin-top: -5vh;
+    padding-top: 5vh;
     flex-direction: column;
   }
 
   @include responsive(tab) {
+    margin-top: -5vh;
+    padding-top: 5vh;
     flex-direction: column;
     height: 80vh;
   }
