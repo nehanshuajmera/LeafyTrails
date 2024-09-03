@@ -8,6 +8,12 @@
 
 @import "./sass/mixins";
 
+/* Custom font */ 
+@font-face {
+  font-family: "lovely-coffee"; /* Can be any text */
+  src: local("LovelyCoffee"), url("./fonts/LovelyCoffee.woff") format("woff");
+}
+
 :root {
   font-size: 62.5%;
 
