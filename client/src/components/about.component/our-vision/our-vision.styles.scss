@@ -2,8 +2,6 @@
 
 .our-vision {
   height: 80vh;
-  margin-top: -10vh;
-  padding-top: 10vh;
   @include linearGradient($dark-grey, $light-grey);
   background-position: center;
   background-repeat: no-repeat;
@@ -12,17 +10,55 @@
   align-items: center;
   justify-content: space-evenly;
 
+  @include responsive(iphone) {
+    flex-direction: column;
+    height: 60vh;
+  }
+
+  @include responsive(android) {
+    flex-direction: column;
+    height: 60vh;
+  }
+
+  @include responsive(ipad) {
+    flex-direction: column;
+  }
+
+  @include responsive(tab) {
+    flex-direction: column;
+    height: 70vh;
+  }
+
   &__img {
     width: 30%;
-    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include responsive(iphone) {
+      width: 100%;
+    }
+
+    @include responsive(android) {
+      width: 100%;
+    }
+
+    @include responsive(ipad) {
+      width: 100%;
+    }
+
+    @include responsive(tab) {
+      width: 100%;
+    }
 
     .container--img {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
-      padding: 2rem 2.5rem;
+      border-radius: 0.4rem;
 
       .img-grid {
+        visibility: visible;
         width: 10rem;
         height: 10rem;
         border-radius: 0.4rem;
@@ -79,11 +115,26 @@
 
   &__container {
     width: 50%;
-    // border: 1px solid greenyellow;
     position: relative;
     padding: 3rem;
     border-radius: 0.5rem;
     @include linearGradient(rgba($light-blue, 0.4), rgba($color-white, 0.4));
+
+    @include responsive(iphone) {
+      width: 80%;
+    }
+
+    @include responsive(android) {
+      width: 80%;
+    }
+
+    @include responsive(ipad) {
+      width: 60%;
+    }
+
+    @include responsive(tab) {
+      width: 70%;
+    }
 
     .heading-tertiary {
       @include headingGradient($light-blue, $dark-blue);
