@@ -9,10 +9,10 @@ export const FormStyle3 = ({ formState, onFormChange }) => {
 
   const handlePackageChange = (packageName) => {
     const selected = tours.find((tour) => tour.cardHeading === packageName);
-    onFormChange({ 
+    onFormChange({
       selectedPackage: selected || null,
-      category: selected ? selected.category : '',
-      price: selected ? selected.price : ''
+      category: selected ? selected.category : "",
+      price: selected ? selected.price : "",
     });
   };
 
@@ -70,7 +70,27 @@ export const FormStyle3 = ({ formState, onFormChange }) => {
         />
       </div>
       <div className="form-style--3-instructions">
-        
+        <h3 className="heading-tertiary">
+          Instructions for Completing the Form
+        </h3>
+        <ul>
+          <li>
+            <span>Travel Date:</span> Select the date you wish to start your
+            tour.
+          </li>
+          <li>
+            <span>Package Selection:</span> Choose a tour package from the
+            dropdown menu.
+          </li>
+          <li>
+            <span>Package Category:</span> This field will automatically display
+            the category of your selected package.
+          </li>
+          <li>
+            <span>Package Price:</span> This field will automatically display
+            the price of your selected package.
+          </li>
+        </ul>
       </div>
     </div>
   );

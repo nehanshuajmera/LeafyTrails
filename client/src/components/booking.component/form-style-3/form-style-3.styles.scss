@@ -3,6 +3,8 @@
 .form-style--3 {
   transform: translate(-55%, -50%);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   &-textbox {
     width: 50%;
@@ -14,6 +16,32 @@
       color: #888;
       font-weight: 700;
       transition: all 0.4s;
+    }
+  }
+
+  &-instructions {
+    width: 45%;
+    align-self: flex-start;
+    padding: 2rem;
+
+    & h3 {
+      font-size: 2rem;
+      font-family: 'merriweather';
+      font-style: italic;
+      // text-align: right;
+    }   
+    
+    & ul {
+      padding: 2rem;
+
+      & li {
+        font-size: 1.8rem;
+        margin: 1rem 0;
+
+        & span {
+          font-weight: 500;
+        }
+      }
     }
   }
 }
