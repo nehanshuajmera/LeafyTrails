@@ -17,6 +17,12 @@
 :root {
   font-size: 62.5%;
 
+  @include responsive(mobile) {
+    /* 1rem = 6px */
+    /* 6px / 16px = .375 = 37.5% */
+    font-size: 37.5%;
+  }
+
   @include responsive(iphone) {
     /* 1rem = 6px */
     font-size: 37.5%;

@@ -28,7 +28,8 @@
 
 /* media query manager */
 
-/*  320px - 480px -- iphone       | 1rem = 6px
+/*  320px - 400px -- mobile       | 1rem = 6px
+    400px - 480px -- iphone       | 1rem = 6px
     480px - 600px -- android      | 1rem = 7px
     600px - 800px -- ipad         | 1rem = 8px
     800px - 1024px -- tab         | 1rem = 9px
@@ -41,10 +42,18 @@
 /* 1em = 16px (default browser font size) */
 
 @mixin responsive($breakpoint) {
-  /* 320px - 480px -- iphone */
+  /* 320px - 400px -- mobile */
+  @if $breakpoint == mobile {
+    /* 320px/16px = 20em | 400px/16px = 30em */
+    @media (min-width: 20em) and (max-width: 25em) {
+      @content;
+    }
+  }
+
+  /* 400px - 480px -- iphone */
   @if $breakpoint == iphone {
-    /* 320px/16px = 20em | 480px/16px = 30em */
-    @media (min-width: 20em) and (max-width: 30em) {
+    /* 400px/16px = 25em | 480px/16px = 30em */
+    @media (min-width: 25em) and (max-width: 30em) {
       @content;
     }
   }

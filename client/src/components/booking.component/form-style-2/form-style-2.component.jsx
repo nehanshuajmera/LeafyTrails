@@ -2,6 +2,10 @@ import { useState } from "react";
 import { FormInput } from "../../universal.component/form-input/form-input.component";
 import "./form-style-2.styles.scss";
 
+import addUser from "../../../assets/add-user.png";
+import deleteUser from "../../../assets/delete-user.png";
+import naviBtn from "../../../assets/arrow-right.png";
+
 export const FormStyle2 = () => {
   const [participants, setParticipants] = useState([{ name: "", age: "" }]);
   const [currentPage, setCurrentPage] = useState(0);
@@ -60,7 +64,9 @@ export const FormStyle2 = () => {
   return (
     <div className="form-inner-box form-style--2">
       <div className="form-style--2-textbox">
-        <h3 className="heading-tertiary">Members Info:</h3>
+        <h3 className="heading-tertiary utility-margin-btm-small">
+          Traveller Info:
+        </h3>
         {participants.length > 0 && (
           <div className="participant-entry">
             <FormInput
@@ -81,13 +87,6 @@ export const FormStyle2 = () => {
               onChange={(event) => handleChange(currentPage, event)}
               required
             />
-            <button
-              type="button"
-              onClick={() => handleRemoveParticipant(currentPage)}
-              disabled={participants.length === 1}
-            >
-              Remove Member
-            </button>
           </div>
         )}
         <div className="navigation-buttons">
@@ -96,7 +95,17 @@ export const FormStyle2 = () => {
             onClick={handlePreviousPage}
             disabled={currentPage === 0}
           >
-            Previous
+            <img src={naviBtn} alt="previous button" />
+          </button>
+          <button
+            type="button"
+            onClick={() => handleRemoveParticipant(currentPage)}
+            disabled={participants.length === 1}
+          >
+            <img src={deleteUser} alt="remove member button" />
+          </button>
+          <button type="button" onClick={handleAddParticipant}>
+            <img src={addUser} alt="add member button" />
           </button>
           <button
             type="button"
@@ -105,10 +114,7 @@ export const FormStyle2 = () => {
               !isValidParticipant() || currentPage >= participants.length - 1
             }
           >
-            Next
-          </button>
-          <button type="button" onClick={handleAddParticipant}>
-            Add Member
+            <img src={naviBtn} alt="next button" />
           </button>
         </div>
         <FormInput
@@ -118,12 +124,47 @@ export const FormStyle2 = () => {
           label="Nationality"
           required
         />
-        <FormInput
-          type="textarea"
-          name="specialRequest"
-          placeholder="Special Request"
-          label="Special Request"
+        <textarea
+          name="special requirements"
+          id="special requirements"
+          placeholder="Special Requirements"
+          rows={4}
+          cols={40}
         />
+        <label className="form-input-label" htmlFor="special requirements">
+          Special Requiements
+        </label>
+      </div>
+      <div className="form-style--2-instructions">
+        <h3 className="heading-tertiary">
+          Instructions for Completing the Form
+        </h3>
+        <ul>
+          <li>
+            <span>Fill in Traveler Info:</span> Complete all fields for the
+            traveler before moving to the next step.
+          </li>
+          <li>
+            <span>Add New Traveler:</span> After filling out the details, click
+            the "Add Traveler" button to add another.
+          </li>
+          <li>
+            <span>Remove Traveler:</span> You can remove a traveler by clicking
+            the remove icon. At least one traveler must remain.
+          </li>
+          <li>
+            <span>Navigation:</span> Use the arrows to navigate between
+            travelers and modify their details.
+          </li>
+          <li>
+            <span>Nationality:</span> Enter your nationality for booking
+            purposes.
+          </li>
+          <li>
+            <span>Special Requirements:</span> List any special needs or
+            requests you have for your tour.
+          </li>
+        </ul>
       </div>
     </div>
   );

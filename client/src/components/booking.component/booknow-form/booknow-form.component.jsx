@@ -1,7 +1,8 @@
 import "./booknow-form.styles.scss";
-import { FormInput } from "../../universal.component/form-input/form-input.component";
+import { AnimatedButton } from "../../universal.component/animated-button/animated-button.component";
 import { FormStyle1 } from "../form-style-1/form-style-1.component";
 import { FormStyle2 } from "../form-style-2/form-style-2.component";
+import { FormStyle3 } from "../form-style-3/form-style-3.component";
 
 export const BooknowForm = () => {
   return (
@@ -13,7 +14,8 @@ export const BooknowForm = () => {
         <FormStyle2 />
       </div>
       <div className="booknow-form__container form-img--3">
-        <div className="form-inner-box form-style--3">hello</div>
+        <FormStyle3 />
+        {/* <AnimatedButton>Next Step &rarr;</AnimatedButton> */}
       </div>
     </form>
   );
