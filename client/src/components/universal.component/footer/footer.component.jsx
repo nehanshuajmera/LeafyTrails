@@ -70,7 +70,7 @@ export const Footer = () => {
                 </Link>
               </div>
             </div>
-            <span className="footer-links-design">&nbsp;</span>
+            {/* <span className="footer-links-design">&nbsp;</span> */}
             <div className="get-in-touch">
               <div className="footer-main-heading">Ready for an Adventure?</div>
               <div className="footer-main-tagline">
