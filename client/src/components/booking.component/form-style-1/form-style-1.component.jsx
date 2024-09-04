@@ -1,7 +1,12 @@
 import "./form-style-1.styles.scss";
 import { FormInput } from "../../universal.component/form-input/form-input.component";
 
-export const FormStyle1 = () => {
+export const FormStyle1 = ({ formState, onFormChange }) => {
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    onFormChange({ [name]: value });
+  };
+
   return (
     <div className="form-inner-box form-style--1">
       <div className="form-style--1-textbox">
@@ -12,6 +17,8 @@ export const FormStyle1 = () => {
           type="text"
           placeholder="Name"
           required
+          value={formState.name}
+          onChange={handleInputChange}
         />
         <FormInput
           name="email"
@@ -19,20 +26,26 @@ export const FormStyle1 = () => {
           type="email"
           placeholder="Email"
           required
+          value={formState.email}
+          onChange={handleInputChange}
         />
         <FormInput
-          name="contact number"
+          name="contactNumber"
           label="Mobile Number"
           type="text"
           placeholder="Mobile Number"
           required
+          value={formState.contactNumber}
+          onChange={handleInputChange}
         />
         <FormInput
-          name="numofmembers"
-          label="Number of Members"
+          name="numOfMembers"
+          label="Number of Travelers"
           type="number"
-          placeholder="Number"
+          placeholder="Number of Travelers"
           required
+          value={formState.numOfMembers}
+          onChange={handleInputChange}
         />
       </div>
       <div className="form-style--1-instructions">
@@ -54,7 +67,7 @@ export const FormStyle1 = () => {
             booking.
           </li>
           <li>
-            <span>Number of Members:</span> Enter the total number of people in
+            <span>Number of Travelers:</span> Enter the total number of people in
             your group.
           </li>
         </ul>

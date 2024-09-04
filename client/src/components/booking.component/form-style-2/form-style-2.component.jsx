@@ -6,14 +6,17 @@ import addUser from "../../../assets/add-user.png";
 import deleteUser from "../../../assets/delete-user.png";
 import naviBtn from "../../../assets/arrow-right.png";
 
-export const FormStyle2 = () => {
-  const [participants, setParticipants] = useState([{ name: "", age: "" }]);
+export const FormStyle2 = ({ formState, onFormChange }) => {
+  const [participants, setParticipants] = useState(
+    formState.participants || [{ name: "", age: "" }]
+  );
   const [currentPage, setCurrentPage] = useState(0);
 
   const handleChange = (index, event) => {
     const values = [...participants];
     values[index][event.target.name] = event.target.value;
     setParticipants(values);
+    onFormChange({ participants: values });
   };
 
   const isValidParticipant = () => {
@@ -26,25 +29,26 @@ export const FormStyle2 = () => {
       alert("Please fill in all fields before adding a new member.");
       return;
     }
-    setParticipants([...participants, { name: "", age: "" }]);
-    setCurrentPage(participants.length); /* Go to the new page */
+    const newParticipants = [...participants, { name: "", age: "" }];
+    setParticipants(newParticipants);
+    setCurrentPage(newParticipants.length - 1); /* Go to the new page */
+    onFormChange({ participants: newParticipants });
   };
 
   const handleRemoveParticipant = (index) => {
-    /* Prevent removal if there's only one participant left */
     if (participants.length === 1) {
       alert("At least one member must be present.");
       return;
     }
 
-    const values = [...participants];
-    values.splice(index, 1);
-    setParticipants(values);
+    const newParticipants = [...participants];
+    newParticipants.splice(index, 1);
+    setParticipants(newParticipants);
 
-    /* Adjust currentPage if necessary */
-    if (currentPage >= values.length) {
-      setCurrentPage(values.length - 1);
+    if (currentPage >= newParticipants.length) {
+      setCurrentPage(newParticipants.length - 1);
     }
+    onFormChange({ participants: newParticipants });
   };
 
   const handleNextPage = () => {
@@ -65,15 +69,15 @@ export const FormStyle2 = () => {
     <div className="form-inner-box form-style--2">
       <div className="form-style--2-textbox">
         <h3 className="heading-tertiary utility-margin-btm-small">
-          Traveller Info:
+          Traveler Info:
         </h3>
         {participants.length > 0 && (
           <div className="participant-entry">
             <FormInput
               name="name"
               type="text"
-              placeholder="Member Name"
-              label="Member Name"
+              placeholder="Traveler Name"
+              label="Traveler Name"
               value={participants[currentPage].name}
               onChange={(event) => handleChange(currentPage, event)}
               required
@@ -81,7 +85,7 @@ export const FormStyle2 = () => {
             <FormInput
               name="age"
               type="number"
-              placeholder="Member Age"
+              placeholder="Traveler Age"
               label="Age"
               value={participants[currentPage].age}
               onChange={(event) => handleChange(currentPage, event)}
@@ -122,17 +126,23 @@ export const FormStyle2 = () => {
           type="text"
           placeholder="Nationality"
           label="Nationality"
+          value={formState.nationality || ""}
+          onChange={(e) => onFormChange({ nationality: e.target.value })}
           required
         />
         <textarea
-          name="special requirements"
-          id="special requirements"
+          name="specialRequirements"
+          id="specialRequirements"
           placeholder="Special Requirements"
           rows={4}
           cols={40}
+          value={formState.specialRequirements || ""}
+          onChange={(e) =>
+            onFormChange({ specialRequirements: e.target.value })
+          }
         />
-        <label className="form-input-label" htmlFor="special requirements">
-          Special Requiements
+        <label className="form-input-label" htmlFor="specialRequirements">
+          Special Requirements
         </label>
       </div>
       <div className="form-style--2-instructions">
