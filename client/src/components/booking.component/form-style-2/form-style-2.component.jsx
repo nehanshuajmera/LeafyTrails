@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FormInput } from "../../universal.component/form-input/form-input.component";
 import "./form-style-2.styles.scss";
 
@@ -11,6 +11,12 @@ export const FormStyle2 = ({ formState, onFormChange }) => {
     formState.participants || [{ name: "", age: "" }]
   );
   const [currentPage, setCurrentPage] = useState(0);
+
+  useEffect(() => {
+    /* Synchronize local participants state with formState */
+    setParticipants(formState.participants || [{ name: "", age: "" }]);
+    setCurrentPage(0); /* Reset to the first page */
+  }, [formState.participants]);
 
   const handleChange = (index, event) => {
     const values = [...participants];
@@ -137,9 +143,7 @@ export const FormStyle2 = ({ formState, onFormChange }) => {
           rows={4}
           cols={40}
           value={formState.specialRequests || ""}
-          onChange={(e) =>
-            onFormChange({ specialRequests: e.target.value })
-          }
+          onChange={(e) => onFormChange({ specialRequests: e.target.value })}
         />
         <label className="form-input-label" htmlFor="specialRequests">
           Special Requests
@@ -171,8 +175,8 @@ export const FormStyle2 = ({ formState, onFormChange }) => {
             purposes.
           </li>
           <li>
-            <span>Special Requests:</span> List any special needs or
-            requests you have for your tour.
+            <span>Special Requests:</span> List any special needs or requests
+            you have for your tour.
           </li>
         </ul>
       </div>
