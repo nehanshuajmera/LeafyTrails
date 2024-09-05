@@ -308,7 +308,7 @@
   }
 }
 
-/* media query mob */
+/* media query mobile II */
 @include responsive(mob) {
   .footer {
     height: 80vh;
@@ -340,7 +340,7 @@
       }
 
       &--links {
-        width: 80%;
+        width: 90%;
         height: 70%;
         position: relative;
 
@@ -421,7 +421,7 @@
         }
 
         .terms-conditions {
-          width: 50%;
+          width: 55%;
           position: absolute;
           top: 0;
           right: 0;

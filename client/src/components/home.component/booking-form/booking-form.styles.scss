@@ -17,8 +17,20 @@
   background-attachment: fixed;
 
 
+  @include responsive(mobile) {
+    min-height: 50vh;
+    height: auto;
+    background-attachment: scroll;
+  }
+
+  @include responsive(mob) {
+    min-height: 50vh;
+    height: auto;
+    background-attachment: scroll;
+  }
+
   @include responsive(iphone) {
-    min-height: 35vh;
+    min-height: 45vh;
     height: auto;
     background-attachment: scroll;
   }
@@ -55,6 +67,32 @@
     background-repeat: no-repeat;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.3);
     border-radius: 0.3rem;
+
+    @include responsive(mobile) {
+      width: 85%;
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-white, 0.55) 0%,
+          rgba($color-white, 0.55) 100%
+        ),
+        url("../../../assets/form.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include responsive(mob) {
+      width: 85%;
+      background-image: linear-gradient(
+          90deg,
+          rgba($color-white, 0.55) 0%,
+          rgba($color-white, 0.55) 100%,
+        ),
+        url("../../../assets/form.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     @include responsive(iphone) {
       width: 85%;
@@ -107,6 +145,16 @@
       display: flex;
       flex-direction: column;
 
+      @include responsive(mobile) {
+        width: 70%;
+        padding: 2rem;
+      }
+
+      @include responsive(mob) {
+        width: 70%;
+        padding: 2rem;
+      }
+
       @include responsive(iphone) {
         width: 60%;
         padding: 2rem;
@@ -136,9 +184,18 @@
           $outline-secondary
         );
 
+        @include responsive(mobile) {
+          font-size: 2.5rem;
+        }
+
+        @include responsive(mob) {
+          font-size: 2.5rem;
+        }
+
         @include responsive(iphone) {
           font-size: 2.5rem;
         }
+
         @include responsive(android) {
           font-size: 2.5rem;
         }
@@ -153,6 +210,14 @@
 
         &:hover {
           transform: scale(1.02);
+
+          @include responsive(mobile) {
+            transform: scale(1);
+          }
+
+          @include responsive(mob) {
+            transform: scale(1);
+          }
 
           @include responsive(iphone) {
             transform: scale(1);

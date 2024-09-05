@@ -9,6 +9,14 @@
   flex-direction: column;
   position: relative;
 
+  @include responsive(mobile) {
+    height: 100vh;
+  }
+
+  @include responsive(mob) {
+    height: 80vh;
+  }
+
   @include responsive(iphone) {
     height: 80vh;
   }
@@ -36,6 +44,14 @@
       $outline-secondary
     );
     text-align: center;
+
+    @include responsive(mobile) {
+      margin: 0 1rem;
+    }
+
+    @include responsive(mob) {
+      margin: 0 1rem;
+    }
 
     @include responsive(iphone) {
       margin: 0 1rem;
