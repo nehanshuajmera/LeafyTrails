@@ -21,8 +21,8 @@
       url("../../../assets/header--default.jpg");
   }
 
-   /* media query */
-   @include responsive(mobile) {
+  /* media query */
+  @include responsive(mobile) {
     height: 50vh;
     @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
@@ -30,7 +30,15 @@
     }
   }
 
-   @include responsive(iphone) {
+  @include responsive(mob) {
+    height: 50vh;
+    @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+      clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
+    }
+  }
+
+  @include responsive(iphone) {
     height: 50vh;
     @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
       clip-path: polygon(0 0, 100% 0, 100% 40vh, 0 100%);
@@ -73,6 +81,14 @@
 
     /* media query */
     @include responsive(mobile) {
+      height: 40vh;
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+        clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
+      }
+    }
+
+    @include responsive(mob) {
       height: 40vh;
       @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 50% 40vh, 0 35vh);
@@ -132,6 +148,11 @@
       left: 2.5rem;
     }
 
+    @include responsive(mob) {
+      top: 1.5rem;
+      left: 2.5rem;
+    }
+
     @include responsive(iphone) {
       top: 2rem;
       left: 2.5rem;
@@ -166,6 +187,10 @@
     text-align: center;
 
     @include responsive(mobile) {
+      width: 80%;
+    }
+
+    @include responsive(mob) {
       width: 80%;
     }
 

@@ -16,6 +16,10 @@ body {
     padding: 0;
   }
 
+  @include responsive(mob) {
+    padding: 0;
+  }
+
   @include responsive(iphone) {
     padding: 0;
   }

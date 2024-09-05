@@ -19,6 +19,10 @@
       font-size: 1.8rem;
     }
 
+    @include responsive(mob) {
+      font-size: 1.8rem;
+    }
+
     @include responsive(iphone) {
       font-size: 1.8rem;
     }

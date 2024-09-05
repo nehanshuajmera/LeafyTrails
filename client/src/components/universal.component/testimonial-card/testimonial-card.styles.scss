@@ -10,6 +10,16 @@
   font-size: 1.6rem;
   transform: skewX(-12deg);
 
+  @include responsive(mobile) {
+    width: 80%;
+    transform: skewX(0);
+  }
+
+  @include responsive(mob) {
+    width: 80%;
+    transform: skewX(0);
+  }
+
   @include responsive(iphone) {
     width: 75%;
   }
@@ -45,6 +55,18 @@
       -webkit-clip-path: circle(50% at 50% 50%);
       clip-path: circle(50% at 50% 50%);
     }
+
+    @include responsive(mobile) {
+      height: 12rem;
+      width: 12rem;
+      transform: translateX(-4rem) skewX(0);
+    }
+
+    @include responsive(mob) {
+      height: 12rem;
+      width: 12rem;
+      transform: translateX(-4rem) skewX(0);
+    }
   }
 
   .testimonial--image {
@@ -75,6 +97,14 @@
   &__content {
     transform: skewX(12deg);
     padding: 0.5rem 0;
+
+    @include responsive(mobile) {
+      transform: skewX(0);
+    }
+
+    @include responsive(mob) {
+      transform: skewX(0);
+    }
   }
 
   .heading-tertiary {

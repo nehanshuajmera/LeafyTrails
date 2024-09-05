@@ -10,6 +10,10 @@
     margin-bottom: 4.5rem;
   }
 
+  @include responsive(mob){
+    margin-bottom: 4.5rem;
+  }
+
   @include responsive(iphone){
     margin-bottom: 5rem;
   }
@@ -31,6 +35,10 @@
   margin-bottom: 6rem;
 
   @include responsive(mobile){
+    margin-bottom: 3.5rem;
+  }
+
+  @include responsive(mob){
     margin-bottom: 3.5rem;
   }
 
@@ -58,6 +66,10 @@
     margin-bottom: 1.8rem;
   }
 
+  @include responsive(mob){
+    margin-bottom: 1.8rem;
+  }
+
   @include responsive(iphone){
     margin-bottom: 2rem;
   }
@@ -79,6 +91,10 @@
   margin-bottom: 1.5rem;
 
   @include responsive(mobile){
+    margin-bottom: 1rem;
+  }
+
+  @include responsive(mob){
     margin-bottom: 1rem;
   }
 
@@ -106,6 +122,10 @@
     margin-top: 4.5rem;
   }
 
+  @include responsive(mob){
+    margin-top: 4.5rem;
+  }
+
   @include responsive(iphone){
     margin-top: 5rem;
   }
@@ -123,6 +143,10 @@
   margin-top: 6rem;
 
   @include responsive(mobile){
+    margin-top: 3.5rem;
+  }
+
+  @include responsive(mob){
     margin-top: 3.5rem;
   }
 
@@ -146,6 +170,10 @@
     margin-top: 1.8rem;
   }
 
+  @include responsive(mob){
+    margin-top: 1.8rem;
+  }
+
   @include responsive(iphone){
     margin-top: 2rem;
   }
@@ -163,6 +191,10 @@
   margin-top: 1.5rem;
 
   @include responsive(mobile){
+    margin-top: 1rem;
+  }
+
+  @include responsive(mob){
     margin-top: 1rem;
   }
 
