@@ -5,7 +5,7 @@ export const FormInput = ({ handleChange, label, ...otherProps }) => {
     <div className="input-group">
       <input
         className="form-input"
-        handleChange={handleChange}
+        onChange={handleChange}
         {...otherProps}
       />
       {label ? <label className={`form-input-label`}>{label}</label> : null}

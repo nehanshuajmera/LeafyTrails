@@ -10,6 +10,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
     .form-inner-box {
       width: 75%;
@@ -21,6 +24,10 @@
       background-color: rgba($color-white, 0.4);
       padding: 2rem;
     }
+  }
+
+  &__submit-btn {
+    margin-bottom: 3rem;
   }
 
   .form-img--1 {

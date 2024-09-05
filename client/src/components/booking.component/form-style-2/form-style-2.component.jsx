@@ -131,18 +131,18 @@ export const FormStyle2 = ({ formState, onFormChange }) => {
           required
         />
         <textarea
-          name="specialRequirements"
-          id="specialRequirements"
-          placeholder="Special Requirements"
+          name="specialRequests"
+          id="specialRequests"
+          placeholder="Special Requests"
           rows={4}
           cols={40}
-          value={formState.specialRequirements || ""}
+          value={formState.specialRequests || ""}
           onChange={(e) =>
-            onFormChange({ specialRequirements: e.target.value })
+            onFormChange({ specialRequests: e.target.value })
           }
         />
-        <label className="form-input-label" htmlFor="specialRequirements">
-          Special Requirements
+        <label className="form-input-label" htmlFor="specialRequests">
+          Special Requests
         </label>
       </div>
       <div className="form-style--2-instructions">
@@ -171,7 +171,7 @@ export const FormStyle2 = ({ formState, onFormChange }) => {
             purposes.
           </li>
           <li>
-            <span>Special Requirements:</span> List any special needs or
+            <span>Special Requests:</span> List any special needs or
             requests you have for your tour.
           </li>
         </ul>

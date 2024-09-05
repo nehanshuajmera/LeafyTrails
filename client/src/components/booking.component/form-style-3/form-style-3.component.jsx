@@ -11,8 +11,9 @@ export const FormStyle3 = ({ formState, onFormChange }) => {
     const selected = tours.find((tour) => tour.cardHeading === packageName);
     onFormChange({
       selectedPackage: selected || null,
-      category: selected ? selected.category : "",
-      price: selected ? selected.price : "",
+      packageName: selected ? selected.cardHeading : "", // Update packageName
+      packageCategory: selected ? selected.category : "", // Update category
+      packagePrice: selected ? selected.price : "", // Update price
     });
   };
 
@@ -37,35 +38,28 @@ export const FormStyle3 = ({ formState, onFormChange }) => {
             value: tour.cardHeading,
             label: tour.cardHeading,
           }))}
-          value={
-            formState.selectedPackage
-              ? formState.selectedPackage.cardHeading
-              : ""
-          }
+          value={formState.packageName || ""}
           onChange={handlePackageChange}
         />
         <label className="dropdown-label">Your Selected Package</label>
+
         <FormInput
           type="text"
-          name="package category"
+          name="packageCategory"
           placeholder="Package Category"
           label="Package Category"
           id="packageCategory"
-          value={
-            formState.selectedPackage ? formState.selectedPackage.category : ""
-          }
+          value={formState.packageCategory || ""}
           readOnly
         />
 
         <FormInput
           type="text"
           id="packagePrice"
-          name="package price"
+          name="packagePrice"
           placeholder="Package Price"
           label="Package Price"
-          value={
-            formState.selectedPackage ? formState.selectedPackage.price : ""
-          }
+          value={formState.packagePrice || ""}
           readOnly
         />
       </div>

@@ -15,8 +15,8 @@ const bookingSchema = new Schema(
       type: String,
       required: true,
     },
-    numberOfMembers: {
-      type: Number,
+    numOfMembers: {
+      type: String,
       required: true,
     },
     participants: [
@@ -26,7 +26,7 @@ const bookingSchema = new Schema(
           required: true,
         },
         age: {
-          type: Number,
+          type: String,
           required: false,
         },
       },
@@ -41,7 +41,7 @@ const bookingSchema = new Schema(
     },
     tourDate: {
       type: Date,
-      required: true,
+      // required: true,
     },
     packageName: {
       type: String,
@@ -87,19 +87,9 @@ const bookingSchema = new Schema(
       ],
     },
     packagePrice: {
-      type: Number,
-      required: true,
-    },
-    paymentStatus: {
       type: String,
-      enum: ["Pending", "Completed", "Failed"],
-      default: "Pending",
-    },
-    paymentMethod: {
-      type: String,
-      enum: ["Credit Card", "Debit Card", "PayPal", "Bank Transfer"],
       required: true,
-    },
+    }
   },
   { timestamps: true }
 );

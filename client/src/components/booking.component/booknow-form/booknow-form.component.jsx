@@ -1,9 +1,12 @@
 import { useState } from "react";
-import "./booknow-form.styles.scss";
-import { AnimatedButton } from "../../universal.component/animated-button/animated-button.component";
+import axios from "axios";
 import { FormStyle1 } from "../form-style-1/form-style-1.component";
 import { FormStyle2 } from "../form-style-2/form-style-2.component";
 import { FormStyle3 } from "../form-style-3/form-style-3.component";
+import { AnimatedButton } from "../../universal.component/animated-button/animated-button.component";
+import "./booknow-form.styles.scss";
+
+const apiUrl = import.meta.env.VITE_API_URL;
 
 export const BooknowForm = () => {
   const [formState, setFormState] = useState({
@@ -17,7 +20,7 @@ export const BooknowForm = () => {
     packagePrice: "",
     participants: [{ name: "", age: "" }],
     currentPage: 0,
-    specialRequirements: "",
+    specialRequests: "",
   });
 
   const [isFormValid, setIsFormValid] = useState(true);
@@ -35,11 +38,37 @@ export const BooknowForm = () => {
     return isValid;
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     if (validateForm()) {
-      // Proceed with form submission or further processing
-      alert("Form submitted successfully!");
+      console.log("Form Data:", formState);
+      try {
+        const cleanPayload = {
+          name: formState.name,
+          email: formState.email,
+          contactNumber: formState.contactNumber,
+          numOfMembers: formState.numOfMembers,
+          date: formState.date,
+          packageName: formState.packageName,
+          packageCategory: formState.packageCategory,
+          packagePrice: formState.packagePrice,
+          participants: formState.participants,
+          nationality: formState.nationality,
+          specialRequests: formState.specialRequests,
+        };
+        console.log(cleanPayload);
+        const response = await axios.post(`${apiUrl}/booking`, cleanPayload, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        alert("Form submitted successfully!");
+        console.log(response.data);
+        // Optionally, redirect or clear the form
+      } catch (err) {
+        alert("An error occurred while submitting the form.");
+        console.error(err.message);
+      }
     } else {
       alert("Please fill out all required fields.");
     }
@@ -55,7 +84,11 @@ export const BooknowForm = () => {
       </div>
       <div className="booknow-form__container form-img--3">
         <FormStyle3 formState={formState} onFormChange={handleFormChange} />
-        {/* <AnimatedButton type="submit">Submit</AnimatedButton> */}
+        <div className="booknow-form__submit-btn">
+          <AnimatedButton color="blue" type="submit">
+            Submit
+          </AnimatedButton>
+        </div>
       </div>
       {!isFormValid && (
         <p className="error">Please fill out all required fields.</p>

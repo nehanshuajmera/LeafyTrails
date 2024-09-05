@@ -6,6 +6,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { storyRoutes } from "./routes/storyRoute.js";
 import { tourRoutes } from "./routes/tourRoute.js";
+import { bookingRoutes } from "./routes/bookingRoute.js";
 
 const PORT = process.env.PORT;
 
@@ -30,6 +31,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/stories", storyRoutes);
 app.use("/api/tours", tourRoutes);
+app.use('/api/booking', bookingRoutes);
 
 const connect = async () => {
   try {
