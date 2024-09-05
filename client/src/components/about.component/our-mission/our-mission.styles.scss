@@ -12,6 +12,20 @@
   align-items: center;
   justify-content: space-evenly;
 
+  @include responsive(mobile) {
+    margin-top: -5vh;
+    padding-top: 5vh;
+    flex-direction: column;
+    height: 90vh;
+  }
+
+  @include responsive(mob) {
+    margin-top: -5vh;
+    padding-top: 5vh;
+    flex-direction: column;
+    height: 80vh;
+  }
+
   @include responsive(iphone) {
     margin-top: -5vh;
     padding-top: 5vh;
@@ -44,6 +58,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include responsive(mobile) {
+      width: 100%;
+    }
+
+    @include responsive(mob) {
+      width: 100%;
+    }
 
     @include responsive(iphone) {
       width: 100%;
@@ -127,6 +149,14 @@
     position: relative;
     padding: 3rem;
     border-radius: 0.5rem;
+
+    @include responsive(mobile) {
+      width: 80%;
+    }
+
+    @include responsive(mob) {
+      width: 80%;
+    }
 
     @include responsive(iphone) {
       width: 80%;
