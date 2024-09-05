@@ -298,7 +298,6 @@
   }
 
   .copy-popup {
-    width: 60%;
     text-align: center;
     position: absolute;
     top: 85%;
@@ -311,6 +310,7 @@
     border-radius: 0.4rem;
     font-weight: 500;
     transition: all 0.4s ease-in-out;
+    width: fit-content;
 
     @include responsive(mobile) {
       top: 65%;
