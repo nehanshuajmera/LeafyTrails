@@ -54,4 +54,28 @@
       margin-bottom: 4rem;
     }
   }
+
+  .grid-layout-3x1 {
+    & > *:last-child {
+      @include responsive(iphone) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+
+      @include responsive(android) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+  
+      @include responsive(ipad) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+  
+      @include responsive(tab) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+    }
+  }
 }

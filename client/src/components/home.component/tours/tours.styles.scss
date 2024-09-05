@@ -8,51 +8,71 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background-image: linear-gradient(
-    to right,
-    $dark-grey,
-    $light-grey
-  );
+  background-image: linear-gradient(to right, $dark-grey, $light-grey);
 
-  @include responsive(mobile){
+  @include responsive(mobile) {
     padding-top: 10rem;
     min-height: 210vh;
     height: auto;
   }
 
-  @include responsive(mob){
+  @include responsive(mob) {
     padding-top: 10rem;
     min-height: 170vh;
     height: auto;
   }
 
-  @include responsive(iphone){
+  @include responsive(iphone) {
     padding-top: 10rem;
     min-height: 110vh;
     height: auto;
   }
 
-  @include responsive(android){
+  @include responsive(android) {
     padding-top: 10rem;
     min-height: 110vh;
-    height: auto; 
+    height: auto;
   }
 
-  @include responsive(ipad){
+  @include responsive(ipad) {
     padding-top: 7rem;
     min-height: 150vh;
     height: auto;
   }
 
-  @include responsive(tab){
+  @include responsive(tab) {
     padding-top: 7rem;
     min-height: 150vh;
     height: auto;
   }
 
-  @include responsive(desktop){
+  @include responsive(desktop) {
     padding-top: 7rem;
     min-height: 120vh;
     height: auto;
+  }
+
+  .grid-layout-3x1 {
+    & > *:last-child {
+      @include responsive(iphone) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+
+      @include responsive(android) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+  
+      @include responsive(ipad) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+  
+      @include responsive(tab) {
+        grid-column: 1/-1;
+        justify-self: center;
+      }
+    }
   }
 }
