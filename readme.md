@@ -19,12 +19,15 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
    git clone https://github.com/nehanshuajmera/leafy-trails.git
 
 2. **Navigate to the project directory**:
+   ```bash
    cd client
 
 3. **Install dependencies**:
+   ```bash
    npm install**
 
 4. **Run the app**:
+   ```bash
    npm run dev
 
 🛠️ Tech Stack
@@ -32,21 +35,24 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
 **Backend**: Node.js, MongoDB
 **Deployment**: Vercel (Backend), Netlify (Frontend)
 
-🤝 **Contributions**
+🤝 Contributions
 We welcome contributions! If you'd like to contribute:
 
 1. **Fork the repository**.
 
 2. **Create a feature branch**:
+   ```bash
    git checkout -b feature-branch
 
 3. **Commit your changes**:
+   ```bash
    git commit -m 'Add a new feature'
 
 4. **Push to the branch**:
+   ```bash
    git push origin feature-branch
 
 5. **Open a Pull Request**.
 
-📬 **Contact**
+📬 Contact
 For any queries or feedback, feel free to reach out at collab.nehanshuajmera@gmail.com.
