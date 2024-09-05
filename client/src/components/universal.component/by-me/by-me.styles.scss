@@ -7,6 +7,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+
+  & span {
+    background-image: linear-gradient(
+      to right,
+      $outline-primary,
+      $outline-secondary
+    );
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: transparent;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-family: "merriweather";
+    font-style: italic;
+    cursor: auto;
+  }
 
   .heading-secondary {
     font-size: 1.6rem;
