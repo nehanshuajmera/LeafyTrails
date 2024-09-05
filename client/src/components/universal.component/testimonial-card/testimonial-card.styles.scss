@@ -11,12 +11,12 @@
   transform: skewX(-12deg);
 
   @include responsive(mobile) {
-    width: 80%;
+    width: 85%;
     transform: skewX(0);
   }
 
   @include responsive(mob) {
-    width: 80%;
+    width: 85%;
     transform: skewX(0);
   }
 
