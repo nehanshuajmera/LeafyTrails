@@ -15,6 +15,14 @@
     display: flex;
     align-items: center;
 
+    @include responsive(mobile) {
+      font-size: 1.8rem;
+    }
+
+    @include responsive(iphone) {
+      font-size: 1.8rem;
+    }
+
     @include responsive(android) {
       font-size: 1.8rem;
     }
