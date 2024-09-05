@@ -13,7 +13,7 @@
   @include responsive(mobile) {
     margin-top: -10vh;
     padding-top: 8vh;
-    height: 60vh;
+    height: 70vh;
   }
 
   @include responsive(mob) {
@@ -66,79 +66,76 @@
     margin: 0 auto;
 
     @include responsive(mobile) {
-      width: 85%;
+      width: 90%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.7) 0%,
-        rgba($color-white, 0.7) 40%,
-        rgba($color-white, 0.5) 70%,
-        rgba($color-white, 0.3) 100%,
-      ),
-      url("../../../assets/card-5.jpg");
+          90deg,
+          rgba($color-white, 0.7) 0%,
+          rgba($color-white, 0.7) 40%,
+          rgba($color-white, 0.5) 70%,
+          rgba($color-white, 0.3) 100%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     @include responsive(mob) {
-      width: 85%;
+      width: 90%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.7) 0%,
-        rgba($color-white, 0.7) 40%,
-        rgba($color-white, 0.5) 70%,
-        rgba($color-white, 0.3) 100%,
-      ),
-      url("../../../assets/card-5.jpg");
+          90deg,
+          rgba($color-white, 0.7) 0%,
+          rgba($color-white, 0.7) 40%,
+          rgba($color-white, 0.5) 70%,
+          rgba($color-white, 0.3) 100%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     @include responsive(iphone) {
       width: 85%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 40%,
-        rgba($color-white, 0.7) 50%,
-        rgba($color-white, 0.5) 55%,
-        transparent 60%
-      ),
-      url("../../../assets/card-5.jpg");
+          180deg,
+          rgba($color-white, 0.8) 0%,
+          rgba($color-white, 0.6) 30%,
+          rgba($color-white, 0.3) 100%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     @include responsive(android) {
       width: 85%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 40%,
-        rgba($color-white, 0.7) 50%,
-        rgba($color-white, 0.5) 55%,
-        transparent 60%
-      ),
-      url("../../../assets/card-5.jpg");
+          90deg,
+          rgba($color-white, 0.7) 0%,
+          rgba($color-white, 0.7) 40%,
+          rgba($color-white, 0.5) 70%,
+          rgba($color-white, 0.3) 100%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     @include responsive(ipad) {
       width: 85%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 40%,
-        rgba($color-white, 0.7) 50%,
-        rgba($color-white, 0.5) 55%,
-        transparent 60%
-      ),
-      url("../../../assets/card-5.jpg");
+          90deg,
+          rgba($color-white, 0.9) 0%,
+          rgba($color-white, 0.9) 40%,
+          rgba($color-white, 0.7) 50%,
+          rgba($color-white, 0.5) 55%,
+          transparent 60%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     @include responsive(tab) {
       width: 85%;
       background-image: linear-gradient(
-        90deg,
-        rgba($color-white, 0.9) 0%,
-        rgba($color-white, 0.9) 40%,
-        rgba($color-white, 0.7) 50%,
-        rgba($color-white, 0.5) 55%,
-        transparent 60%
-      ),
-      url("../../../assets/card-5.jpg");
+          90deg,
+          rgba($color-white, 0.9) 0%,
+          rgba($color-white, 0.9) 40%,
+          rgba($color-white, 0.7) 50%,
+          rgba($color-white, 0.5) 55%,
+          transparent 60%
+        ),
+        url("../../../assets/card-5.jpg");
     }
 
     &--box {
@@ -146,27 +143,27 @@
       height: 100%;
       padding: 2rem;
 
-      @include responsive(mobile){
+      @include responsive(mobile) {
         width: 100%;
       }
 
-      @include responsive(mob){
+      @include responsive(mob) {
         width: 100%;
       }
 
-      @include responsive(iphone){
+      @include responsive(iphone) {
+        width: 100%;
+      }
+
+      @include responsive(android) {
+        width: 100%;
+      }
+
+      @include responsive(ipad) {
         width: 58%;
       }
 
-      @include responsive(android){
-        width: 58%;
-      }
-
-      @include responsive(ipad){
-        width: 58%;
-      }
-
-      @include responsive(tab){
+      @include responsive(tab) {
         width: 58%;
       }
 
@@ -180,15 +177,7 @@
         background-clip: text;
         color: transparent;
 
-        @include responsive(iphone){
-          font-size: 6rem;
-        }
-
-        @include responsive(android){
-          font-size: 6rem;
-        }
-
-        @include responsive(ipad){
+        @include responsive(ipad) {
           font-size: 6rem;
         }
       }
@@ -197,16 +186,8 @@
         font-size: 3rem;
         margin: 0.5rem 0;
 
-        @include responsive(iphone){
-          font-size: 2.5rem;
-        }
-
-        @include responsive(android){
-          font-size: 2.5rem;
-        }
-
-        @include responsive(ipad){
-          font-size: 2.5rem;
+        @include responsive(ipad) {
+          font-size: 2.8rem;
         }
       }
 
@@ -214,11 +195,52 @@
         font-size: 1.4rem;
         line-height: 1.3;
         margin: 0.5rem 0;
+        text-align: justify;
+
+        @include responsive(mobile) {
+          font-size: 2rem;
+        }
+
+        @include responsive(mob) {
+          font-size: 2rem;
+        }
+
+        @include responsive(iphone) {
+          font-size: 2rem;
+        }
+
+        @include responsive(android) {
+          font-size: 2rem;
+        }
+
+        @include responsive(ipad) {
+          font-size: 2rem;
+        }
       }
 
       .offer--conclusion {
         font-size: 1.6rem;
         font-weight: bold;
+
+        @include responsive(mobile) {
+          font-size: 2rem;
+        }
+
+        @include responsive(mob) {
+          font-size: 2rem;
+        }
+
+        @include responsive(iphone) {
+          font-size: 2rem;
+        }
+
+        @include responsive(android) {
+          font-size: 2rem;
+        }
+
+        @include responsive(ipad) {
+          font-size: 2rem;
+        }
       }
 
       .offer--coupon-code {
@@ -233,12 +255,20 @@
         flex-direction: column;
         box-shadow: 0 1rem 3rem rgba($light-blue, 0.3);
 
-        @include responsive(mobile){
-          background-color: rgba($color-white, .4);
+        @include responsive(mobile) {
+          background-color: rgba($color-white, 0.4);
         }
 
-        @include responsive(mob){
-          background-color: rgba($color-white, .4);
+        @include responsive(mob) {
+          background-color: rgba($color-white, 0.4);
+        }
+
+        @include responsive(iphone) {
+          background-color: rgba($color-white, 0.4);
+        }
+
+        @include responsive(android) {
+          background-color: rgba($color-white, 0.4);
         }
 
         .coupon-text {
@@ -271,15 +301,42 @@
   }
 
   .copy-popup {
+    width: 60%;
+    text-align: center;
     position: absolute;
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba($color-white, 0.5);
+    background-color: rgba($color-white, 0.6);
+    color: $outline-secondary;
     padding: 1rem 2rem;
     font-size: 1.6rem;
     border-radius: 0.4rem;
     font-weight: 500;
     transition: all 0.4s ease-in-out;
+
+    @include responsive(mobile) {
+      top: 65%;
+    }
+
+    @include responsive(mob) {
+      top: 110%;
+    }
+
+    @include responsive(iphone) {
+      top: 110%;
+    }
+
+    @include responsive(android) {
+      top: 110%;
+    }
+
+    @include responsive(ipad) {
+      top: 110%;
+    }
+
+    @include responsive(tab) {
+      top: 110%;
+    }
   }
 }
