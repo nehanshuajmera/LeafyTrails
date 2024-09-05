@@ -55,6 +55,20 @@
 }
 
 /* media quesries */
+/* mobile */
+@include responsive(mobile) {
+  .landing-gallery {
+    display: none;
+  }
+}
+
+/* mobile II */
+@include responsive(mob) {
+  .landing-gallery {
+    display: none;
+  }
+}
+
 /* iphone */
 @include responsive(iphone) {
   .landing-gallery {

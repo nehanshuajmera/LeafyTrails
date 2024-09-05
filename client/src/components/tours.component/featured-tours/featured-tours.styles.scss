@@ -10,24 +10,48 @@
   height: 100vh;
   @include linearGradient($dark-grey, $light-grey);
 
+  @include responsive(mobile) {
+    min-height: 180vh;
+    height: auto;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
+
+  @include responsive(mob) {
+    min-height: 160vh;
+    height: auto;
+    margin-top: -5vh;
+    padding-top: 5vh;
+  }
+
   @include responsive(iphone) {
     height: 100vh;
     margin-top: -5vh;
     padding-top: 5vh;
   }
+
   @include responsive(android) {
     height: 100vh;
     margin-top: -5vh;
     padding-top: 5vh;
   }
+
   @include responsive(ipad) {
     height: 130vh;
     margin-top: -5vh;
     padding-top: 5vh;
   }
+
   @include responsive(tab) {
     height: 130vh;
     margin-top: -5vh;
     padding-top: 5vh;
+  }
+
+  .heading-secondary {
+
+    @include responsive(mobile){
+      margin-bottom: 4rem;
+    }
   }
 }
