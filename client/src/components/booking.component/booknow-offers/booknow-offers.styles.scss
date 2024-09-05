@@ -10,6 +10,42 @@
   align-items: center;
   justify-content: center;
 
+  @include responsive(mobile) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
+  @include responsive(mob) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
+  @include responsive(iphone) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
+  @include responsive(android) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
+  @include responsive(ipad) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
+  @include responsive(tab) {
+    margin-top: -10vh;
+    padding-top: 8vh;
+    height: 60vh;
+  }
+
   &__container {
     width: 75%;
     border-radius: 0.5rem;
@@ -29,10 +65,110 @@
     position: relative;
     margin: 0 auto;
 
+    @include responsive(mobile) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.7) 0%,
+        rgba($color-white, 0.7) 40%,
+        rgba($color-white, 0.5) 70%,
+        rgba($color-white, 0.3) 100%,
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
+    @include responsive(mob) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.7) 0%,
+        rgba($color-white, 0.7) 40%,
+        rgba($color-white, 0.5) 70%,
+        rgba($color-white, 0.3) 100%,
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
+    @include responsive(iphone) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 40%,
+        rgba($color-white, 0.7) 50%,
+        rgba($color-white, 0.5) 55%,
+        transparent 60%
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
+    @include responsive(android) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 40%,
+        rgba($color-white, 0.7) 50%,
+        rgba($color-white, 0.5) 55%,
+        transparent 60%
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
+    @include responsive(ipad) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 40%,
+        rgba($color-white, 0.7) 50%,
+        rgba($color-white, 0.5) 55%,
+        transparent 60%
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
+    @include responsive(tab) {
+      width: 85%;
+      background-image: linear-gradient(
+        90deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 40%,
+        rgba($color-white, 0.7) 50%,
+        rgba($color-white, 0.5) 55%,
+        transparent 60%
+      ),
+      url("../../../assets/card-5.jpg");
+    }
+
     &--box {
       width: 45%;
       height: 100%;
       padding: 2rem;
+
+      @include responsive(mobile){
+        width: 100%;
+      }
+
+      @include responsive(mob){
+        width: 100%;
+      }
+
+      @include responsive(iphone){
+        width: 58%;
+      }
+
+      @include responsive(android){
+        width: 58%;
+      }
+
+      @include responsive(ipad){
+        width: 58%;
+      }
+
+      @include responsive(tab){
+        width: 58%;
+      }
 
       .offer--name {
         font-family: "lovely-coffee";
@@ -43,11 +179,35 @@
         @include linearGradient($color-dark-blue, $color-light-blue);
         background-clip: text;
         color: transparent;
+
+        @include responsive(iphone){
+          font-size: 6rem;
+        }
+
+        @include responsive(android){
+          font-size: 6rem;
+        }
+
+        @include responsive(ipad){
+          font-size: 6rem;
+        }
       }
 
       .offer--title {
         font-size: 3rem;
         margin: 0.5rem 0;
+
+        @include responsive(iphone){
+          font-size: 2.5rem;
+        }
+
+        @include responsive(android){
+          font-size: 2.5rem;
+        }
+
+        @include responsive(ipad){
+          font-size: 2.5rem;
+        }
       }
 
       .offer--content {
@@ -72,6 +232,14 @@
         justify-content: space-evenly;
         flex-direction: column;
         box-shadow: 0 1rem 3rem rgba($light-blue, 0.3);
+
+        @include responsive(mobile){
+          background-color: rgba($color-white, .4);
+        }
+
+        @include responsive(mob){
+          background-color: rgba($color-white, .4);
+        }
 
         .coupon-text {
           font-size: 1.3rem;
