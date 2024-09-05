@@ -56,7 +56,7 @@ export const Popup = ({ isOpen, onClose, title, heading, content, images }) => {
             {heading}
           </h3>
           <p className="popup__text utility-margin-btm-md-2">{content}</p>
-          <AnimatedButton color="blue">Book Now</AnimatedButton>
+          <AnimatedButton to='/booking' color="blue">Book Now</AnimatedButton>
         </div>
       </div>
     </div>
