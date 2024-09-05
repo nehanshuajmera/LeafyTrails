@@ -31,14 +31,24 @@
       background: none;
       margin: 0 3rem;
 
+      @include responsive(mobile) {
+        width: 7rem;
+        height: 7rem;
+      }
+
+      @include responsive(mob) {
+        width: 7rem;
+        height: 7rem;
+      }
+
       @include responsive(iphone) {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
       }
 
       @include responsive(android) {
-        width: 6rem;
-        height: 6rem;
+        width: 7rem;
+        height: 7rem;
       }
 
       &:first-child {
@@ -58,12 +68,20 @@
       font-size: 1.8rem;
       font-weight: 600;
 
+      @include responsive(mobile) {
+        font-size: 2.8rem;
+      }
+
+      @include responsive(mob) {
+        font-size: 2.8rem;
+      }
+
       @include responsive(iphone) {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
       }
 
       @include responsive(android) {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
       }
     }
   }
