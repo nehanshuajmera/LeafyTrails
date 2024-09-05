@@ -31,9 +31,9 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
    npm run dev
 
 ## 🛠️ Tech Stack
-**Frontend**: React, SCSS
-**Backend**: Node.js, MongoDB
-**Deployment**: Vercel (Backend), Netlify (Frontend)
+- **Frontend**: React, SCSS
+- **Backend**: Node.js, MongoDB
+- **Deployment**: Vercel (Backend), Netlify (Frontend)
 
 ## 🤝 Contributions
 We welcome contributions! If you'd like to contribute:
