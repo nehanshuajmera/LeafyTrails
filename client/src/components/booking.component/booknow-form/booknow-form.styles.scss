@@ -14,9 +14,21 @@
     align-items: flex-end;
     justify-content: center;
 
-     @include responsive(iphone) {
+    @include responsive(mobile) {
+      height: 90vh;
+    }
+
+    @include responsive(mob) {
+      height: 80vh;
+    }
+
+    @include responsive(iphone) {
       height: 60vh;
-     }
+    }
+
+    @include responsive(android) {
+      height: 60vh;
+    }
 
     .form-inner-box {
       width: 75%;
@@ -28,9 +40,21 @@
       background-color: rgba($color-white, 0.4);
       padding: 2rem;
 
+      @include responsive(mobile) {
+        width: 85%;
+      }
+
+      @include responsive(mob) {
+        width: 85%;
+      }
+
       @include responsive(iphone) {
         width: 85%;
-       }
+      }
+
+      @include responsive(android) {
+        width: 85%;
+      }
     }
   }
 
@@ -54,7 +78,7 @@
         rgba($color-white, 0.2)
       ),
       url("https://img.freepik.com/premium-photo/travel-luggage-globe-travel-time_639785-56530.jpg?w=740");
-      background-position: bottom;
+    background-position: bottom;
   }
 
   .form-img--3 {
@@ -64,6 +88,6 @@
         rgba($color-white, 0.2)
       ),
       url("https://img.freepik.com/premium-photo/plane-is-flying-globe-words-airplane_605423-188347.jpg?w=740");
-      background-position: top;
+    background-position: top;
   }
 }

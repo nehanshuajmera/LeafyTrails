@@ -24,6 +24,9 @@ export const FormStyle3 = ({ formState, onFormChange }) => {
   return (
     <div className="form-inner-box form-style--3">
       <div className="form-style--3-textbox">
+        <h3 className="heading-tertiary utility-margin-btm-small">
+          Package Info:
+        </h3>
         <FormInput
           type="date"
           placeholder="Select your travel date"

@@ -6,12 +6,26 @@
   align-items: center;
   justify-content: space-between;
 
+  @include responsive(mobile) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &-textbox{
     width: 50%;
+
+    @include responsive(mobile) {
+      width: 100%
+    }
 
     .heading-secondary {
       @include linearGradient($outline-primary, $outline-secondary);
       margin-bottom: 3rem;
+
+      @include responsive(mobile){
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
     }
   }
 
@@ -19,6 +33,14 @@
     width: 45%;
     align-self: flex-start;
     padding: 2rem;
+
+    @include responsive(mobile) {
+      width: 100%;
+    }
+
+    @include responsive(mob) {
+      width: 50%;
+    }
 
     & h3 {
       font-size: 2rem;
@@ -33,6 +55,10 @@
       & li {
         font-size: 1.8rem;
         margin: 1rem 0;
+
+        @include responsive(mobile) {
+          text-align: justify;
+        }
 
         & span {
           font-weight: 500;
