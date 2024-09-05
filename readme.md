@@ -12,7 +12,7 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
 - **Responsive Design**: Enjoy a sleek, modern interface that looks great on any device.
 - **Easy Booking**: Book your next adventure with just a few clicks.
 
-## 🛠 Installation**
+## 🛠 Installation
 
 1. **Clone the repository**:
    ```bash  
@@ -24,18 +24,18 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
 
 3. **Install dependencies**:
    ```bash
-   npm install**
+   npm install
 
 4. **Run the app**:
    ```bash
    npm run dev
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 **Frontend**: React, SCSS
 **Backend**: Node.js, MongoDB
 **Deployment**: Vercel (Backend), Netlify (Frontend)
 
-🤝 Contributions
+## 🤝 Contributions
 We welcome contributions! If you'd like to contribute:
 
 1. **Fork the repository**.
@@ -54,5 +54,5 @@ We welcome contributions! If you'd like to contribute:
 
 5. **Open a Pull Request**.
 
-📬 Contact
+## 📬 Contact
 For any queries or feedback, feel free to reach out at collab.nehanshuajmera@gmail.com.
