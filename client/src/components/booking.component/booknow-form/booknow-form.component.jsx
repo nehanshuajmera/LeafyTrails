@@ -41,7 +41,6 @@ export const BooknowForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form Data:", formState);
       try {
         const cleanPayload = {
           name: formState.name,
@@ -56,15 +55,25 @@ export const BooknowForm = () => {
           nationality: formState.nationality,
           specialRequests: formState.specialRequests,
         };
-        console.log(cleanPayload);
         const response = await axios.post(`${apiUrl}/booking`, cleanPayload, {
           headers: {
             "Content-Type": "application/json",
           },
         });
         alert("Form submitted successfully!");
-        console.log(response.data);
-        // Optionally, redirect or clear the form
+        setFormState({
+          name: "",
+          email: "",
+          contactNumber: "",
+          numOfMembers: "",
+          date: "",
+          selectedPackage: null,
+          packageCategory: "",
+          packagePrice: "",
+          participants: [{ name: "", age: "" }],
+          currentPage: 0,
+          specialRequests: "",
+        });
       } catch (err) {
         alert("An error occurred while submitting the form.");
         console.error(err.message);

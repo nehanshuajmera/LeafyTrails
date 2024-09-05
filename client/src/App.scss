@@ -12,12 +12,18 @@ body {
   box-sizing: border-box;
   padding: 1.5rem;
 
+  @include responsive(mobile) {
+    padding: 0;
+  }
+
   @include responsive(iphone) {
     padding: 0;
   }
+
   @include responsive(android) {
     padding: 0;
   }
+
   @include responsive(ipad) {
     padding: 0;
   }
