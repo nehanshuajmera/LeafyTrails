@@ -10,6 +10,10 @@
   transition: transform 0.3s;
   cursor: pointer;
 
+  @include responsive(mobile) {
+    font-size: 1.8rem;
+  }
+
   @include responsive(iphone) {
     font-size: 2rem;
   }
@@ -72,5 +76,25 @@
 
   &:hover {
     transform: translateY(-1.5rem) scale(1.02);
+
+    @include responsive(mobile){
+      transform: translateY(0) scale(1);
+    }
+
+    @include responsive(iphone){
+      transform: translateY(0) scale(1);
+    }
+
+    @include responsive(android){
+      transform: translateY(0) scale(1);
+    }
+
+    @include responsive(ipad){
+      transform: translateY(0) scale(1);
+    }
+
+    @include responsive(tab){
+      transform: translateY(0) scale(1);
+    }
   }
 }
