@@ -24,6 +24,13 @@
     margin-top: -9rem;
   }
 
+  @include responsive(mob) {
+    min-height: 80vh;
+    height: auto;
+    transform: skewy(-11deg);
+    margin-top: -9rem;
+  }
+
   @include responsive(iphone) {
     min-height: 80vh;
     height: auto;
@@ -63,6 +70,10 @@
     transform: skewY(6deg);
 
     @include responsive(mobile) {
+      transform: skewy(11deg);
+    }
+
+    @include responsive(mob) {
       transform: skewy(11deg);
     }
 
