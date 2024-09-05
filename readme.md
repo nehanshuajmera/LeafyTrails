@@ -16,7 +16,7 @@ Whether you're seeking a thrilling journey or a relaxing getaway, Leafy Trails h
 
 1. **Clone the repository**:
    ```bash  
-   git clone https://github.com/nehanshuajmera/leafy-trails.git
+   git clone https://github.com/nehanshuajmera/LeafyTrails.git
 
 2. **Navigate to the project directory**:
    ```bash
