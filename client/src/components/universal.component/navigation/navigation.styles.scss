@@ -27,6 +27,16 @@
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     /* button media query */
+    @include responsive(mobile) {
+      height: 7rem;
+      width: 7rem;
+    }
+
+    @include responsive(mob) {
+      height: 7rem;
+      width: 7rem;
+    }
+
     @include responsive(iphone) {
       height: 7rem;
       width: 7rem;
@@ -66,6 +76,14 @@
       display: inline-block;
 
       /* media query */
+      @include responsive(mobile) {
+        width: 3rem;
+      }
+
+      @include responsive(mob) {
+        width: 3rem;
+      }
+
       @include responsive(iphone) {
         width: 3rem;
       }
@@ -96,6 +114,14 @@
       top: -0.7rem;
 
       /* media query */
+      @include responsive(mobile) {
+        top: -0.9rem;
+      }
+
+      @include responsive(mob) {
+        top: -0.9rem;
+      }
+
       @include responsive(iphone) {
         top: -0.9rem;
       }
@@ -117,6 +143,14 @@
       top: 0.7rem;
 
       /* media query */
+      @include responsive(mobile) {
+        top: 0.9rem;
+      }
+
+      @include responsive(mob) {
+        top: 0.9rem;
+      }
+
       @include responsive(iphone) {
         top: 0.9rem;
       }
@@ -137,10 +171,58 @@
 
   &__button:hover &__icon::before {
     top: -0.8rem;
+
+    @include responsive(mobile) {
+      top: -0.9rem;
+    }
+
+    @include responsive(mob) {
+      top: -0.9rem;
+    }
+
+    @include responsive(iphone) {
+      top: -0.9rem;
+    }
+
+    @include responsive(android) {
+      top: -0.9rem;
+    }
+
+    @include responsive(ipad) {
+      top: -1rem;
+    }
+
+    @include responsive(tab) {
+      top: -1rem;
+    }
   }
 
   &__button:hover &__icon::after {
     top: 0.8rem;
+
+    @include responsive(mobile) {
+      top: 0.9rem;
+    }
+
+    @include responsive(mob) {
+      top: 0.9rem;
+    }
+
+    @include responsive(iphone) {
+      top: 0.9rem;
+    }
+
+    @include responsive(android) {
+      top: 0.9rem;
+    }
+
+    @include responsive(ipad) {
+      top: 1rem;
+    }
+
+    @include responsive(tab) {
+      top: 1.1rem;
+    }
   }
 
   /* backgroung styles of navigation */
@@ -156,6 +238,16 @@
     transition: transform 0.8s cubic-bezier(0.37, 0, 0.63, 1);
 
     /* media query */
+    @include responsive(mobile) {
+      height: 6rem;
+      width: 6rem;
+    }
+
+    @include responsive(mob) {
+      height: 6rem;
+      width: 6rem;
+    }
+
     @include responsive(iphone) {
       height: 6rem;
       width: 6rem;
@@ -192,6 +284,14 @@
     transition: all 0.8s cubic-bezier(0.65, 0, 0.35, 1);
 
     /* media query */
+    @include responsive(mobile) {
+      transition: all 0.8s ease-in-out;
+    }
+
+    @include responsive(mob) {
+      transition: all 0.8s ease-in-out;
+    }
+
     @include responsive(iphone) {
       transition: all 0.8s ease-in-out;
     }
@@ -266,6 +366,14 @@
     transform: scale(80);
 
     /* media query */
+    @include responsive(mobile) {
+      transform: scale(85);
+    }
+
+    @include responsive(mobile) {
+      transform: scale(85);
+    }
+
     @include responsive(iphone) {
       transform: scale(85);
     }
