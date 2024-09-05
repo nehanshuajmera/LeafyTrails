@@ -250,6 +250,106 @@ in order to achieve needed styles related to this 3D card */
   }
 }
 
+/* media query for mobile II */
+@include responsive(mob) {
+  .rotate-card {
+    width: 40rem;
+    height: 60rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.25);
+    border-radius: 3px;
+    background-color: $color-white;
+
+    .card__side {
+      height: auto;
+      position: relative;
+      transition: all 0.8s ease;
+      box-shadow: none;
+      border-radius: none;
+    }
+
+    .card__side--front {
+      height: 75%;
+
+      .card__heading {
+        font-size: 3.5rem;
+        width: 80%;
+        top: 6rem;
+      }
+
+      .card__details {
+        padding: 1rem 2rem;
+        padding-top: 2rem;
+
+        ul {
+          width: 90%;
+
+          li {
+            font-size: 2rem;
+            padding: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .card__side--back {
+      transform: rotateY(0deg);
+      height: auto;
+
+      .card__action {
+        height: 18rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0);
+        padding-top: 2rem;
+        margin-top: -3rem;
+
+        .price--only {
+          text-transform: uppercase;
+          font-size: 1.4rem;
+        }
+
+        .price--value {
+          font-size: 4rem;
+          font-weight: 100;
+        }
+      }
+    }
+
+    .back-orange,
+    .back-green,
+    .back-blue,
+    .back-brown,
+    .back-darkblue,
+    .back-cyan,
+    .back-red,
+    .back-gray,
+    .back-lightblue,
+    .back-darkgreen,
+    .back-pink,
+    .back-lavender,
+    .back-lightgreen,
+    .back-yellow,
+    .back-turquoise,
+    .back-silver,
+    .back-crimson,
+    .back-lightpink,
+    .back-goldenrod,
+    .back-forestgreen,
+    .back-khaki {
+      @supports (clip-path: polygon(0 0)) and (-webkit-clip-path: polygon(0 0)) {
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover .card__side--front {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
 /* media query for iphone */
 @include responsive(iphone) {
   .rotate-card {
