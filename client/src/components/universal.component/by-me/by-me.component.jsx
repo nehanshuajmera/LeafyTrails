@@ -6,7 +6,7 @@ export const ByNehanshu = () => {
     <div className="by-nehanshu">
       <span className="my-footer--1">
         Presenting{" "}
-        <Link to="https://leafytrails.netlify.app/" target="_blank">
+        <Link to="https://github.com/nehanshuajmera/LeafyTrails.git" target="_blank">
           {" "}
           Leafy Trails{" "}
         </Link>{" "}
