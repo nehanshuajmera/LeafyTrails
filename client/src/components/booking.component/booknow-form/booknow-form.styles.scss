@@ -30,6 +30,14 @@
       height: 60vh;
     }
 
+    @include responsive(ipad) {
+      height: 60vh;
+    }
+
+    @include responsive(tab) {
+      height: 70vh;
+    }
+
     .form-inner-box {
       width: 75%;
       box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
@@ -55,11 +63,33 @@
       @include responsive(android) {
         width: 85%;
       }
+
+      @include responsive(ipad) {
+        width: 85%;
+      }
     }
   }
 
   &__submit-btn {
     margin-bottom: 3rem;
+
+    // @include responsive(mobile) {}
+
+    @include responsive(mob) {
+      margin-bottom: 5rem;
+    }
+
+    @include responsive(iphone) {
+      margin-bottom: 8rem;
+    }
+
+    @include responsive(android) {
+      margin-bottom: 8rem;
+    }
+
+    // @include responsive(ipad) {}
+
+    // @include responsive(tab) {}
   }
 
   .form-img--1 {

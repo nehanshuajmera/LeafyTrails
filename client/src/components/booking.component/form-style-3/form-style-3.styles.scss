@@ -80,16 +80,6 @@
       padding: 1.5rem;
     }
 
-    @include responsive(ipad) {
-      width: 50%;
-      padding: 1.5rem;
-    }
-
-    @include responsive(tab) {
-      width: 50%;
-      padding: 1.5rem;
-    }
-
     & h3 {
       font-size: 2rem;
       font-family: 'merriweather';
@@ -109,14 +99,6 @@
       }
   
       @include responsive(android) {
-        font-size: 1.8rem;
-      }
-  
-      @include responsive(ipad) {
-        font-size: 1.8rem;
-      }
-  
-      @include responsive(tab) {
         font-size: 1.8rem;
       }
     }   
@@ -148,15 +130,6 @@
         @include responsive(android) {
           font-size: 1.6rem;
         }
-    
-        @include responsive(ipad) {
-          font-size: 1.6rem;
-        }
-    
-        @include responsive(tab) {
-          font-size: 1.6rem;
-        }
-
 
         & span {
           font-weight: 500;

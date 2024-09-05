@@ -4,6 +4,34 @@
 .custom-dropdown {
   position: relative;
   width: 90%;
+
+  @include responsive(mobile) {
+    font-size: 1.6rem;
+  }
+
+  @include responsive(mob) {
+    font-size: 1.6rem;
+  }
+
+  @include responsive(iphone) {
+    width: 85%;
+    font-size: 1.6rem;
+  }
+
+  @include responsive(android) {
+    width: 85%;
+    font-size: 1.6rem;
+  }
+
+  @include responsive(ipad) {
+    width: 85%;
+    font-size: 1.6rem;
+  }
+
+  @include responsive(tab) {
+    width: 85%;
+    font-size: 1.8rem;
+  }
 }
 
 .dropdown-header {
