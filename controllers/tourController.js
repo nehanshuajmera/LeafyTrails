@@ -1,5 +1,5 @@
-import mongoose from "mongoose";
-import { Tour } from "../models/tourModel.js";
+import mongoose from 'mongoose';
+import { Tour } from '../models/tourModel.js';
 
 /* get all tours data */
 export const getTours = async (req, res) => {
@@ -14,23 +14,25 @@ export const getTours = async (req, res) => {
 /* get a single tour data */
 export const getTour = async (req, res) => {
   const { id } = req.params;
+
   try {
     if (!mongoose.Types.ObjectId.isValid(id)) {
-      res.status(400).json({
+      return res.status(400).json({
         error: "The resource you're trying to access is not available",
       });
-
-      const getTour = await Tour.findById(id);
-
-      if (!getTour) {
-        res.status(404).json({
-          error: "The resource you're trying to access is not available",
-        });
-      }
-      res.status(200).json(getTour);
     }
+
+    const tour = await Tour.findById(id);
+
+    if (!tour) {
+      return res.status(404).json({
+        error: "The resource you're trying to access is not available",
+      });
+    }
+
+    return res.status(200).json(tour);
   } catch (err) {
-    res.status(400).json({ error: err.message });
+    return res.status(400).json({ error: err.message });
   }
 };
 
@@ -105,7 +107,7 @@ export const updateTour = async (req, res) => {
       },
       {
         new: true,
-      }
+      },
     );
 
     if (!updateTour) {
