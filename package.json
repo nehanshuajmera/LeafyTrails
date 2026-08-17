@@ -7,7 +7,7 @@
     "dev": "nodemon index.js"
   },
   "engines": {
-    "node": ">=26 <27"
+    "node": ">=24 <25"
   },
   "keywords": [],
   "author": "Nehanshu AJmera",
